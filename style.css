@@ -54,13 +54,6 @@ body{
 /*Seção de Formação Acadêmica:*/
 
 /*Administração de Empresas:*/
-#titFormacaoAcademica{
-    color: #50fa7b;
-    text-align: center;
-    line-height: 50px;
-    text-decoration: underline;
-}
-
 #conteudoAdm{
     color: #50fa7b;
     text-align: center;
@@ -84,15 +77,28 @@ body{
     text-align: center;
 }
 
+/*Seção de Experiência Profissional:*/
+#conteudoEstagio{
+    color: #50fa7b;
+    text-align: center;
+}
 
 /*Classes para todo o documento:*/
 
-/*1- Classe para pipes:*/
+/*1- Títulos das Seções:*/
+.tituloDasSecoes{
+    color: #50fa7b;
+    text-align: center;
+    line-height: 50px;
+    text-decoration: underline;
+}
+
+/*2- Classe para pipes:*/
 .pipe{
     color: #ff79c6;
 }
 
-/*2- Classe para datas:*/
+/*3- Classe para datas:*/
 .datas{
     color:#bd93f9;
     text-align: center;
@@ -100,13 +106,13 @@ body{
     font-style: italic;
 }
 
-/*3- Classe para instituições:*/
+/*4- Classe para instituições:*/
 .instituicoes{
     color: #bd93f9;
     font-weight: bold;
 }
 
-/*4- Classe para informações adicionais:*/
+/*5- Classe para informações adicionais:*/
 .infoAdicionalConteudo{
     color: #ffb86c;
 }

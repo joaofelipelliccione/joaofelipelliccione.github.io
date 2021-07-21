@@ -27,8 +27,10 @@ body{
 }
 
 /*Estilização do índice:*/
-.indice{
-    margin-left: 355px;
+
+#posicaoIndice{
+    width: 220px;
+    margin:auto;
     color: #ff79c6;
 }
 

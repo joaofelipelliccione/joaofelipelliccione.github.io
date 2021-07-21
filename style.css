@@ -52,6 +52,8 @@ body{
 }
 
 /*Seção de Formação Acadêmica:*/
+
+/*Administração de Empresas:*/
 #titFormacaoAcademica{
     color: #50fa7b;
     text-align: center;
@@ -64,14 +66,13 @@ body{
     text-align: center;
 }
 
-#puc{
-    color: #bd93f9;
-    font-weight: bold;
+/*Curso Trybe:*/
+
+#conteudoTrybe{
+    color: #50fa7b;
+    text-align: center;
 }
 
-.infoAdicionalAdm{
-    color: #ffb86c;
-}
 
 /*Classes para todo o documento:*/
 
@@ -84,7 +85,17 @@ body{
 .datas{
     color:#bd93f9;
     text-align: center;
-    line-height: 1px;
     text-decoration: underline;
     font-style: italic;
+}
+
+/*3- Classe para instituições:*/
+.instituicoes{
+    color: #bd93f9;
+    font-weight: bold;
+}
+
+/*4- Classe para informações adicionais:*/
+.infoAdicionalConteudo{
+    color: #ffb86c;
 }

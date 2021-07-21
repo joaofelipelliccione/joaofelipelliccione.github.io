@@ -118,6 +118,27 @@ body{
     color:#adf0be;
     text-align: center;
 }
+
+/*Botão de Linkedin:*/
+#posicaoBotaoLkdin{
+    text-align:center;
+}
+
+#corBotaoLkdin{
+    color: #1293d2;
+    font-size: 20px;
+}
+
+/*Botão de Volta ao Início:*/
+#posicaoBotaoInicio{
+    text-align:center;
+}
+
+#corBotaoInicio{
+    color: #ff5555;
+    font-size: 17px;
+}
+
 /*Classes para todo o documento:*/
 
 /*1- Títulos das Seções:*/

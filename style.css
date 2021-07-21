@@ -1,5 +1,27 @@
+/*Estilização geral:*/
 body{
-
     background-color:#282a36;
     font-family:'Source Sans Pro', sans-serif;
+    font-size: 15px;
+    color: wheat;
+}
+
+/*Estilização do cabeçalho:*/
+#nome{
+    color: #50fa7b;
+    text-align: center;
+    line-height: 10px;
+}
+
+#infoCabecalho{
+    text-align: center;
+    font-weight: bold;
+}
+
+.contato{
+    color: wheat;
+}
+
+.pipe{
+    color: #ff79c6;
 }

@@ -25,3 +25,12 @@ body{
 .pipe{
     color: #ff79c6;
 }
+
+#fotoDeveloper{
+    text-align: center;
+}
+
+/*Estilização do índice:*/
+.indice{
+    margin-left: 350px;
+}

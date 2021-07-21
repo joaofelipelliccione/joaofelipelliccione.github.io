@@ -9,6 +9,7 @@ body{
 /*Estilização do cabeçalho:*/
 #nome{
     color: #50fa7b;
+    text-decoration: underline;
     text-align: center;
     line-height: 10px;
 }
@@ -27,7 +28,6 @@ body{
 }
 
 /*Estilização do índice:*/
-
 #posicaoIndice{
     width: 220px;
     margin:auto;

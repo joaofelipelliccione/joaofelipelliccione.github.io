@@ -32,5 +32,25 @@ body{
 
 /*Estilização do índice:*/
 .indice{
-    margin-left: 350px;
+    margin-left: 355px;
+    color: #ff79c6;
+}
+
+#item1{
+    color: #8be9fd;
+}
+#item2{
+    color: #8be9fd;
+}
+#item3{
+    color: #8be9fd;
+}
+#item4{
+    color: #8be9fd;
+}
+#item5{
+    color: #8be9fd;
+}
+#item6{
+    color: #8be9fd;
 }

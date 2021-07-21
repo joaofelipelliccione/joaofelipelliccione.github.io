@@ -22,10 +22,6 @@ body{
     color: wheat;
 }
 
-.pipe{
-    color: #ff79c6;
-}
-
 #fotoDeveloper{
     text-align: center;
 }
@@ -53,4 +49,42 @@ body{
 }
 #item6{
     color: #8be9fd;
+}
+
+/*Seção de Formação Acadêmica:*/
+#titFormacaoAcademica{
+    color: #50fa7b;
+    text-align: center;
+    line-height: 50px;
+    text-decoration: underline;
+}
+
+#conteudoAdm{
+    color: #50fa7b;
+    text-align: center;
+}
+
+#puc{
+    color: #bd93f9;
+    font-weight: bold;
+}
+
+.infoAdicionalAdm{
+    color: #ffb86c;
+}
+
+/*Classes para todo o documento:*/
+
+/*1- Classe para pipes:*/
+.pipe{
+    color: #ff79c6;
+}
+
+/*2- Classe para datas:*/
+.datas{
+    color:#bd93f9;
+    text-align: center;
+    line-height: 1px;
+    text-decoration: underline;
+    font-style: italic;
 }

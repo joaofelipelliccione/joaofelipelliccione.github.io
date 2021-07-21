@@ -78,11 +78,18 @@ body{
 }
 
 /*Seção de Experiência Profissional:*/
+
+/*Estágio L'Oréal:*/
 #conteudoEstagio{
     color: #50fa7b;
     text-align: center;
 }
 
+/*Work Experience Vinci:*/
+#conteudoVinci{
+    color: #50fa7b;
+    text-align: center;
+}
 /*Classes para todo o documento:*/
 
 /*1- Títulos das Seções:*/

@@ -108,13 +108,15 @@ body{
 }
 
 /*Seção de Atividades Extracurriculares:*/
-.conteudoAtivExtracurricular{
+#conteudoAtivExtracurricular{
     color: #adf0be;
     text-align: center;
 }
 
-.datasAtivExtra{
-    color: #bd93f9;
+/*Seção de Informações Adicionais:*/
+#bolsaPremio{
+    color:#adf0be;
+    text-align: center;
 }
 /*Classes para todo o documento:*/
 
@@ -154,8 +156,13 @@ body{
 /*6- Títulos das Seções Menores:*/
 .tituloDasSecoesMenores{
     color: #adf0be;
-    font-size: 23px;
+    font-size: 22px;
     text-align: center;
     line-height: 50px;
     text-decoration: underline;
+}
+
+/*7- Datas das Seções Menores:*/
+.datasDasSecoesMenores{
+    color: #bd93f9;
 }

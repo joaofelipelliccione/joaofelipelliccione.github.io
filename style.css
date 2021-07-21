@@ -67,8 +67,19 @@ body{
 }
 
 /*Curso Trybe:*/
-
 #conteudoTrybe{
+    color: #50fa7b;
+    text-align: center;
+}
+
+/*Intercâmbio:*/
+#conteudoIntercambio{
+    color: #50fa7b;
+    text-align: center;
+}
+
+/*Escola:*/
+#conteudoEscola{
     color: #50fa7b;
     text-align: center;
 }

@@ -90,6 +90,15 @@ body{
     color: #50fa7b;
     text-align: center;
 }
+
+/*Seção de Cursos:*/
+.cursos{
+    color: #50fa7b;
+    text-align: center;
+}
+
+
+
 /*Classes para todo o documento:*/
 
 /*1- Títulos das Seções:*/
@@ -122,4 +131,12 @@ body{
 /*5- Classe para informações adicionais:*/
 .infoAdicionalConteudo{
     color: #ffb86c;
+}
+
+/*6- Títulos das Seções Menores:*/
+.tituloDasSecoesMenores{
+    color: #50fa7b;
+    text-align: center;
+    line-height: 50px;
+    text-decoration: underline;
 }

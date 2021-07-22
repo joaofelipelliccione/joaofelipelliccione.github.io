@@ -28,9 +28,9 @@ body{
     font-size: 16px;
 }
 
-
 #fotoDeveloper{
     text-align: center;
+    border-radius: 10px;
 }
 
 /*Estilização do índice:*/

@@ -23,6 +23,12 @@ body{
     color: wheat;
 }
 
+.contato:hover{
+    color: #ff5555;
+    font-size: 16px;
+}
+
+
 #fotoDeveloper{
     text-align: center;
 }
@@ -31,26 +37,16 @@ body{
 #posicaoIndice{
     width: 220px;
     margin:auto;
-    color: #ff79c6;
+    color: #ff5555;
 }
 
-#item1{
+.itensIndice{
     color: #8be9fd;
 }
-#item2{
-    color: #8be9fd;
-}
-#item3{
-    color: #8be9fd;
-}
-#item4{
-    color: #8be9fd;
-}
-#item5{
-    color: #8be9fd;
-}
-#item6{
-    color: #8be9fd;
+
+.itensIndice:hover{
+    color:#ff5555;
+    font-size: 16px;
 }
 
 /*Seção de Formação Acadêmica:*/
@@ -131,6 +127,11 @@ body{
     font-size: 20px;
 }
 
+#corBotaoLkdin:hover{
+    color:#8be9fd;
+    font-size: 25px;
+}
+
 /*Botão de Volta ao Início:*/
 #posicaoBotaoInicio{
     text-align:center;
@@ -139,6 +140,11 @@ body{
 #corBotaoInicio{
     color: #ff5555;
     font-size: 17px;
+}
+
+#corBotaoInicio:hover{
+    color:#50fa7b;
+    font-size: 20px;
 }
 
 /*Classes para todo o documento:*/

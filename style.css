@@ -1,12 +1,106 @@
 /*Estilização geral:*/
-body{
-    background-color:#282a36;
-    font-family:'Source Sans Pro', sans-serif;
-    font-size: 15px;
-    color: wheat;
+body {
+  background-color: #6272a4;
+  font-family: Source Sans Pro, sans-serif;
+  font-size: 25px;
+  color: wheat;
+  width: 1920px;
+  height: 1080px;
 }
 
-/*Estilização do cabeçalho:*/
+#mainHeader {
+  position: fixed;
+  width: 100%;
+  background-color: #282a36;
+  top: 0;
+  left: 0;
+}
+
+#mainHeader h1 {
+  font-size: 1.8em;
+  text-align: center;
+}
+
+#mainHeader nav {
+  margin-top: -0.5%;
+}
+
+#mainHeader nav ul {
+  display: flex;
+  justify-content: center;
+  padding-left: 0%;
+  padding-right: 0%;
+  list-style: none;
+}
+
+#mainHeader nav ul li {
+  text-align: center;
+  display: inline-block;
+  margin-left: 0.8%;
+  margin-right: 0.8%;
+}
+
+#mainHeader nav ul li a {
+  font-size: 1.2em;
+  border-radius: 5%;
+  font-weight: 900;
+  color: ghostwhite
+}
+
+#mainHeader nav ul li a:hover {
+  color: #ff79c6;
+  font-size: 1.3em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Estilização do cabeçalho:
 #nome{
     color: #50fa7b;
     text-decoration: underline;
@@ -32,8 +126,9 @@ body{
     text-align: center;
     border-radius: 10px;
 }
+*/
 
-/*Estilização do índice:*/
+/*Estilização do índice:
 #posicaoIndice{
     width: 220px;
     margin:auto;
@@ -48,54 +143,62 @@ body{
     color:#ff5555;
     font-size: 16px;
 }
+*/
 
 /*Seção de Formação Acadêmica:*/
 
-/*Administração de Empresas:*/
+/*Administração de Empresas:
 #conteudoAdm{
     color: #50fa7b;
     text-align: center;
 }
+*/
 
-/*Curso Trybe:*/
+/*Curso Trybe:
 #conteudoTrybe{
     color: #50fa7b;
     text-align: center;
 }
+*/
 
-/*Intercâmbio:*/
+/*Intercâmbio:
 #conteudoIntercambio{
     color: #50fa7b;
     text-align: center;
 }
+*/
 
-/*Escola:*/
+/*Escola:
 #conteudoEscola{
     color: #50fa7b;
     text-align: center;
 }
+*/
 
 /*Seção de Experiência Profissional:*/
 
-/*Estágio L'Oréal:*/
+/*Estágio L'Oréal:
 #conteudoEstagio{
     color: #50fa7b;
     text-align: center;
 }
+*/
 
-/*Work Experience Vinci:*/
+/*Work Experience Vinci:
 #conteudoVinci{
     color: #50fa7b;
     text-align: center;
 }
+*/
 
-/*Seção de Cursos:*/
+/*Seção de Cursos:
 .cursos{
     color: #adf0be;
     text-align: center;
 }
+*/
 
-/*Seção de Ferramentas e Idiomas:*/
+/*Seção de Ferramentas e Idiomas:
 .conteudoferrEIdiomas{
     color: #adf0be;
     text-align: center;
@@ -104,20 +207,23 @@ body{
 #levelIelts{
     color:#ffb86c
 }
+*/
 
-/*Seção de Atividades Extracurriculares:*/
+/*Seção de Atividades Extracurriculares:
 #conteudoAtivExtracurricular{
     color: #adf0be;
     text-align: center;
 }
+*/
 
-/*Seção de Informações Adicionais:*/
+/*Seção de Informações Adicionais:
 #bolsaPremio{
     color:#adf0be;
     text-align: center;
 }
+*/
 
-/*Botão de Linkedin:*/
+/*Botão de Linkedin:
 #posicaoBotaoLkdin{
     text-align:center;
 }
@@ -131,8 +237,9 @@ body{
     color:#8be9fd;
     font-size: 25px;
 }
+*/
 
-/*Botão de Volta ao Início:*/
+/*Botão de Volta ao Início:
 #posicaoBotaoInicio{
     text-align:center;
 }
@@ -146,10 +253,11 @@ body{
     color:#50fa7b;
     font-size: 20px;
 }
+*/
 
 /*Classes para todo o documento:*/
 
-/*1- Títulos das Seções:*/
+/*1- Títulos das Seções:
 .tituloDasSecoes{
     color: #50fa7b;
     font-size: 26px;
@@ -157,32 +265,37 @@ body{
     line-height: 50px;
     text-decoration: underline;
 }
+*/
 
-/*2- Classe para pipes:*/
+/*2- Classe para pipes:
 .pipe{
     color: #ff79c6;
 }
+*/
 
-/*3- Classe para datas:*/
+/*3- Classe para datas:
 .datas{
     color:#bd93f9;
     text-align: center;
     text-decoration: underline;
     font-style: italic;
 }
+*/
 
-/*4- Classe para instituições:*/
+/*4- Classe para instituições:
 .instituicoes{
     color: #bd93f9;
     font-weight: bold;
 }
+*/
 
-/*5- Classe para informações adicionais:*/
+/*5- Classe para informações adicionais:
 .infoAdicionalConteudo{
     color: #ffb86c;
 }
+*/
 
-/*6- Títulos das Seções Menores:*/
+/*6- Títulos das Seções Menores:
 .tituloDasSecoesMenores{
     color: #adf0be;
     font-size: 22px;
@@ -190,8 +303,10 @@ body{
     line-height: 50px;
     text-decoration: underline;
 }
+*/
 
-/*7- Datas das Seções Menores:*/
+/*7- Datas das Seções Menores:
 .datasDasSecoesMenores{
     color: #bd93f9;
 }
+*/

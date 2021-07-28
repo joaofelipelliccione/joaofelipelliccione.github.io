@@ -4,14 +4,14 @@ body {
   font-family: Source Sans Pro, sans-serif;
   font-size: 25px;
   color: wheat;
-  width: 1920px;
-  height: 1080px;
 }
 
+/*Cabeçalho*/
 #mainHeader {
   position: fixed;
   width: 100%;
   background-color: #282a36;
+  box-shadow: 0 0 1em wheat;
   top: 0;
   left: 0;
 }
@@ -52,12 +52,40 @@ body {
   font-size: 1.3em;
 }
 
+/*Conteúdo Principal*/
+#conteudoPrincipal {
+  text-align: center;
+}
 
+/*Seção "Quem Sou Eu?"*/
+#quemSouEu {
+  background-color: #44475a;
+  padding-bottom: 3%;
+}
 
+#quemSouEu img {
+  border-radius: 50%;
+  margin-top: 10%;
+  margin-bottom: 1%;
+}
 
+#apresentacao {
+  margin-left: 25%;
+  margin-right: 25%;
+}
 
+#apresentacao h2 {
+  font-size: 2.5em;
+  color: #ff79c6;
+  font-weight: 1000;
+  margin-top: 0%;
+}
 
-
+#apresentacao p {
+  font-size: 1.5em;
+  text-align: justify;
+  color: #50fa7b;
+}
 
 
 

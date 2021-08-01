@@ -17,7 +17,7 @@ body {
 }
 
 #mainHeader h1 {
-  font-size: 1.8em;
+  font-size: 2em;
   text-align: center;
 }
 
@@ -49,7 +49,7 @@ body {
 
 #mainHeader nav ul li a:hover {
   color: #ff79c6;
-  font-size: 1.3em;
+  font-size: 1.1em;
 }
 
 /*Conteúdo Principal*/
@@ -65,8 +65,12 @@ body {
 
 #quemSouEu img {
   border-radius: 50%;
-  margin-top: 10%;
+  margin-top: 12%;
   margin-bottom: 1%;
+}
+
+#quemSouEu img:hover {
+  width: 35%;
 }
 
 #apresentacao {
@@ -87,10 +91,87 @@ body {
   color: #50fa7b;
 }
 
+/*Seção "Formação Acadêmica"*/
 
+#formacaoAcademica {
+  background-color: rgb(71, 50, 71);
+  margin-top: 0%;
 
+}
 
+#formacaoAcademica h2 {
+  font-size: 2.5em;
+  color: #ff79c6;
+  font-weight: 1000;
+  margin-top: 0%;
+  padding-top: 1.5%;
+  
+}
 
+#admPuc {
+  border: solid 3px #50fa7b;
+  border-radius: 15%;
+  display: inline-block;
+  width: 40%;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+  margin-bottom: 2%;
+  padding-bottom: 1%;
+}
+
+#trybe {
+  border: solid 3px #50fa7b;
+  border-radius: 15%;
+  display: inline-block;
+  width: 40%;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+  margin-bottom: 2%;
+  padding-bottom: 1%;
+}
+
+#intercambio{
+  border: solid 3px #50fa7b;
+  border-radius: 15%;
+  display: inline-block;
+  width: 40%;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+  margin-top: 2%;
+  padding-bottom: 1%;
+  margin-bottom: 2%;
+}
+
+#teresiano {
+  border: solid 3px #50fa7b;
+  border-radius: 15%;
+  display: inline-block;
+  width: 40%;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+  margin-top: 2%;
+  padding-bottom: 1%;
+  margin-bottom: 2%;
+}
+
+.titulosFormacaoAcademica {
+  color: ghostwhite;
+  font-size: 1.3em;
+  margin-bottom: 1%;
+}
+
+.pipe {
+  color: #ff5555;
+}
+
+.instituicao {
+  color: #50fa7b;
+}
+
+.conteudoFormacaoAcademica {
+  font-size: 1.3em;
+  font-weight: 550;
+}
 
 
 

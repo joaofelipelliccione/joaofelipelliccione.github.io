@@ -48,7 +48,7 @@ body {
 }
 
 #mainHeader nav ul li a:hover {
-  color: #ff79c6;
+  color: #ec6948;
   font-size: 1.1em;
 }
 
@@ -70,7 +70,7 @@ body {
 }
 
 #quemSouEu img:hover {
-  width: 35%;
+  width: 30%;
 }
 
 #apresentacao {
@@ -80,7 +80,7 @@ body {
 
 #apresentacao h2 {
   font-size: 2.5em;
-  color: #ff79c6;
+  color: #ec6948;
   font-weight: 1000;
   margin-top: 0%;
 }
@@ -88,7 +88,7 @@ body {
 #apresentacao p {
   font-size: 1.5em;
   text-align: justify;
-  color: #50fa7b;
+  color: ghostwhite;
 }
 
 /*Seção "Formação Acadêmica"*/
@@ -101,7 +101,7 @@ body {
 
 #formacaoAcademica h2 {
   font-size: 2.5em;
-  color: #ff79c6;
+  color: #ec6948;
   font-weight: 1000;
   margin-top: 0%;
   padding-top: 1.5%;
@@ -119,6 +119,16 @@ body {
   padding-bottom: 1%;
 }
 
+#admPuc nav a {
+  font-size: 1.3em;
+  color: ghostwhite;
+}
+
+#admPuc nav a:hover {
+  font-size: 1.2em;
+  color: #ec6948;
+}
+
 #trybe {
   border: solid 3px #50fa7b;
   border-radius: 15%;
@@ -130,6 +140,16 @@ body {
   padding-bottom: 1%;
 }
 
+#trybe nav a {
+  font-size: 1.3em;
+  color: ghostwhite;
+}
+
+#trybe nav a:hover {
+  font-size: 1.2em;
+  color: #ec6948;
+}
+
 #intercambio{
   border: solid 3px #50fa7b;
   border-radius: 15%;
@@ -138,8 +158,20 @@ body {
   margin-left: 2.5%;
   margin-right: 2.5%;
   margin-top: 2%;
-  padding-bottom: 1%;
   margin-bottom: 2%;
+  padding-left: 1%;
+  padding-right: 1%;
+  padding-bottom: 1%;
+}
+
+#intercambio nav a {
+  font-size: 1.3em;
+  color: ghostwhite;
+}
+
+#intercambio nav a:hover {
+  font-size: 1.2em;
+  color: #ec6948;
 }
 
 #teresiano {
@@ -150,8 +182,18 @@ body {
   margin-left: 2.5%;
   margin-right: 2.5%;
   margin-top: 2%;
-  padding-bottom: 1%;
   margin-bottom: 2%;
+  padding-bottom: 1%;
+}
+
+#teresiano nav a {
+  font-size: 1.3em;
+  color: ghostwhite;
+}
+
+#teresiano nav a:hover {
+  font-size: 1.2em;
+  color: #ec6948;
 }
 
 .titulosFormacaoAcademica {

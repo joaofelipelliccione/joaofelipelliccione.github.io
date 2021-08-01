@@ -1,3 +1,4 @@
+/*Rolagem Suave para Links Internos:*/
 html{
   scroll-behavior: smooth;
 }
@@ -74,7 +75,7 @@ body {
 }
 
 #quemSouEu img:hover {
-  width: 30%;
+  width: 35%;
 }
 
 #apresentacao {
@@ -202,6 +203,7 @@ body {
   color: #ec6948;
 }
 
+/*Classes compartilhadas, dessa seção.*/
 .titulosFormacaoAcademica {
   color: ghostwhite;
   font-size: 1.3em;
@@ -220,33 +222,6 @@ body {
   font-size: 1.3em;
   font-weight: 550;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

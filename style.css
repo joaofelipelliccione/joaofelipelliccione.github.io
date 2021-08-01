@@ -5,7 +5,7 @@ html{
 
 /*Estilização geral:*/
 body {
-  background-color: #6272a4;
+  background-color: #282a36;
   font-family: Source Sans Pro, sans-serif;
   font-size: 25px;
   color: wheat;
@@ -49,12 +49,13 @@ body {
   font-size: 1.1em;
   border-radius: 5%;
   font-weight: 900;
-  color: ghostwhite
+  color: ghostwhite;
+  text-decoration: none;
 }
 
 #mainHeader nav ul li a:hover {
   color: #ec6948;
-  font-size: 1em;
+  font-size: 1.05em;
 }
 
 /*Conteúdo Principal*/
@@ -70,7 +71,7 @@ body {
 
 #quemSouEu img {
   border-radius: 50%;
-  margin-top: 13%;
+  margin-top: 12%;
   margin-bottom: 1%;
 }
 
@@ -128,7 +129,8 @@ body {
 
 #admPuc nav a {
   font-size: 1.3em;
-  color: ghostwhite;
+  color: #50fa7b;
+  text-decoration: none;
 }
 
 #admPuc nav a:hover {
@@ -149,7 +151,8 @@ body {
 
 #trybe nav a {
   font-size: 1.3em;
-  color: ghostwhite;
+  color: #50fa7b;
+  text-decoration: none;
 }
 
 #trybe nav a:hover {
@@ -173,12 +176,14 @@ body {
 
 #intercambio nav a {
   font-size: 1.3em;
-  color: ghostwhite;
+  color: #50fa7b;
+  text-decoration: none;
 }
 
 #intercambio nav a:hover {
   font-size: 1.2em;
   color: #ec6948;
+  text-decoration: none;
 }
 
 #teresiano {
@@ -195,7 +200,8 @@ body {
 
 #teresiano nav a {
   font-size: 1.3em;
-  color: ghostwhite;
+  color: #50fa7b;
+  text-decoration: none;
 }
 
 #teresiano nav a:hover {
@@ -223,11 +229,33 @@ body {
   font-weight: 550;
 }
 
+/*Seção "Rodapé"*/
+footer {
+  background-color: #282a36;
+  padding-bottom: 5%;
+  padding-top: 5%;
+}
 
+footer span {
+  display: block;
+  font-size: 1em;
+  text-align: center;
+  color: ghostwhite;
+}
 
+footer span a {
+  color: #50fa7b;
+  text-decoration: none;
+}
 
+#heart {
+  color: #ff5555;
+}
 
-
+footer span a:hover {
+  color: #ec6948;
+  font-size: 0.95em;
+}
 
 
 

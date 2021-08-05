@@ -24,6 +24,7 @@ body {
 #mainHeader h1 {
   font-size: 2em;
   text-align: center;
+  margin-top: 1%;
 }
 
 #mainHeader nav {
@@ -41,12 +42,12 @@ body {
 #mainHeader nav ul li {
   text-align: center;
   display: inline-block;
-  margin-left: 0.8%;
-  margin-right: 0.8%;
+  margin-left: 0.9%;
+  margin-right: 0.9%;
 }
 
 #mainHeader nav ul li a {
-  font-size: 1.1em;
+  font-size: 1em;
   border-radius: 5%;
   font-weight: 900;
   color: ghostwhite;
@@ -55,7 +56,7 @@ body {
 
 #mainHeader nav ul li a:hover {
   color: #ec6948;
-  font-size: 1.05em;
+  font-size: 1.1em;
 }
 
 /*Conteúdo Principal*/
@@ -70,13 +71,15 @@ body {
 }
 
 #quemSouEu img {
+  width: 30%;
   border-radius: 50%;
-  margin-top: 12%;
+  margin-top: 10%;
   margin-bottom: 1%;
 }
 
 #quemSouEu img:hover {
-  width: 35%;
+  width: 32%;
+  transition-delay: 0.35s;
 }
 
 #apresentacao {
@@ -98,11 +101,9 @@ body {
 }
 
 /*Seção "Formação Acadêmica"*/
-
 #formacaoAcademica {
   background-color: rgb(71, 50, 71);
   margin-top: 0%;
-
 }
 
 #formacaoAcademica h2 {
@@ -111,7 +112,6 @@ body {
   font-weight: 1000;
   margin-top: 0%;
   padding-top: 2%;
-  
 }
 
 #admPuc {
@@ -146,6 +146,8 @@ body {
   margin-left: 2.5%;
   margin-right: 2.5%;
   margin-bottom: 2%;
+  padding-left: 1%;
+  padding-right: 1%;
   padding-bottom: 1%;
 }
 
@@ -195,6 +197,8 @@ body {
   margin-right: 2.5%;
   margin-top: 2%;
   margin-bottom: 2%;
+  padding-left: 1%;
+  padding-right: 1%;
   padding-bottom: 1%;
 }
 
@@ -202,14 +206,14 @@ body {
   font-size: 1.3em;
   color: #50fa7b;
   text-decoration: none;
-}
+} Formação Acadêmica
 
 #teresiano nav a:hover {
   font-size: 1.2em;
   color: #ec6948;
 }
 
-/*Classes compartilhadas, dessa seção.*/
+/*Classes compartilhadas pelos elementos da seção Formação Acadêmica.*/
 .titulosFormacaoAcademica {
   color: ghostwhite;
   font-size: 1.3em;
@@ -227,6 +231,82 @@ body {
 .conteudoFormacaoAcademica {
   font-size: 1.3em;
   font-weight: 550;
+}
+
+/* Seção "Experiências Profissionais"*/
+#xpProfissional {
+  background-color: #44475a;
+  padding-top: 2%;
+}
+
+#xpProfissional h2 {
+  font-size: 2.5em;
+  color: #ec6948;
+  font-weight: 1000;
+  margin-top: 0%;
+}
+
+#loreal {
+  border: purple solid 5px;
+  display: inline-block;
+  width: 40%;
+}
+
+#loreal h3 {
+border: solid red 5px;
+margin-top: 0%;
+margin-left: 17.5%;
+margin-right: 17.5%;
+margin-bottom: 2%;
+width: 65%;
+}
+
+#containerImgLoreal {
+border: #ff5555 solid 5px;
+display: block;
+margin-bottom: 3%;
+}
+
+#loreal img {
+width: 60%;
+}
+
+#vinci {
+  border: blue solid 5px;
+  display: inline-block;
+  width: 40%;
+}
+
+#vinci h3 {
+border: solid brown 5px;
+margin-top: 0%;
+margin-left: 25%;
+margin-right: 25%;
+margin-bottom: 2%;
+width: 50%;
+}
+
+#containerImgVinci {
+  border: gray solid 5px;
+  display: block;
+  margin-bottom: 3%;
+  }
+
+#vinci img {
+width: 60%;
+}
+
+/*Classes compartilhadas pelos elementos da seção Experiência Profissional.*/
+.titulosXpProfissional {
+  color: ghostwhite;
+  font-size: 2em;
+  margin-bottom: 1%;
+}
+
+.conteudoXpProfissional {
+  border: solid green 5px;
+  color: #50fa7b;
+  display: block;
 }
 
 /*Seção "Rodapé"*/

@@ -260,10 +260,6 @@ body {
   margin-bottom: 1%;
 }
 
-.pipe {
-  color: #ff5555;
-}
-
 .instituicao {
   color: #50fa7b;
 }
@@ -396,14 +392,36 @@ body {
   border: #ec6948 3px solid;
   display: inline-block;
   text-align: center;
+  width: 33%;
+  padding-right: 1.6%;
 }
 
 #pacoteOffice h3 {
-  border: #50fa7b 3px solid;
   font-size: 1.5em;
   color: ghostwhite;
+  width: 42%;
   margin-top: 3%;
+  margin-left: 33%;
+  margin-right: 25;
   margin-bottom: 3%;
+}
+
+#pacoteOffice ul {
+  list-style: square;
+  list-style-position: inside;
+  font-size: 1.3em;
+  line-height: 1.5em;
+}
+
+.certificadosHashtag {
+  text-decoration: none;
+  color: #50fa7b;
+  font-size: 0.9em;
+}
+
+.certificadosHashtag:hover {
+  color: #ec6948;
+  font-size: 0.85em;
 }
 
 #softwareWeb {
@@ -411,6 +429,8 @@ body {
 
 #idiomas {
 }
+
+/*Classes compartilhadas pelos elementos da seção Ferramentas e Idiomas.*/
 
 /*Seção "Rodapé"*/
 footer {
@@ -439,4 +459,9 @@ footer span a {
 footer span a:hover {
   color: #ec6948;
   font-size: 0.95em;
+}
+
+/*Classes compartilhadas pelos elementos de várias seções.*/
+.pipe {
+  color: #ff5555;
 }

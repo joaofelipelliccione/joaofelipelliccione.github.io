@@ -27,6 +27,7 @@ body {
   text-align: center;
   width: 50%;
   margin-top: 1%;
+  margin-bottom: 1%;
   margin-left: 25%;
   margin-right: 10%;
 }
@@ -74,9 +75,8 @@ body {
 #mainHeader nav ul {
   display: flex;
   justify-content: center;
-  padding-left: 0%;
-  padding-right: 0%;
   list-style: none;
+  padding-left: 0%;
 }
 
 #mainHeader nav ul li {
@@ -87,7 +87,7 @@ body {
 }
 
 #mainHeader nav ul li a {
-  font-size: 1em;
+  font-size: 0.95em;
   border-radius: 5%;
   font-weight: 900;
   color: ghostwhite;

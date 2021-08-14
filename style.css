@@ -140,8 +140,11 @@ body {
 #apresentacao p {
   font-size: 1.5em;
   text-align: justify;
+  border-radius: 5%;
   font-weight: 600;
-  color: ghostwhite;
+  color:rgb(255, 255, 255);
+  background-color: #e17b62;
+  padding: 2%;
 }
 
 /*Seção "Formação Acadêmica"*/

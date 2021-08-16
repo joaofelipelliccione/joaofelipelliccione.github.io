@@ -138,10 +138,10 @@ body {
 }
 
 #apresentacao p {
-  font-size: 1.5em;
+  font-size: 1.2em;
   text-align: justify;
   border-radius: 5%;
-  font-weight: 600;
+  font-weight: 500;
   color:rgb(255, 255, 255);
   background-color: #e17b62;
   padding: 2%;

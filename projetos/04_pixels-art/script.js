@@ -28,6 +28,12 @@ function randomColors() {
   }
 }
 
+// Atribuindo função de aleatoriedade de cores, em um botão:
+  const changePaletteBtn = document.querySelector('#changePalette')
+  changePaletteBtn.addEventListener('click', function () {
+    randomColors()
+  })
+
 // Criando função para selecionar cor da paleta:
 function selectPaletteColor() {
   const paletteColorsArray = document.getElementById('color-palette').children;
@@ -38,7 +44,7 @@ function selectPaletteColor() {
       currentSelectedElement.classList.remove('selected');
       currentSelectedElement.style.fontSize = '1.5em';
       element.classList.add('selected');
-      element.style.fontSize = '2em';
+      element.style.fontSize = '1.8em';
     });
   }
 }
@@ -71,7 +77,7 @@ function cleanPixels() {
 window.onload = function () {
   const blackColorFromPalette = document.querySelector('#color1');
   blackColorFromPalette.classList.add('selected');
-  blackColorFromPalette.style.fontSize = '2em';
+  blackColorFromPalette.style.fontSize = '1.8em';
   randomColors();
   selectPaletteColor();
   coloring();

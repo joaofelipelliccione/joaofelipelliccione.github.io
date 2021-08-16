@@ -40,11 +40,13 @@ header ul li {
   padding-right: 1.5%;
 }
 
-header span {
+header div {
   color: #ff79c6;
+  width: 45%;
+  text-align: center;
   font-size: 1.4em;
-  margin-left: 30.2%;
-  margin-right: 30.2%;
+  margin-left: 27.5%;
+  margin-right: 27.5%;
 }
 
 #color1 {
@@ -147,6 +149,7 @@ main {
 #changePalette {
   display: inline-block;
   border-radius: 15%;
+  cursor: pointer;
   background-color: #ff5555;
   color: aquamarine;
   width: 15%;
@@ -159,6 +162,7 @@ main {
 #clear-board {
   display: inline-block;
   border-radius: 15%;
+  cursor: pointer;
   background-color: wheat;
   color: cornflowerblue;
   width: 15%;

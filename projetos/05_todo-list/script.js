@@ -11,9 +11,11 @@ function addTask() {
     taskList.appendChild(newLi);
     const taskListLastElementChild = taskList.lastElementChild;
     taskListLastElementChild.innerHTML = inputValue;
-    taskListLastElementChild.style.width = '80%';
-    taskListLastElementChild.style.marginLeft = '10%';
-    taskListLastElementChild.style.marginRight = '10%';
+    taskListLastElementChild.style.fontSize = '1.15em';
+    taskListLastElementChild.style.width = '70%';
+    taskListLastElementChild.style.marginLeft = '15%';
+    taskListLastElementChild.style.marginRight = '15%';
+    taskListLastElementChild.style.wordBreak = 'break-all'
     document.getElementById('texto-tarefa').value = '';
   });
 }
@@ -32,7 +34,7 @@ function selectUnselectLi() {
         li.classList.remove('selected');
         li.style.backgroundColor = 'blueviolet';
         event.target.classList.add('selected');
-        event.target.style.backgroundColor = 'rgb(128, 128, 128)';
+        event.target.style.backgroundColor = '#44475a';
       }
     }
   });

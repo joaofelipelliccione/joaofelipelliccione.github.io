@@ -111,9 +111,9 @@ function moveTaskListItems() {
 
   moveUpBtn.addEventListener('click', function () {
     const selectedTaskListElement = document.querySelector('.selected');
-    const selectedPreviousElement = selectedTaskListElement.previousElementSibling;
 
-    if (selectedPreviousElement !== null) {
+    if (selectedTaskListElement !== null) {
+      const selectedPreviousElement = selectedTaskListElement.previousElementSibling;
       // ref: https://devdocs.io/dom/node/insertbefore --> elementoPai.insertBefore(elementoQueDesejaMover, elementoQueEstaNaPosicaoDesejada)
       taskList.insertBefore(selectedTaskListElement, selectedPreviousElement); 
     }
@@ -123,9 +123,9 @@ function moveTaskListItems() {
 
   moveDownBtn.addEventListener('click', function () {
     const selectedTaskListElement = document.querySelector('.selected');
-    const selectedNextElement = selectedTaskListElement.nextElementSibling;
 
-    if (selectedNextElement !== null) {
+    if (selectedTaskListElement !== null) {
+      const selectedNextElement = selectedTaskListElement.nextElementSibling;
       taskList.insertBefore(selectedNextElement, selectedTaskListElement); 
     }
   });

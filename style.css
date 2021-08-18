@@ -402,21 +402,26 @@ body {
   margin-top: 0%;
 }
 
+#ferrEIdiContainer1 {
+  border: #00b0f2 solid 3px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
 #pacoteOffice {
-  border: #ec6948 3px solid;
-  display: inline-block;
+  border: #747788 3px solid;
+  border-radius: 30%;
   text-align: center;
-  width: 33%;
-  padding-right: 1.6%;
+  width: fit-content;
+  padding: 3%;
 }
 
 #pacoteOffice h3 {
   font-size: 1.5em;
   color: ghostwhite;
-  width: 42%;
+  width: 100%;
   margin-top: 3%;
-  margin-left: 33%;
-  margin-right: 25;
   margin-bottom: 3%;
 }
 
@@ -437,8 +442,6 @@ body {
   color: #ec6948;
   font-size: 0.85em;
 }
-
-/* #softwareWeb {} */
 
 /* #idiomas {} */
 

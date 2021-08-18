@@ -12,9 +12,9 @@ function addTask() {
     const taskListLastElementChild = taskList.lastElementChild;
     taskListLastElementChild.innerHTML = inputValue;
     taskListLastElementChild.style.fontSize = '1.15em';
-    taskListLastElementChild.style.width = '70%';
-    taskListLastElementChild.style.marginLeft = '15%';
-    taskListLastElementChild.style.marginRight = '15%';
+    taskListLastElementChild.style.width = '85%';
+    taskListLastElementChild.style.marginBottom = '1.5%';
+    taskListLastElementChild.style.textAlign = 'center';
     taskListLastElementChild.style.wordBreak = 'break-all'
     document.getElementById('texto-tarefa').value = '';
   });

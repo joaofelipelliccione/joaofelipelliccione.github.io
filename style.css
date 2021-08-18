@@ -127,6 +127,7 @@ body {
 
 #apresentacao img:hover {
   transition-delay: 0.35s;
+  width: 62%;
 }
 
 #apresentacao {
@@ -299,57 +300,51 @@ body {
   margin-top: 0%;
 }
 
+#xpProfissionalContainer1 {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
 #loreal {
   border: solid 3px rgb(194, 146, 25);
   background-color: rgb(114, 91, 32);
   border-radius: 15%;
-  display: inline-block;
-  width: 40%;
-  margin-right: 2.5%;
-  padding-top: 1.5%;
-  padding-bottom: 1.5%;
+  width: fit-content;
+  margin-bottom: 2%;
+  padding: 1% 5%;
 }
 
 #loreal h3 {
+  width: 100%;
   margin-top: 0%;
-  margin-left: 12.5%;
-  margin-right: 12.5%;
-  margin-bottom: 2%;
-  width: 75%;
 }
 
 #containerImgLoreal {
   display: block;
-  margin-top: 4%;
-  margin-bottom: 4%;
+  margin-top: 8%;
+  margin-bottom: 8%;
 }
 
 #loreal img {
-  width: 45%;
+  width: 50%;
 }
 
 #loreal img:hover {
-  width: 48%;
+  width: 53%;
   }
 
 #vinci {
   border: solid 3px #00b0f2;
   background-color: #056385;
   border-radius: 15%;
-  display: inline-block;
-  width: 40%;
-  margin-left: 2.5%;
-  padding-top: 1.5%;
-  padding-left: 0.5%;
-  padding-right: 0.5%;
-  padding-bottom: 1.5%;
+  width: fit-content;
+  margin-bottom: 2%;
+  padding: 1.5% 0.5%;
 }
 
 #vinci h3 {
-  margin-top: 0%;
-  margin-left: 23.5%;
-  margin-right: 25%;
-  margin-bottom: 2%;
+  margin: 0% 25% 2% 23.5%;
   width: 50%;
 }
 
@@ -360,11 +355,11 @@ body {
   }
 
 #vinci img {
-  width: 40%;
+  width: 30%;
 }
 
 #vinci img:hover {
-  width: 43%;
+  width: 33%;
 }
 
 #certificadoVinci {

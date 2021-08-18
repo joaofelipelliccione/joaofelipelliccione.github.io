@@ -5,6 +5,9 @@ body {
 }
 
 header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: #282a36;
   margin-top: 0%;
   padding-bottom: 2%;
@@ -12,41 +15,34 @@ header {
 
 header h1 {
   color: #61f586;
-  width: 28%;
+  width: fit-content;
   text-align: center;
-  margin: 0% 36% 2.5%;
-  padding-top: 1.5%;
 }
 
 header ul {
-  text-align: center;
-  list-style: none;
-  width: 80%;
-  margin-left: 10%;
-  margin-right: 10%;
-  margin-bottom: 3%;
+  display: flex;
+  width: 60%;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  align-items: center;
   padding-left: 0%;
-  padding-right: 0%;
 }
 
 header ul li {
-  border: 1px solid black;
-  display: inline-block;
-  font-size: 1.2em;
+  font-size: 1.4em;
   font-weight: 400;
-  margin-right: 4%;
-  margin-left: 4%;
-  padding-left: 1.5%;
-  padding-right: 1.5%;
+  list-style: none;
+  width: fit-content;
+  text-align: center;
 }
 
 header div {
   color: #ff79c6;
-  width: 45%;
+  width: fit-content ;
   text-align: center;
   font-size: 1.4em;
-  margin-left: 27.5%;
-  margin-right: 27.5%;
+  margin-top: 1.5%;
 }
 
 #color1 {

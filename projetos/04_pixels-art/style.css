@@ -171,12 +171,13 @@ main {
 
 footer {
   background-color: #282a36;
+  display: flex;
+  justify-content: center;
   padding-bottom: 5%;
   padding-top: 5%;
 }
 
 footer span {
-  display: block;
   font-size: 1em;
   text-align: center;
   color: ghostwhite;

@@ -144,8 +144,10 @@ main {
   border: #f33a3a solid 5px;
   border-radius: 25%;
   background-color: #50fa7b;
-  display: block;
+  display: flex;
   width: 80%;
+  flex-wrap: wrap;
+  justify-content: center;
   margin-left: 10%;
   margin-right: 10%;
   margin-bottom: 2.5%;
@@ -156,13 +158,12 @@ main {
 .pixel {
   border: #282a36 solid 1px;
   background-color: white;
-  display: inline-block;
   width: 8%;
   padding-bottom: 8%;
 }
 
 #primeiroDaLinha {
-  margin-left: 30%;
+  margin-left: 25%;
 }
 
 #ultimoDaLinha {

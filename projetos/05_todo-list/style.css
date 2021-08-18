@@ -202,13 +202,14 @@ main section {
 
 footer {
   background-color: #6272a4;
+  display: flex;
+  justify-content: center;
   margin-bottom: 0%;
   padding-top: 5%;
   padding-bottom: 5%;
 }
 
 footer span {
-  display: block;
   font-size: 1em;
   text-align: center;
   color: ghostwhite;

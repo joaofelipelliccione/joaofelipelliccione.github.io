@@ -47,11 +47,11 @@ body {
 }
 
 #linkedinIconContainer img {
-  width: 100%;
+  width: 110%;
 }
 
 #linkedinIconContainer img:hover {
-  width: 90%;
+  width: 100%;
 }
 
 #githubIconContainer {
@@ -74,16 +74,14 @@ body {
 
 #mainHeader nav ul {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
   list-style: none;
   padding-left: 0%;
 }
 
 #mainHeader nav ul li {
-  text-align: center;
-  display: inline-block;
-  margin-left: 0.9%;
-  margin-right: 0.9%;
+  width: fit-content;
 }
 
 #mainHeader nav ul li a {
@@ -96,7 +94,7 @@ body {
 
 #mainHeader nav ul li a:hover {
   color: #ec6948;
-  font-size: 1.1em;
+  font-size: 1em;
 }
 
 /*Conteúdo Principal*/

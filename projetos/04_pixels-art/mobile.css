@@ -31,7 +31,7 @@ header ul {
 
 header ul li {
   font-size: 1.2em;
-  font-weight: 200;
+  font-weight: 400;
   list-style: none;
   width: fit-content;
   margin-bottom: 5%;
@@ -103,10 +103,6 @@ header div {
 #color12 {
   background-color: darkgoldenrod;
   color: black;
-}
-
-.color:hover {
-  font-weight: 300;
 }
 
 #btnsSection {

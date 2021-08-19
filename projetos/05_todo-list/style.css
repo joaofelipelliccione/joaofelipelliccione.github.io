@@ -75,7 +75,6 @@ main section {
   width: fit-content;
   font-size: 1em;
   font-weight: 600;
-  margin-left: 1%;
   padding: 0.4%;
 }
 
@@ -103,7 +102,7 @@ main section {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  margin-bottom: 2%;
+  margin-bottom: 3%;
 }
 
 #salvar-tarefas {
@@ -115,7 +114,6 @@ main section {
   cursor: pointer;
   font-size: 1em;
   font-weight: 600;
-  margin-bottom: 4%;
   padding: 1%;
 }
 
@@ -133,7 +131,6 @@ main section {
   cursor: pointer;
   font-size: 1em;
   font-weight: 600;
-  margin-bottom: 4%;
   padding: 1%;
 }
 
@@ -151,7 +148,6 @@ main section {
   cursor: pointer;
   font-size: 1em;
   font-weight: 600;
-  margin-bottom: 4%;
   padding: 1%;
 }
 
@@ -169,7 +165,6 @@ main section {
   cursor: pointer;
   font-size: 1em;
   font-weight: 600;
-  margin-bottom: 4%;
   padding: 1%;
 }
 
@@ -185,7 +180,7 @@ main section {
 }
 
 .moveBtns {
-  background-color: ghostwhite;
+  background-color: blueviolet;
   border-radius: 15%;
   border: none;
   width: fit-content;
@@ -196,7 +191,7 @@ main section {
 }
 
 .moveBtns:hover {
-  background-color:cornflowerblue;
+  background-color:ghostwhite;
 }
 
 footer {

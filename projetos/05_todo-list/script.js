@@ -28,13 +28,13 @@ function selectUnselectLi() {
     const taskListArray = document.querySelector('#lista-tarefas').children;
     if (event.target.classList.contains('selected') === true) {
       event.target.classList.remove('selected');
-      event.target.style.backgroundColor = 'blueviolet';
+      event.target.style.backgroundColor = '#44475a';
     } else {
       for (const li of taskListArray) {
         li.classList.remove('selected');
-        li.style.backgroundColor = 'blueviolet';
+        li.style.backgroundColor = '#44475a';
         event.target.classList.add('selected');
-        event.target.style.backgroundColor = '#44475a';
+        event.target.style.backgroundColor = 'blueviolet';
       }
     }
   });

@@ -1,10 +1,11 @@
 body {
-  background-color: #7043ae;
+  background-color: #6272a4;
   font-size: 20px;
   font-family: Verdana, sans-serif;
 }
 
 header {
+  box-shadow: 0 15px 15px 0 #46506a;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -50,61 +51,73 @@ header div {
 #color1 {
   background-color: black;
   color: ghostwhite;
+  flex-grow: 0.05;
 }
 
 #color2 {
   background-color: yellow;
   color: #282a36;
+  flex-grow: 0.05;
 }
 
 #color3 {
   background-color: cyan;
   color: #282a36;
+  flex-grow: 0.05;
 }
 
 #color4 {
   background-color: orangered;
   color: ghostwhite;
+  flex-grow: 0.05;
 }
 
 #color5 {
   background-color: darkviolet;
   color: black;
+  flex-grow: 0.05;
 }
 
 #color6 {
   background-color: coral;
   color: black;
+  flex-grow: 0.05;
 }
 
 #color7 {
   background-color: dodgerblue;
   color: black;
+  flex-grow: 0.05;
 }
 
 #color8 {
   background-color: deeppink;
   color: ghostwhite;
+  flex-grow: 0.05;
 }
 
 #color9 {
   background-color: darkslategray;
   color: ghostwhite;
+  flex-grow: 0.05;
 }
 
 #color10 {
   background-color: lightsalmon;
   color: black;
+  flex-grow: 0.05;
 }
 
 #color11 {
   background-color: tan;
   color: black;
+  flex-grow: 0.05;
 }
 
 #color12 {
   background-color: darkgoldenrod;
   color: black;
+  flex-grow: 0.05;
 }
 
 .color:hover {
@@ -112,7 +125,7 @@ header div {
 }
 
 #btnsSection {
-  margin-top: 2%;
+  margin-top: 3.5%;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -143,9 +156,10 @@ main {
 }
 
 #pixel-board {
-  border: #f33a3a solid 5px;
+  border: #50fa7b solid 5px;
   border-radius: 25%;
-  background-color: #50fa7b;
+  box-shadow: 0 15px 15px 0 #46506a;
+  background-color: #282a36;
   display: flex;
   width: 80%;
   flex-wrap: wrap;
@@ -153,8 +167,7 @@ main {
   margin-left: 10%;
   margin-right: 10%;
   margin-bottom: 2.5%;
-  padding-top: 2.5%;
-  padding-bottom: 2.5%;
+  padding: 2.5% 0;
 }
 
 .pixel {
@@ -189,11 +202,6 @@ footer span {
 footer span a {
   color: #50fa7b;
   text-decoration: none;
-}
-
-#heart {
-  color: #ff5555;
-  display: inline;
 }
 
 footer span a:hover {

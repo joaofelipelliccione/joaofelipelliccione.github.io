@@ -1,0 +1,25 @@
+{
+  "name": "joaofelipelliccione.github.io",
+  "version": "1.0.0",
+  "description": "```Autor: João Felipe Pellicicone da Cunha``` <br><br>[Clique](https://joaofelipelliccione.github.io/), para ter acesso ao meu portfólio (ainda em desenvolvimento)!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joaofelipelliccione/joaofelipelliccione.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joaofelipelliccione/joaofelipelliccione.github.io/issues"
+  },
+  "homepage": "https://github.com/joaofelipelliccione/joaofelipelliccione.github.io#readme",
+  "devDependencies": {
+    "eslint": "^7.32.0"
+  },
+  "dependencies": {
+    "eslint-config-trybe-fundamentals": "^1.1.1"
+  }
+}

@@ -48,7 +48,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  padding-top: 45%;
+  padding-top: 38%;
   padding-bottom: 10%;
 }
 
@@ -221,7 +221,6 @@ body {
 }
 
 #xpProfContainer1 {
-  border: #00b0f2 solid 2px;
   display: flex;
   flex-direction: column;
   align-items: center;

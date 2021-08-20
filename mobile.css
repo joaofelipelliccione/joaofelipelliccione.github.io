@@ -1,3 +1,40 @@
+/*Estilização geral:*/
 body {
   font-size: 25px;
+}
+
+/*Cabeçalho*/
+#desktopIndex {
+  display: none;
+}
+
+#mobileIndex {
+  display: flex;
+  width: 100%;
+}
+
+#mobileIndex ul {
+  background-color: #ec6948;
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+  padding-left: 0%;
+}
+
+#mobileIndex ul li {
+  width: fit-content;
+  text-align: center;
+}
+
+#mobileIndex ul li a {
+  color: ghostwhite;
+  border-radius: 5%;
+  font-size: 1em;
+  font-weight: 900;
+  text-decoration: none;
+}
+
+#mobileIndex ul li a:hover {
+  color: #ec6948;
+  font-size: 1.05em;
 }

@@ -32,22 +32,23 @@ body {
   margin-bottom: 0.5%;
 }
 
-#mainHeader nav {
+#desktopIndex {
   width: 100%;
 }
 
-#mainHeader nav ul {
+#desktopIndex ul {
   display: flex;
   justify-content: space-evenly;
   list-style: none;
   padding-left: 0%;
 }
 
-#mainHeader nav ul li {
+#desktopIndex ul li {
   width: fit-content;
+  text-align: center;
 }
 
-#mainHeader nav ul li a {
+#desktopIndex ul li a {
   color: ghostwhite;
   border-radius: 5%;
   font-size: 1em;
@@ -55,13 +56,16 @@ body {
   text-decoration: none;
 }
 
-#mainHeader nav ul li a:hover {
+#desktopIndex ul li a:hover {
   color: #ec6948;
   font-size: 1.05em;
 }
 
-/*Conteúdo Principal*/
+#mobileIndex {
+  display: none;
+}
 
+/*Conteúdo Principal*/
 /*Seção "Quem Sou Eu?"*/
 #quemSouEu {
   background-image: url(./Imagens/WPP-background.jpg);

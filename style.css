@@ -50,7 +50,6 @@ body {
 
 #desktopIndex ul li a {
   color: ghostwhite;
-  border-radius: 5%;
   font-size: 1em;
   font-weight: 900;
   text-decoration: none;
@@ -216,7 +215,7 @@ body {
 
 .falinks:hover {
   color: #ec6948;
-  font-size: 0.95em;
+  font-size: 1em;
   text-decoration: none;
 }
 
@@ -259,6 +258,8 @@ body {
 
 #loreal h3 {
   font-size: 1.8em;
+  color: ghostwhite;
+  margin-bottom: 1%;
 }
 
 #containerImgLoreal {
@@ -286,6 +287,8 @@ body {
 
 #vinci h3 {
   font-size: 1.8em;
+  color: ghostwhite;
+  margin-bottom: 1%;
 }
 
 #containerImgVinci {
@@ -313,12 +316,6 @@ body {
 }
 
 /*Classes compartilhadas pelos elementos da seção Experiência Profissional.*/
-.titulosXpProfissional {
-  color: ghostwhite;
-  font-size: 1.7em;
-  margin-bottom: 1%;
-}
-
 .conteudoXpProfissional {
   font-size: 1.3em;
   line-height: 1.4em;

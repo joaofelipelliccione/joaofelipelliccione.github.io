@@ -8,15 +8,23 @@ body {
   display: none;
 }
 
+#mainHeader h1 {
+  width: fit-content;
+  text-align: center;
+  font-size: 1.1em;
+  margin-top: 2%;
+  margin-bottom: 0.5%;
+}
+
 #mobileIndex {
   display: flex;
   width: 100%;
 }
 
 #mobileIndex ul {
-  background-color: #ec6948;
   display: flex;
   justify-content: space-evenly;
+  width: 100%;
   list-style: none;
   padding-left: 0%;
 }
@@ -28,13 +36,295 @@ body {
 
 #mobileIndex ul li a {
   color: ghostwhite;
-  border-radius: 5%;
-  font-size: 1em;
+  font-size: 1.1em;
   font-weight: 900;
   text-decoration: none;
 }
 
-#mobileIndex ul li a:hover {
+/*Conteúdo Principal*/
+/*Seção "Quem Sou Eu?"*/
+#quemSouEu {
+  background-image: url(./Imagens/WPP-background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  padding-top: 45%;
+  padding-bottom: 10%;
+}
+
+#apresentacao {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+}
+
+#apresentacao img {
+  width: 70%;
+  border-radius: 50%;
+  margin-bottom: 1%;
+}
+
+#apresentacao img:hover {
+  width: 70%;
+}
+
+#apresentacao {
+  margin: 0 25%;
+}
+
+#apresentacao h2 {
   color: #ec6948;
-  font-size: 1.05em;
+  width: 160%;
+  text-align: center;
+  font-size: 1.3em;
+  font-weight: 1000;
+  margin-top: 3%;
+}
+
+#apresentacao p {
+  background-color: #e17b62;
+  color:rgb(255, 255, 255);
+  width: 160%;
+  text-align:center;
+  border-radius: 5%;
+  font-size: 0.8em;
+  font-weight: 500;
+  margin-bottom: 0.5%;
+  padding: 5%;
+}
+
+/*Seção "Formação Acadêmica"*/
+#formacaoAcademica {
+  background-color: rgb(71, 50, 71);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#formacaoAcademica h2 {
+  color: #ec6948;
+  width: fit-content;
+  text-align: center;
+  font-size: 1.3em;
+  font-weight: 1000;
+}
+
+#faContainer1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 4%;
+}
+
+#admPuc {
+  border: solid 3px #50fa7b;
+  border-radius: 15%;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 4%;
+  padding-left: 1%;
+  padding-right: 1%;
+  padding-bottom: 1%;
+}
+
+#trybe {
+  border: solid 3px #50fa7b;
+  border-radius: 15%;
+  text-align: center;
+  width: 100%;
+  padding-left: 1%;
+  padding-right: 1%;
+  padding-bottom: 1%;
+}
+
+#faContainer2  {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 5%;
+}
+
+#intercambio {
+  border: solid 3px #50fa7b;
+  border-radius: 15%;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 4%;
+  padding-left: 1%;
+  padding-right: 1%;
+  padding-bottom: 1%;
+}
+
+#teresiano {
+  border: solid 3px #50fa7b;
+  border-radius: 15%;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 4%;
+  padding-left: 1%;
+  padding-right: 1%;
+  padding-bottom: 1%;
+}
+
+/*Classes compartilhadas pelos elementos da seção Formação Acadêmica.*/
+.titulosFormacaoAcademica {
+  color: ghostwhite;
+  font-size: 0.95em;
+  margin-bottom: 3%;
+}
+
+.instituicao {
+  color: #50fa7b;
+  font-size: 1em;
+}
+
+.conteudoFormacaoAcademica {
+  font-size: 0.85em;
+  font-weight: 550;
+}
+
+.falinks {
+  color: #50fa7b;
+  font-size: 1em;
+  text-decoration: none;
+}
+
+.falinks:hover {
+  color: #ec6948;
+  font-size: 1em;
+  text-decoration: none;
+}
+
+/* Seção "Experiências Profissionais"*/
+#xpProfissional {
+  background-image: url(./Imagens/office-background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position-y: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+#xpProfissional h2 {
+  color: #455481;
+  font-size: 1.3em;
+  font-weight: 1000;
+  text-align: center;
+  width: fit-content;
+}
+
+#xpProfContainer1 {
+  border: #00b0f2 solid 2px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+}
+
+#loreal {
+  background-color: rgb(114, 91, 32);
+  border: solid 3px rgb(194, 146, 25);
+  text-align: center;
+  border-radius: 15%;
+  margin-bottom: 8%;
+  padding: 0 2% 3%;
+}
+
+#loreal h3 {
+  font-size: 1.3em;
+  color: ghostwhite;
+  margin-bottom: 1%;
+}
+
+#containerImgLoreal {
+  display: block;
+  margin-top: 6%;
+  margin-bottom: 4%;
+}
+
+#loreal img {
+  width: 50%;
+}
+
+#loreal img:hover {
+  width: 50%;
+  }
+
+#vinci {
+  background-color: #056385;
+  border: solid 3px #00b0f2;
+  border-radius: 15%;
+  width: 95%;
+  text-align: center;
+  margin-bottom: 8%;
+  padding: 0 2% 3%;
+}
+
+#vinci h3 {
+  font-size: 1.4em;
+  color: ghostwhite;
+  margin-bottom: 1%;
+}
+
+#containerImgVinci {
+  display: block;
+  margin: 6% 0;
+}
+
+#vinci img {
+  width: 40%;
+}
+
+#vinci img:hover {
+  width: 40%;
+}
+
+#certificadoVinci {
+  color: #50fa7b;
+  font-size: 1em;
+  text-decoration: none;
+}
+
+#certificadoVinci:hover {
+  color: #50fa7b;
+  font-size: 1em;
+}
+
+/*Classes compartilhadas pelos elementos da seção Experiência Profissional.*/
+.conteudoXpProfissional {
+  font-size: 1em;
+  line-height: 1.2em;
+}
+
+/*Seção "Rodapé"*/
+footer {
+  background-color: #282a36;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  padding-bottom: 5%;
+  padding-top: 5%;
+}
+
+footer span {
+  font-size: 0.8em;
+  text-align: center;
+  color: ghostwhite;
+}
+
+footer span a {
+  color: #50fa7b;
+  text-decoration: none;
+}
+
+footer span a:hover {
+  color: #ec6948;
+  font-size: 0.8em;
 }

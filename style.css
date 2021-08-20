@@ -111,9 +111,9 @@ body {
   width: 50%;
   text-align: justify;
   border-radius: 5%;
-  font-size: 1.2em;
+  font-size: 1.3em;
   font-weight: 500;
-  padding: 2%;
+  padding: 1.5%;
 }
 
 /* Seção "Formação Acadêmica" */
@@ -212,7 +212,7 @@ body {
 
 .falinks:hover {
   color: #ec6948;
-  font-size: 1em;
+  font-size: 0.95em;
   text-decoration: none;
 }
 

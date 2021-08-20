@@ -1,9 +1,9 @@
-/*Rolagem Suave para Links Internos:*/
+/* Rolagem Suave para Links Internos: */
 html {
   scroll-behavior: smooth;
 }
 
-/*Estilização geral:*/
+/*  Estilização geral: */
 body {
   background-color: #282a36;
   font-family: Source Sans Pro, sans-serif;
@@ -11,7 +11,7 @@ body {
   color: wheat;
 }
 
-/*Cabeçalho*/
+/* Cabeçalho  */
 #mainHeader {
   background-color: #282a36;
   position: fixed;
@@ -64,8 +64,9 @@ body {
   display: none;
 }
 
-/*Conteúdo Principal*/
-/*Seção "Quem Sou Eu?"*/
+/* Conteúdo Principal */
+
+/*  Seção "Quem Sou Eu?" */
 #quemSouEu {
   background-image: url(./Imagens/WPP-background.jpg);
   background-repeat: no-repeat;
@@ -85,17 +86,12 @@ body {
 #apresentacao img {
   width: 60%;
   border-radius: 50%;
-  margin-top: 12%;
-  margin-bottom: 1%;
+  margin: 0 25%;
 }
 
 #apresentacao img:hover {
   transition-delay: 0.35s;
   width: 62%;
-}
-
-#apresentacao {
-  margin: 0 25%;
 }
 
 #apresentacao h2 {
@@ -110,7 +106,7 @@ body {
 
 #apresentacao p {
   background-color: #e17b62;
-  color:rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
   width: fit-content;
   text-align: justify;
   border-radius: 5%;
@@ -119,7 +115,7 @@ body {
   padding: 2%;
 }
 
-/*Seção "Formação Acadêmica"*/
+/* Seção "Formação Acadêmica" */
 #formacaoAcademica {
   background-color: rgb(71, 50, 71);
   display: flex;
@@ -163,14 +159,14 @@ body {
   padding-bottom: 1%;
 }
 
-#faContainer2  {
+#faContainer2 {
   display: flex;
   justify-content: space-evenly;
   max-width: 90%;
   margin-bottom: 4%;
 }
 
-#intercambio{
+#intercambio {
   border: solid 3px #50fa7b;
   border-radius: 15%;
   width: 40%;
@@ -191,7 +187,7 @@ body {
   padding-bottom: 1%;
 }
 
-/*Classes compartilhadas pelos elementos da seção Formação Acadêmica.*/
+/* Classes compartilhadas pelos elementos da seção Formação Acadêmica. */
 .titulosFormacaoAcademica {
   color: ghostwhite;
   font-size: 1.3em;
@@ -219,7 +215,7 @@ body {
   text-decoration: none;
 }
 
-/* Seção "Experiências Profissionais"*/
+/* Seção "Experiências Profissionais" */
 #xpProfissional {
   background-image: url(./Imagens/office-background.jpg);
   background-repeat: no-repeat;
@@ -274,7 +270,7 @@ body {
 
 #loreal img:hover {
   width: 53%;
-  }
+}
 
 #vinci {
   background-color: #056385;
@@ -315,13 +311,13 @@ body {
   font-size: 0.95em;
 }
 
-/*Classes compartilhadas pelos elementos da seção Experiência Profissional.*/
+/* Classes compartilhadas pelos elementos da seção Experiência Profissional. */
 .conteudoXpProfissional {
   font-size: 1.3em;
   line-height: 1.4em;
 }
 
-/*Seção "Ferramentas e Idiomas"*/
+/* Seção "Ferramentas e Idiomas" */
 #ferramentasEIdiomas {
   background-color: rgb(71, 50, 71);
   margin-top: 0%;
@@ -379,9 +375,9 @@ body {
 
 /* #idiomas {} */
 
-/*Classes compartilhadas pelos elementos da seção Ferramentas e Idiomas.*/
+/* Classes compartilhadas pelos elementos da seção Ferramentas e Idiomas. */
 
-/*Seção "Rodapé"*/
+/* Seção "Rodapé" */
 footer {
   background-color: #282a36;
   display: flex;
@@ -407,7 +403,7 @@ footer span a:hover {
   font-size: 0.95em;
 }
 
-/*Classes compartilhadas pelos elementos de várias seções.*/
+/* Classes compartilhadas pelos elementos de várias seções. */
 .pipe {
   color: #ff5555;
 }

@@ -1,121 +1,123 @@
-body{
-  background-color:#6272a4;
+body {
+  background-color: #6272a4;
   font-family: 'Roboto', sans-serif;
   font-size: 15px;
 }
 
-/*Page's Header:*/
-#pageHeader{
+/* Page's Header: */
+#pageHeader {
   border: solid 3px #ff5555;
   border-radius: 10px;
-  background-color:rgb(84, 179, 179);
+  background-color: rgb(84, 179, 179);
   padding-top: 5px;
   padding-bottom: 5px;
 }
 
-header h1{
+header h1 {
   text-align: center;
   line-height: 20px;
-  color:#282a36;
+  color: #282a36;
   font-size: 50px;
 }
 
-header h1 span{
-  color:ghostwhite;
+header h1 span {
+  color: ghostwhite;
 }
 
-.tableOfContent{
+.tableOfContent {
   text-align: center;
-  }
+}
 
-.tableOfContent ul{
-  padding: 0px;
-  margin: 0px;
+.tableOfContent ul {
+  padding: 0;
+  margin: 0;
   list-style: none;
 }
-.tableOfContent ul li{
+
+.tableOfContent ul li {
   display: inline;
   font-size: 25px;
   font-weight: bold;
   line-height: 50px;
 }
 
-.tableOfContent ul li a{
+.tableOfContent ul li a {
   display: inline-block;
   width: 33%;
-  color:blueviolet;
+  color: blueviolet;
   font-size: 40px;
 }
 
-.tableOfContent ul li a:hover{
-  color:darkgreen;
+.tableOfContent ul li a:hover {
+  color: darkgreen;
   font-size: 35px;
 }
 
-/*Stomatopoda's Image:*/
-.image{
-  margin-top:5px;
+/* Stomatopoda's Image: */
+.image {
+  margin-top: 5px;
   margin-bottom: 5px;
   border-radius: 30px;
   height: 800px;
   background-image: url(./imagens/stomatopoda2.jpg);
   background-attachment: fixed;
-  background-size:cover;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position-y: 55%;
 }
 
-/*Page's main content:*/
-main article{
-  background-color:darkcyan;
+/* Page's main content: */
+main article {
+  background-color: darkcyan;
   border-radius: 8px;
   border: solid 3px red;
   margin-top: 5px;
   padding-bottom: 20px;
 }
 
-main article h2{
+main article h2 {
   text-align: center;
   font-size: 39px;
   color: bisque;
 }
 
-/*Page's main content - Section 1:*/
-#about{
+/* Page's main content - Section 1: */
+#about {
   border: solid 5px #ff5555;
   border-radius: 3px;
   margin-left: 400px;
   margin-right: 400px;
 }
-#about h3{
+
+#about h3 {
   text-align: center;
   color: rgb(235, 177, 108);
   font-size: 40px;
   line-height: 1px;
 }
 
-#about nav{
+#about nav {
   line-height: 35px;
   text-align: center;
 }
 
-#about li{
+#about li {
   font-size: 35px;
   font-weight: bold;
-  list-style-position: inside;
   list-style: none;
+  list-style-position: inside;
   line-height: 50px;
-  color:yellow;
+  color: yellow;
 }
 
-#about li span{
+#about li span {
   color: ghostwhite;
   margin-left: auto;
   margin-right: auto;
 }
 
-/*Page's main content - Section 2:*/
-#fact1{
+/* Page's main content - Section 2: */
+#fact1 {
   margin-top: 30px;
   margin-left: 20px;
   margin-right: 20px;
@@ -123,28 +125,28 @@ main article h2{
   border-radius: 10px;
 }
 
-#fact1 h3{
+#fact1 h3 {
   font-size: 35px;
   color: orange;
   text-align: center;
 }
 
-#fact1 p{
+#fact1 p {
   font-size: 35px;
   color: ghostwhite;
   margin-left: 20px;
   margin-right: 5px;
 }
 
-#fact1 p strong{
+#fact1 p strong {
   color: orange;
 }
 
-#fact1 p em{
-  color:black;
+#fact1 p em {
+  color: black;
 }
 
-#fact1 img{
+#fact1 img {
   width: 700px;
   border-radius: 15px;
   display: block;
@@ -153,14 +155,14 @@ main article h2{
   margin-bottom: 30px;
 }
 
-#fact1 img:hover{
+#fact1 img:hover {
   width: 800px;
   transition-delay: 0.3s;
   transition-timing-function: ease;
 }
 
-/*Page's main content - Section 3:*/
-#fact2{
+/* Page's main content - Section 3: */
+#fact2 {
   margin-top: 30px;
   margin-left: 20px;
   margin-right: 20px;
@@ -168,95 +170,95 @@ main article h2{
   border-radius: 10px;
 }
 
-#fact2 h3{
+#fact2 h3 {
   font-size: 35px;
-  color:orangered;
+  color: orangered;
   text-align: center;
 }
 
-#fact2 p{
+#fact2 p {
   font-size: 35px;
   color: ghostwhite;
   margin-left: 20px;
   margin-right: 5px;
 }
 
-#fact2 p strong{
+#fact2 p strong {
   color: orangered;
 }
 
-#fact2 p em{
-  color:black;
+#fact2 p em {
+  color: black;
 }
 
-.imageContainer{
+.imageContainer {
   display: flex;
   text-align: center;
   padding-top: 25px;
 }
 
-.imageContainer div{
+.imageContainer div {
   width: 50%;
 }
 
-.imageContainer div img{
+.imageContainer div img {
   border-radius: 15px;
   margin-bottom: 30px;
   width: 700px;
 }
 
-.imageContainer div img:hover{
+.imageContainer div img:hover {
   width: 800px;
   transition-delay: 0.3s;
   transition-timing-function: ease;
 }
 
-#fact2 aside p a{
-  color:#50fa7b;
+#fact2 aside p a {
+  color: #50fa7b;
   font-weight: bold;
 }
 
-#fact2 aside p a:hover{
+#fact2 aside p a:hover {
   color: blanchedalmond;
   font-size: 36px;
 }
 
-/*Page's main content - Section 4:*/
-.references{
+/* Page's main content - Section 4: */
+.references {
   border: solid 5px #ff5555;
   border-radius: 3px;
   margin-top: 20px;
   margin-left: 400px;
-  margin-right: 400px;;
+  margin-right: 400px;
 }
 
-.references h3{
+.references h3 {
   font-size: 39px;
   color: ghostwhite;
   text-align: center;
   line-height: 1px;
 }
 
-.references a li{
+.references a li {
   list-style-position: inside;
-  list-style-type:square;
+  list-style-type: square;
   text-align: center;
   font-size: 35px;
-  color:#50fa7b;
+  color: #50fa7b;
   font-weight: bold;
 }
 
-.references a{
+.references a {
   color: yellow;
 }
 
-.references li:hover{
+.references li:hover {
   color: #ff5555;
-  font-size: 33px ;
+  font-size: 33px;
 }
 
-/*Page's footer:*/
-footer{
+/* Page's footer: */
+footer {
   text-align: center;
   font-size: 30px;
   font-weight: bold;
@@ -265,14 +267,15 @@ footer{
   margin-top: 25px;
 }
 
-footer a{
-  color:#50fa7b
-}
-footer a:hover{
-  color: #ff5555;
-  font-size:35px;
+footer a {
+  color: #50fa7b;
 }
 
-#developerName{
+footer a:hover {
+  color: #ff5555;
+  font-size: 35px;
+}
+
+#developerName {
   color: #50fa7b;
 }

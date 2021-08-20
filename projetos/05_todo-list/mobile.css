@@ -6,7 +6,7 @@ body {
 
 header {
   background-color: #6272a4;
-  box-shadow: 0 15px 15px 0 rgba(0,0,0,.15);
+  box-shadow: 0 15px 15px 0 rgba(0, 0, 0, .15);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -35,7 +35,7 @@ main section {
   background-color: #44475a;
   border: 3px solid #ff5555;
   border-radius: 20%;
-  box-shadow: rgba(0,0,0,.15) 0px 19px 38px, rgba(0,0,0,.15) 0px 15px 12px;
+  box-shadow: rgba(0, 0, 0, .15) 0 19px 38px, rgba(0, 0, 0, .15) 0 15px 12px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -127,7 +127,7 @@ main section {
 }
 
 #remover-finalizados {
-  background-color: rgb(9 , 9 , 169);
+  background-color: rgb(9, 9, 169);
   border-radius: 15%;
   border: none;
   width: fit-content;
@@ -140,7 +140,7 @@ main section {
 }
 
 #remover-finalizados:hover {
-  background-color: rgb(55 , 55 , 208);
+  background-color: rgb(55, 55, 208);
   color: ghostwhite;
 }
 
@@ -198,5 +198,5 @@ main section {
 }
 
 .moveBtns:hover {
-  background-color:blueviolet;
+  background-color: blueviolet;
 }

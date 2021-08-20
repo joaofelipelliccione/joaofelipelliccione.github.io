@@ -81,17 +81,18 @@ body {
   flex-direction: column;
   align-items: center;
   align-content: center;
+  padding-top: 5%;
 }
 
 #apresentacao img {
-  width: 60%;
+  width: 30%;
   border-radius: 50%;
   margin: 0 25%;
 }
 
 #apresentacao img:hover {
   transition-delay: 0.35s;
-  width: 62%;
+  width: 33%;
 }
 
 #apresentacao h2 {
@@ -100,14 +101,14 @@ body {
   text-align: center;
   font-size: 2.5em;
   font-weight: 1000;
-  margin-top: 3%;
-  margin-bottom: 1%;
+  margin-top: 2%;
+  margin-bottom: 2%;
 }
 
 #apresentacao p {
   background-color: #e17b62;
   color: rgb(255, 255, 255);
-  width: fit-content;
+  width: 50%;
   text-align: justify;
   border-radius: 5%;
   font-size: 1.2em;
@@ -320,14 +321,17 @@ body {
 /* Seção "Ferramentas e Idiomas" */
 #ferramentasEIdiomas {
   background-color: rgb(71, 50, 71);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin-top: 0%;
-  padding-top: 2%;
-  padding-bottom: 2%;
+  padding: 2% 0;
 }
 
 #ferramentasEIdiomas h2 {
-  font-size: 2.5em;
   color: #ec6948;
+  width: fit-content;
+  font-size: 2.5em;
   font-weight: 1000;
   margin-top: 0%;
 }
@@ -335,24 +339,23 @@ body {
 #ferrEIdiContainer1 {
   border: #00b0f2 solid 3px;
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-evenly;
+  width: 80%;
 }
 
 #pacoteOffice {
   border: #747788 3px solid;
   border-radius: 30%;
   text-align: center;
-  width: fit-content;
-  padding: 3%;
+  padding: 2%;
+  width: 35%;
 }
 
 #pacoteOffice h3 {
-  font-size: 1.5em;
   color: ghostwhite;
-  width: 100%;
-  margin-top: 3%;
-  margin-bottom: 3%;
+  font-size: 1.5em;
+  text-align: center;
+  margin: 3% 0;
 }
 
 #pacoteOffice ul {
@@ -373,7 +376,29 @@ body {
   font-size: 0.85em;
 }
 
-/* #idiomas {} */
+#idiomas {
+  border: #747788 3px solid;
+  border-radius: 30%;
+  text-align: center;
+  align-self: center;
+  width: 45%;
+  padding: 2% 0;
+}
+
+#idiomas h3 {
+  color: ghostwhite;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+#containerImgIelts {
+  display: block;
+  margin-bottom: 4%;
+}
+
+#logoIelts a img {
+  width: 60%;
+}
 
 /* Classes compartilhadas pelos elementos da seção Ferramentas e Idiomas. */
 

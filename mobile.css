@@ -357,8 +357,10 @@ body {
 }
 
 #ferramentasEIdiomas h2 {
+  border: #00b0f2 solid 2px;
   color: #ec6948;
   width: fit-content;
+  text-align: center;
   font-size: 1.4em;
   font-weight: 1000;
   margin-top: 0%;

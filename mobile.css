@@ -281,6 +281,7 @@ body {
   font-size: 1.3em;
   color: ghostwhite;
   margin-bottom: 1%;
+  margin-top: 7%;
 }
 
 #containerImgLoreal {
@@ -310,6 +311,7 @@ body {
 #vinci h3 {
   font-size: 1.4em;
   color: ghostwhite;
+  margin-top: 7%;
   margin-bottom: 1%;
 }
 
@@ -382,7 +384,7 @@ body {
   width: fit-content;
   font-size: 1.3em;
   text-align: center;
-  margin-top: 8%;
+  margin-top: 5%;
 }
 
 #pacoteOffice ul {
@@ -422,6 +424,7 @@ body {
   font-size: 1.3em;
   width: fit-content;
   text-align: center;
+  margin-top: 5%;
   margin-bottom: 5%;
 }
 

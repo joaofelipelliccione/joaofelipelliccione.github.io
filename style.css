@@ -92,7 +92,7 @@ body {
 
 #apresentacao img:hover {
   transition-delay: 0.35s;
-  width: 33%;
+  width: 31%;
 }
 
 #apresentacao h2 {
@@ -337,7 +337,6 @@ body {
 }
 
 #ferrEIdiContainer1 {
-  border: #00b0f2 solid 3px;
   display: flex;
   justify-content: space-evenly;
   width: 80%;
@@ -398,6 +397,27 @@ body {
 
 #logoIelts a img {
   width: 60%;
+}
+
+#logoIelts a img:hover {
+  width: 63%;
+}
+
+#idiomas span {
+  color: wheat;
+  font-size: 1.2em;
+  line-height: 1.3em;
+}
+
+#certificadoIelts {
+  text-decoration: none;
+  color: #50fa7b;
+  font-size: 1.2em;
+}
+
+#certificadoIelts:hover {
+  color: #ec6948;
+  font-size: 1.1em;
 }
 
 /* Classes compartilhadas pelos elementos da seção Ferramentas e Idiomas. */

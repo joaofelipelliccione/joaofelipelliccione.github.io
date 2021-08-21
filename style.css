@@ -324,7 +324,6 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 0%;
   padding: 2% 0;
 }
 
@@ -419,8 +418,6 @@ body {
   color: #ec6948;
   font-size: 1.1em;
 }
-
-/* Classes compartilhadas pelos elementos da seção Ferramentas e Idiomas. */
 
 /* Seção "Rodapé" */
 footer {

@@ -207,8 +207,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 2%;
-  padding-bottom: 2%;
+  padding: 2% 0;
 }
 
 #xpProfissional h2 {
@@ -291,7 +290,7 @@ body {
 }
 
 #certificadoVinci:hover {
-  color: #50fa7b;
+  color: #ec6948;
   font-size: 1em;
 }
 
@@ -299,6 +298,119 @@ body {
 .conteudoXpProfissional {
   font-size: 1em;
   line-height: 1.5em;
+}
+
+/* Seção "Ferramentas e Idiomas" */
+#ferramentasEIdiomas {
+  background-color: rgb(71, 50, 71);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5% 0;
+}
+
+#ferramentasEIdiomas h2 {
+  color: #ec6948;
+  width: fit-content;
+  font-size: 1.4em;
+  font-weight: 1000;
+  margin-top: 0%;
+}
+
+#ferrEIdiContainer1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+#pacoteOffice {
+  border: #747788 3px solid;
+  border-radius: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 93%;
+  margin-bottom: 5%;
+}
+
+#pacoteOffice h3 {
+  color: ghostwhite;
+  width: fit-content;
+  font-size: 1.3em;
+  text-align: center;
+  margin-top: 8%;
+}
+
+#pacoteOffice ul {
+  text-align: center;
+  list-style: square;
+  list-style-position: inside;
+  width: fit-content;
+  font-size: 1em;
+  line-height: 1.3em;
+  margin-top: 1%;
+  padding-left: 0%;
+}
+
+.certificadosHashtag {
+  color: #50fa7b;
+  text-decoration: none;
+  font-size: 0.8em;
+}
+
+.certificadosHashtag:hover {
+  color: #ec6948;
+  font-size: 0.8em;
+}
+
+#idiomas {
+  border: #747788 3px solid;
+  border-radius: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 91%;
+  padding: 0 3%;
+}
+
+#idiomas h3 {
+  color: ghostwhite;
+  width: fit-content;
+  font-size: 1.3em;
+  width: fit-content;
+  text-align: center;
+  margin-bottom: 5%;
+}
+
+#containerImgIelts {
+  display: block;
+  margin-bottom: 4%;
+}
+
+#logoIelts a img {
+  width: 80%;
+}
+
+#logoIelts a img:hover {
+  width: 70%;
+}
+
+#idiomas span {
+  color: wheat;
+  font-size: 0.95em;
+  line-height: 1em;
+}
+
+#certificadoIelts {
+  text-decoration: none;
+  color: #50fa7b;
+  font-size: 0.95em;
+}
+
+#certificadoIelts:hover {
+  color: #ec6948;
+  font-size: 0.9em;
 }
 
 /* Seção "Rodapé" */

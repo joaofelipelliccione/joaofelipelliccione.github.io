@@ -25,11 +25,21 @@ body {
 }
 
 #mainHeader h1 {
+  font-size: 2em;
   width: fit-content;
   text-align: center;
-  font-size: 2em;
   margin-top: 2%;
   margin-bottom: 0.5%;
+}
+
+#mainHeader h1 a {
+  color: wheat;
+  text-decoration: none;
+}
+
+#mainHeader h1 a:hover {
+  color: #50fa7b;
+  font-size: 1.05em;
 }
 
 #desktopIndex {

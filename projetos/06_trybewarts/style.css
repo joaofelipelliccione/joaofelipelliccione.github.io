@@ -235,15 +235,33 @@ main {
 
 /* Seção Principal - Logo Trybewarts: */
 #trybewarts-forms-logo {
-  height: 500px;
+  width: 35%;
   align-self: center;
 }
 
 /* Seção Rodapé: */
 footer {
-  background-color: rgb(40, 42, 54);
+  background-color: rgb(50, 167, 145);
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  padding: 2% 0;
+}
+
+footer span {
   color: ghostwhite;
-  font-size: 0.9em;
+  font-size: 0.95em;
   text-align: center;
-  padding: 1.5% 0;
+}
+
+footer span a {
+  color: ghostwhite;
+  text-decoration: none;
+  font-size: 0.95em;
+  font-weight: 700;
+}
+
+footer span a:hover {
+  color: rgb(96, 41, 136);
+  font-size: 0.9em;
 }

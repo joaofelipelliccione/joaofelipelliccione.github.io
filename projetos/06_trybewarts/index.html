@@ -22,11 +22,11 @@
   <main>
     <form id="evaluation-form">
       <fieldset class="firstSection">
-        <input type="text" name="userName" placeholder="Nome" id="input-name">
-        <input type="text" name="userLastName"  placeholder="Sobrenome" id="input-lastname">
+        <input type="text" name="userName" placeholder="Nome" id="input-name" required>
+        <input type="text" name="userLastName"  placeholder="Sobrenome" id="input-lastname" required>
       </fieldset>
       <fieldset class="firstSection">
-        <input type="email" name="userEmailMain" placeholder="Email" id="input-email">
+        <input type="email" name="userEmailMain" placeholder="Email" id="input-email" required>
         <label for="house">Casa:</label>
         <select name="userHouse" id="house">
           <option value="Gitnória" id="gitnoria-house" selected>Gitnória</option>
@@ -39,7 +39,7 @@
         <fieldset id="secondSectionLeft">
           <label id="label-family">Qual sua família?</label>
             <div>
-              <input type="radio" name="family" value="Frontend" id="frontendRadio">
+              <input type="radio" name="family" value="Frontend" id="frontendRadio" required>
               <label for="frontendRadio">Família Frontend</label>
             </div>
             <div>
@@ -73,7 +73,7 @@
       </fieldset>
       <fieldset class="thirdSection">
         <label id="label-rate">Como você avalia a Trybewarts?</label>
-          <input type="radio" name="rate" value=1 id="rating1">
+          <input type="radio" name="rate" value=1 id="rating1" required>
           <label for="rating1">1</label>
           <input type="radio" name="rate" value=2 id="rating2">
           <label for="rating2">2</label>
@@ -96,7 +96,7 @@
       </fieldset>
       <fieldset class="forthSection">
         <label for="textarea" class="textarea">Deixe seu comentário:</label>
-        <textarea name="userComments" rows="6" maxlength="500" placeholder="Máximo de 500 Caracteres" id="textarea"></textarea>
+        <textarea name="userComments" rows="6" maxlength="500" placeholder="Máximo de 500 Caracteres" id="textarea" required></textarea>
         <output id="counter">500</output>
       </fieldset>
       <fieldset class="fifthSection">

@@ -239,6 +239,12 @@ main {
   align-self: center;
 }
 
+#trybewarts-forms-logo:hover {
+  transition-delay: 0.5s;
+  width: 40%;
+  align-self: center;
+}
+
 /* Seção Rodapé: */
 footer {
   background-color: rgb(50, 167, 145);

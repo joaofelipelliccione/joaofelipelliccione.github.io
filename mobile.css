@@ -90,7 +90,7 @@ body {
 
 /* Seção "Quem Sou Eu?" */
 #quemSouEu {
-  background-image: url(./Imagens/WPP-background.jpg);
+  background-image: url(./imagens/WPP-background.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -244,7 +244,7 @@ body {
 
 /* Seção "Experiências Profissionais" */
 #xpProfissional {
-  background-image: url(./Imagens/office-background.jpg);
+  background-image: url(./imagens/office-background.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;

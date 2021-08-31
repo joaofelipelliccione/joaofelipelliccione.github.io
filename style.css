@@ -234,10 +234,6 @@ body {
   margin-bottom: 3%;
 }
 
-.instituicao {
-  color: #50fa7b;
-}
-
 .conteudoFormacaoAcademica {
   font-size: 1.3em;
   font-weight: 550;
@@ -363,7 +359,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 2% 0;
+  padding: 2% 0 4% 0;
 }
 
 #ferramentasEIdiomas h2 {
@@ -464,20 +460,73 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  background-position-y: 80px;
+  background-position-y: 150px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 1%;
-  padding-bottom: 6%;
+  padding: 5% 0 4% 0;
 }
 
 #ativExtraCv h2 {
+  background-color: rgba(71, 50, 71, 0.796);
+  border: ghostwhite 2px solid;
+  border-radius: 12px;
   color: #ec6948;
-  width: fit-content;
+  width: 35%;
+  text-align: center;
   font-size: 2.5em;
-  font-weight: 1000;
-  margin: 2% 0;
+  margin-top: -2%;
+}
+
+#ativExtContainer1 {
+  display: flex;
+  justify-content: space-evenly;
+  width: 80%;
+}
+
+#monitorias {
+  background-color: rgba(71, 50, 71, 0.796);
+  border: ghostwhite 2px solid;
+  border-radius: 30%;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  width: 30%;
+  text-align: center;
+  padding: 2% 2% 0 1%;
+}
+
+#monitorias h3 {
+  color: #ec6948;
+  font-size: 1.5em;
+  width: fit-content;
+  text-align: center;
+  margin: 0 5% 0 15%;
+  padding-right: 4%;
+}
+
+#monitorias h3 span {
+  font-size: 0.95em;
+}
+
+#monitorias ul {
+  list-style: none;
+  font-size: 1.4em;
+  line-height: 1.5em;
+  color: ghostwhite;
+  font-weight: 600;
+  margin-top: 5%;
+}
+
+.certificadosMonitoria {
+  text-decoration: none;
+  color: #50fa7b;
+  font-size: 0.9em;
+}
+
+.certificadosMonitoria:hover {
+  color: #ec6948;
+  font-size: 0.85em;
 }
 
 /* Seção "Rodapé" */
@@ -509,4 +558,8 @@ footer span a:hover {
 /* Classes compartilhadas pelos elementos de várias seções. */
 .pipe {
   color: rgb(255, 85, 85);
+}
+
+.instituicao {
+  color: #50fa7b;
 }

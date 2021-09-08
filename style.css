@@ -401,12 +401,12 @@ body {
 .certificadosHashtag {
   text-decoration: none;
   color: #50fa7b;
-  font-size: 0.9em;
+  font-size: 0.95em;
 }
 
 .certificadosHashtag:hover {
   color: #ec6948;
-  font-size: 0.85em;
+  font-size: 0.9em;
 }
 
 #idiomas {
@@ -451,7 +451,7 @@ body {
 
 #certificadoIelts:hover {
   color: #ec6948;
-  font-size: 1.1em;
+  font-size: 1.15em;
 }
 
 /* Seção "Atividades Extracurriculares" */
@@ -472,10 +472,11 @@ body {
   border: ghostwhite 2px solid;
   border-radius: 12px;
   color: #ec6948;
-  width: 35%;
+  width: fit-content;
   text-align: center;
   font-size: 2.5em;
   margin-top: -2%;
+  padding: 0 1%;
 }
 
 #ativExtContainer1 {
@@ -491,7 +492,6 @@ body {
   display: flex;
   flex-direction: column;
   align-self: center;
-  width: 30%;
   text-align: center;
   padding: 2% 2% 0 1%;
 }
@@ -522,11 +522,69 @@ body {
   text-decoration: none;
   color: #50fa7b;
   font-size: 0.9em;
+  font-weight: 500;
 }
 
 .certificadosMonitoria:hover {
   color: #ec6948;
   font-size: 0.85em;
+}
+
+#infoAdd {
+  background-color: rgba(71, 50, 71, 0.796);
+  border: ghostwhite 2px solid;
+  border-radius: 15%;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  align-items: center;
+  padding: 3% 2% 2% 2%;
+}
+
+#tituloInfoAdd {
+  border-radius: 12px;
+  color: #ec6948;
+  width: fit-content;
+  text-align: center;
+  font-size: 1.8em;
+  margin-top: -2%;
+  margin-bottom: 1%;
+}
+
+#hackathon {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  align-items: center;
+  padding-bottom: 1%;
+}
+
+#bolsa {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  align-items: center;
+  padding-bottom: 1%;
+}
+
+.certificadosInfoAdd {
+  text-decoration: none;
+  color: #50fa7b;
+  font-size: 1.4em;
+  font-weight: 500;
+}
+
+.certificadosInfoAdd:hover {
+  color: #ec6948;
+  font-size: 1.35em;
+}
+
+/* Classes compartilhadas pelos elementos da seção "Atividades Extracurriculares". */
+.titulosAtivExt {
+  color: ghostwhite;
+  text-align: center;
+  font-size: 1.3em;
+  margin-bottom: 3%;
 }
 
 /* Seção "Rodapé" */

@@ -27,7 +27,7 @@ function createProductItemElement({ id, title, thumbnail }) { // Alterei o nome 
   section.appendChild(createCustomElement('span', 'item__sku', id));
   section.appendChild(createCustomElement('span', 'item__title', title));
   section.appendChild(createProductImageElement(thumbnail));
-  section.appendChild(createCustomElement('button', 'item__add', 'Adicionar ao carrinho!'));
+  section.appendChild(createCustomElement('button', 'item__add', '🛒'));
 
   return section;
 } // Função definida pela Trybe.
@@ -39,7 +39,7 @@ function getComputerPrice(htmlElement) { // [REQUISITO 5]: Função que capta o 
   const compPriceArrayForm = compPriceStringForm.split('$'); // [' PRICE: ', '1633.91']
   const compPriceString = compPriceArrayForm[compPriceArrayForm.length - 1]; // '1633.91'
   const compPrice = Number(Number(compPriceString).toFixed(2)); // 1633.91
-  return Number(compPrice);
+  return compPrice;
 }
 
 function saveShopCart() { // [REQUISITO 4]: Função que armazena o atual estado do carrinho de compras no localStorage sempre que um computador for adicionado [addOnShopCart(] ou removido [cartItemClickListener()].

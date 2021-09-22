@@ -9,6 +9,9 @@ class Pokemon extends React.Component {
           <p>{pokemon.type}</p>
           <p>Average Weigth: {`${pokemon.averageWeight.value} ${pokemon.averageWeight.measurementUnit}`}</p>
           <img src={pokemon.image} alt={pokemon.name}></img>
+          <nav>
+            <a href={pokemon.moreInfo} target='_blank'>More Info!</a>
+          </nav>
         </div>
     ))
     )

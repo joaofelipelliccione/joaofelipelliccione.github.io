@@ -18,7 +18,6 @@ body {
 
 .pokInfo {
   background-image: linear-gradient(red, yellow);
-  border: solid 2px rgb(104, 103, 103);
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   border-radius: 10px;
   display: flex;
@@ -47,5 +46,19 @@ body {
   border-radius: 50%;
   width: 50%;
   justify-self: center;
-  margin-top: 8%;
+  margin: 8% 0 5% 0;
+}
+
+.pokInfo nav a {
+  color: #53566d;
+  font-size: 1.3em;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.pokInfo nav a:hover {
+  color: rgb(12, 177, 12);
+  font-size: 1.25em;
+  font-weight: 600;
+  text-decoration: none;
 }

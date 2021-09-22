@@ -6,14 +6,32 @@ body {
   font-size: 1em;
 }
 
+#pageHeader {
+  display: flex;
+  justify-content: center;
+  padding: 0 0 1% 0;
+}
+
+#pageHeader h1 {
+  background-color: rgb(100, 153, 100);
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  border-radius: 15px;
+  color: ghostwhite;
+  font-size: 3em;
+  margin: 2% 0 1% 0;
+  padding: 2% 3% 3% 2%;
+}
+
 #pokemonsContainer {
   background-color: rgb(110, 182, 110);
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  border-radius: 15px;
   width: 50%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
   margin: 0 25% 0 25%;
+  padding: 0 0 1% 0;
 }
 
 .pokInfo {
@@ -24,7 +42,7 @@ body {
   flex-direction: column;
   align-items: center;
   width: 35%;
-  margin: 1% 0 1% 0;
+  margin: 3% 0 1% 0;
   padding: 0 0 2% 0;
 }
 

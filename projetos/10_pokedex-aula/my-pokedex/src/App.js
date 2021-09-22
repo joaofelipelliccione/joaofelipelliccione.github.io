@@ -6,10 +6,15 @@ import './App.css';
 class App extends React.Component {
   render() {
     return(
-      <main id='pokemonsContainer'>
-        <Pokemon pokemonData={pokemonsData}></Pokemon>
+      <main>
+        <header id='pageHeader'>
+          <h1>Pokédex</h1>
+        </header>
+        <article id='pokemonsContainer'>
+          <Pokemon pokemonData={pokemonsData}></Pokemon>
+        </article>
       </main>
-    )
+  )
   };
 }
 

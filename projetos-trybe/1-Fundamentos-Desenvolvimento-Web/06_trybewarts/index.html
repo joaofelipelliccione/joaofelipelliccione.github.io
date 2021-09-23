@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet"  href="style.css" type="text/css" >
+  <title>Trybewarts 🧙‍♂️</title>
+</head>
+<body>
+  <header class="header">
+    <img src="./images/trybewarts-header-logo.svg" alt="Logo da escola Trybewarts" class="trybewarts-header-logo">
+    <h1 id="trybewarts-header-title">Trybewarts</h1>
+    <form method="POST" class="trybewarts-login">
+      <input type="email" name="email" placeholder="Email" id="emailInputBox">
+      <input type="password" name="password" placeholder="Senha" id="passwordInputBox">
+      <button type="submit" id="loginBtn">Entrar</button>
+    </form>
+  </header>
+  <script src="script.js"></script>
+
+  <main>
+    <form id="evaluation-form">
+      <fieldset class="firstSection">
+        <input type="text" name="userName" placeholder="Nome" id="input-name" required>
+        <input type="text" name="userLastName"  placeholder="Sobrenome" id="input-lastname" required>
+      </fieldset>
+      <fieldset class="firstSection">
+        <input type="email" name="userEmailMain" placeholder="Email" id="input-email" required>
+        <label for="house">Casa:</label>
+        <select name="userHouse" id="house">
+          <option value="Gitnória" id="gitnoria-house" selected>Gitnória</option>
+          <option value="Reactpuff" id="reactpuff-house">Reactpuff</option>
+          <option value="Corvinode" id="corvinode-house">Corvinode</option> 
+          <option value="Pytherina" id="pytherina-house">Pytherina</option> 
+        </select>
+      </fieldset>
+      <fieldset class="secondSection">
+        <fieldset id="secondSectionLeft">
+          <label id="label-family">Qual sua família?</label>
+            <div>
+              <input type="radio" name="family" value="Frontend" id="frontendRadio" required>
+              <label for="frontendRadio">Família Frontend</label>
+            </div>
+            <div>
+              <input type="radio" name="family" value="Backend" id="backendRadio">
+              <label for="backendRadio">Família Backend</label>
+            </div>
+            <div>
+              <input type="radio" name="family" value="FullStack" id="fullStackRadio">
+              <label for="fullStackRadio">Família FullStack</label>
+            </div>
+        </fieldset>
+        <fieldset id="secondSectionRight">
+          <label id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
+            <div>
+              <input type="checkbox" name="wantToLearn" value="HoFs" id="wantToLearnHofs">
+              <label for="wantToLearnHofs">HoFs</label>
+              <input type="checkbox" name="wantToLearn" value="Jest" id="wantToLearnJest">
+              <label for="wantToLearnJest">Jest</label>
+              <input type="checkbox" name="wantToLearn" value="Promises" id="wantToLearnPromises">
+              <label for="wantToLearnPromises">Promises</label>
+            </div>
+            <div>
+              <input type="checkbox" name="wantToLearn" value="React" id="wantToLearnReact">
+              <label for="wantToLearnReact">React</label>
+              <input type="checkbox" name="wantToLearn" value="SQL" id="wantToLearnSQL">
+              <label for="wantToLearnSQL">SQL</label>
+              <input type="checkbox" name="wantToLearn" value="Python" id="wantToLearnPython">
+              <label for="wantToLearnPython">Python</label>
+            </div>
+        </fieldset>
+      </fieldset>
+      <fieldset class="thirdSection">
+        <label id="label-rate">Como você avalia a Trybewarts?</label>
+          <input type="radio" name="rate" value=1 id="rating1" required>
+          <label for="rating1">1</label>
+          <input type="radio" name="rate" value=2 id="rating2">
+          <label for="rating2">2</label>
+          <input type="radio" name="rate" value=3 id="rating3">
+          <label for="rating3">3</label>
+          <input type="radio" name="rate" value=4 id="rating4">
+          <label for="rating4">4</label>
+          <input type="radio" name="rate" value=5 id="rating5">
+          <label for="rating5">5</label>
+          <input type="radio" name="rate" value=6 id="rating6">
+          <label for="rating6">6</label>
+          <input type="radio" name="rate" value=7 id="rating7">
+          <label for="rating7">7</label>
+          <input type="radio" name="rate" value=8 id="rating8">
+          <label for="rating8">8</label>
+          <input type="radio" name="rate" value=9 id="rating9">
+          <label for="rating9">9</label>
+          <input type="radio" name="rate" value=10 id="rating10">
+          <label for="rating10">10</label>
+      </fieldset>
+      <fieldset class="forthSection">
+        <label for="textarea" class="textarea">Deixe seu comentário:</label>
+        <textarea name="userComments" rows="6" maxlength="500" placeholder="Máximo de 500 Caracteres" id="textarea" required></textarea>
+        <output id="counter">500</output>
+      </fieldset>
+      <fieldset class="fifthSection">
+        <label for="agreement" id="label-infos">Você concorda com o uso das informações acima?</label>
+        <input type="checkbox" name="agreementAccept" value="Yes" id="agreement">
+      </fieldset>
+      <fieldset class="btnSection">
+        <button type="submit" id="submit-btn">Enviar</button>
+      </fieldset>
+    </form>
+    <img src="./images/trybewarts-colored.svg" alt="" id="trybewarts-forms-logo">
+  </main>
+  <footer>
+    <span>
+      Developed by <a href="https://github.com/joaofelipelliccione" rel="noreferrer" target="_blank">João Felipe Pelliccione</a>
+    </span>
+  </footer>
+</body>
+</html>

@@ -100,7 +100,7 @@ async function fillHtmlItemsSection(item = 'Smartphone') { // Caso nenhum argume
   headerElement.insertAdjacentElement('afterEnd', loadingElement); // Inserindo <span class="loading">Loading...</span> como primeiro filho de <body></body>.
 
   const pcs = await getMeliProducts(`https://api.mercadolibre.com/sites/MLB/search?q=${item}`); // Utiliza-se o 'await' pois getMeliProducts() é assíncrona e preciso esperar seu retorno para seguir com as atividades síncronas abaixo.
-  document.querySelector('.loading').remove(); // Removendo <span class="loading">Loading...</span>, pois as informações da API já foram recebidas.
+  //document.querySelector('.loading').remove(); // Removendo <span class="loading">Loading...</span>, pois as informações da API já foram recebidas.
 
   const productsContainer = document.querySelector('.items'); // Captando o elemento <section class="items"></section>.
 

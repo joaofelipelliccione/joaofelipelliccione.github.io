@@ -1,6 +1,7 @@
-# Estudante de Desenvolvimento WEB - Trybe
+#Trybe
 
-Este repositório contém todas as atividades de aprendizagem desenvolvidas por _[João Felipe Pelliccione da Cunha](https://www.linkedin.com/in/joaofelipelliccione/)_ enquanto o mesmo estudava na [Trybe](https://www.betrybe.com/) :rocket:
+Este diretório contém todos os projetos desenvolvidos por _[João Felipe Pelliccione da Cunha](https://www.linkedin.com/in/joaofelipelliccione/)_ enquanto o mesmo estudava na [Trybe](https://www.betrybe.com/) :rocket:
+Abaixo, é possível encontrar a grade curricular do respectivo curso, que terminará em meados de 2022!
 
 _"A Trybe é uma escola do futuro para qualquer pessoa que queira melhorar de vida e construir uma carreira de sucesso em tecnologia, onde a pessoa só paga quando conseguir um bom trabalho."_
 

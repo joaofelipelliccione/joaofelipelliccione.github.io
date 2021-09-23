@@ -1,13 +1,14 @@
-#Trybe
+# Trybe
 
-Este diretório contém todos os projetos desenvolvidos por _[João Felipe Pelliccione da Cunha](https://www.linkedin.com/in/joaofelipelliccione/)_ enquanto o mesmo estudava na [Trybe](https://www.betrybe.com/) :rocket:
-Abaixo, é possível encontrar a grade curricular do respectivo curso, que terminará em meados de 2022!
+Este repositório contém todas as atividades de aprendizagem desenvolvidas por _[João Felipe Pelliccione da Cunha](https://www.linkedin.com/in/joaofelipelliccione/)_ enquanto o mesmo estudava na [Trybe](https://www.betrybe.com/) :rocket:
 
 _"A Trybe é uma escola do futuro para qualquer pessoa que queira melhorar de vida e construir uma carreira de sucesso em tecnologia, onde a pessoa só paga quando conseguir um bom trabalho."_
 
 O programa conta com mais de 1.500 horas de aulas presenciais e online e aborda introdução ao desenvolvimento de software, front-end, back-end, ciência da computação, engenharia de software, metodologias ágeis e habilidades comportamentais.
 
-**[Clique](https://joaofelipelliccione.github.io/), para ter acesso ao meu CV e portfólio 🧑‍💼**
+Abaixo, é possível encontrar a grade curricular do respectivo curso, que terminará em meados de 2022!
+
+**[Clique](https://joaofelipelliccione.github.io/), para ter acesso ao meu *CV* e portfólio 🧑‍💼**
 
 ## Fundamentos do Desenvolvimento Web :white_check_mark:
 
@@ -255,3 +256,4 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online e aborda 
 - [ ] 35-5: _[Projeto - Tech news]()_
 
 # E isso é só o começo... :rocket:
+

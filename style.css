@@ -28,7 +28,7 @@ body {
   font-size: 2em;
   width: fit-content;
   text-align: center;
-  margin: 2% 0 0.5% 0;
+  margin: 2% 0 0.5%;
 }
 
 #mainHeader h1 a {
@@ -59,7 +59,7 @@ body {
   text-align: center;
 }
 
-.notDropdown, .dropbtn {
+.notDropdown , .dropbtn {
   color: ghostwhite;
   font-size: 1em;
   font-weight: 900;
@@ -67,13 +67,13 @@ body {
   transition-duration: 0.4s;
 }
 
-.notDropdown:hover, .dropbtn:hover {
+.notDropdown:hover , .dropbtn:hover {
   color: #ec6948;
   font-size: 1.05em;
 }
 
 .dropdown-content {
-  background-image: linear-gradient(rgb(54,56,70), rgb(71, 50, 71));
+  background-image: linear-gradient(rgb(54, 56, 70), rgb(71, 50, 71));
   border-radius: 10%;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   display: none;
@@ -109,7 +109,7 @@ body {
 
 /*  Seção "Quem Sou Eu?" */
 #quemSouEu {
-  background-image: url(./imagens/WPP-background.jpg);
+  background-image: url('./imagens/WPP-background.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -133,7 +133,7 @@ body {
 }
 
 #apresentacao img:hover {
-  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
   width: 32%;
   border-radius: 50%;
   transition-delay: 0.2s;
@@ -151,8 +151,8 @@ body {
 
 #apresentacao p {
   background-color: #e17b62;
-  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-  color: rgb(255, 255, 255);
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  color: white;
   width: 50%;
   text-align: justify;
   border-radius: 20px;
@@ -163,7 +163,7 @@ body {
 
 /* Seção "Formação Acadêmica" */
 #formacaoAcademica {
-  background-image: linear-gradient(rgb(54,56,70), rgb(71, 50, 71));
+  background-image: linear-gradient(rgb(54, 56, 70), rgb(71, 50, 71));
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -187,7 +187,7 @@ body {
 #admPuc {
   border: solid 3px #50fa7b;
   border-radius: 25px;
-  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
   width: 40%;
   text-align: center;
   padding-left: 1%;
@@ -198,7 +198,7 @@ body {
 #trybe {
   border: solid 3px #50fa7b;
   border-radius: 25px;
-  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
   text-align: center;
   width: 40%;
   align-self: center;
@@ -217,7 +217,7 @@ body {
 #intercambio {
   border: solid 3px #50fa7b;
   border-radius: 25px;
-  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
   width: 40%;
   text-align: center;
   padding-left: 1%;
@@ -228,7 +228,7 @@ body {
 #teresiano {
   border: solid 3px #50fa7b;
   border-radius: 25px;
-  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
   text-align: center;
   align-self: center;
   width: 40%;
@@ -264,7 +264,7 @@ body {
 
 /* Seção "Experiências Profissionais" */
 #xpProfissional {
-  background-image: url(./imagens/office-background.jpg);
+  background-image: url('./imagens/office-background.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -294,7 +294,7 @@ body {
   background-color: rgb(114, 91, 32);
   border: solid 3px rgb(194, 146, 25);
   border-radius: 25px;
-  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.5), 0 17px 50px 0 rgba(0,0,0,0.5);
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.5), 0 17px 50px 0 rgba(0, 0, 0, 0.5);
   text-align: center;
   align-self: center;
   padding: 0 2% 3%;
@@ -320,14 +320,14 @@ body {
 
 #loreal img:hover {
   width: 53%;
-  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
   padding: 1.5%;
 }
 
 #vinci {
   background-color: #056385;
   border: solid 3px #00b0f2;
-  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.5), 0 17px 50px 0 rgba(0,0,0,0.5);
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.5), 0 17px 50px 0 rgba(0, 0, 0, 0.5);
   border-radius: 25px;
   width: 50%;
   text-align: center;
@@ -353,7 +353,7 @@ body {
 
 #vinci img:hover {
   width: 38%;
-  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
   padding: 1.5%;
 }
 
@@ -377,11 +377,11 @@ body {
 
 /* Seção "Ferramentas e Idiomas" */
 #ferramentasEIdiomas {
-  background-image: linear-gradient(rgb(54,56,70), rgb(71, 50, 71));
+  background-image: linear-gradient(rgb(54, 56, 70), rgb(71, 50, 71));
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 2% 0 4% 0;
+  padding: 2% 0 4%;
 }
 
 #ferramentasEIdiomas h2 {
@@ -401,7 +401,7 @@ body {
 #pacoteOffice {
   border: #747788 3px solid;
   border-radius: 40px;
-  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
   text-align: center;
   padding: 2%;
   width: 35%;
@@ -436,7 +436,7 @@ body {
 #idiomas {
   border: #747788 3px solid;
   border-radius: 40px;
-  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
   text-align: center;
   align-self: center;
   width: 45%;
@@ -460,7 +460,7 @@ body {
 }
 
 #logoIelts a img:hover {
-  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
   width: 63%;
 }
 
@@ -484,7 +484,7 @@ body {
 
 /* Seção "Atividades Extracurriculares" */
 #ativExtraCv {
-  background-image: url(./imagens/hackathon.jpeg);
+  background-image: url('./imagens/hackathon.jpeg');
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -492,14 +492,14 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 5% 0 4% 0;
+  padding: 5% 0 4%;
 }
 
 #ativExtraCv h2 {
   background-color: rgba(71, 50, 71, 0.796);
   border: ghostwhite 2px solid;
   border-radius: 12px;
-  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.5), 0 17px 50px 0 rgba(0,0,0,0.5);
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.5), 0 17px 50px 0 rgba(0, 0, 0, 0.5);
   color: #ec6948;
   width: fit-content;
   text-align: center;
@@ -518,7 +518,7 @@ body {
   background-color: rgba(71, 50, 71, 0.796);
   border: ghostwhite 2px solid;
   border-radius: 35px;
-  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.5), 0 17px 50px 0 rgba(0,0,0,0.5);
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.5), 0 17px 50px 0 rgba(0, 0, 0, 0.5);
   display: flex;
   flex-direction: column;
   align-self: center;
@@ -565,12 +565,12 @@ body {
   background-color: rgba(71, 50, 71, 0.796);
   border: ghostwhite 2px solid;
   border-radius: 35px;
-  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.5), 0 17px 50px 0 rgba(0,0,0,0.5);
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.5), 0 17px 50px 0 rgba(0, 0, 0, 0.5);
   display: flex;
   flex-direction: column;
   width: 50%;
   align-items: center;
-  padding: 3% 2% 2% 2%;
+  padding: 3% 2% 2%;
 }
 
 #tituloInfoAdd {

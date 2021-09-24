@@ -110,31 +110,36 @@ body {
   flex-direction: column;
   align-items: center;
   align-content: center;
-  margin: 0 25%;
+  margin: 0 28%;
   padding-top: 8%;
 }
 
 #apresentacao img {
-  width: 70%;
+  width: 80%;
   border-radius: 50%;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
   margin-bottom: 1%;
 }
 
 #apresentacao img:hover {
-  width: 70%;
+  width: 80%;
+  border-radius: 50%;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  margin-bottom: 1%;
 }
 
 #apresentacao h2 {
   color: #ec6948;
   width: 160%;
   text-align: center;
-  font-size: 1.3em;
+  font-size: 1em;
   font-weight: 1000;
-  margin-top: 3%;
+  margin-top: 10%;
 }
 
 #apresentacao p {
   background-color: #e17b62;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
   color: rgb(255, 255, 255);
   width: 160%;
   text-align: center;
@@ -142,12 +147,12 @@ body {
   font-size: 0.8em;
   font-weight: 500;
   margin-bottom: 0.5%;
-  padding: 5%;
+  padding: 8%;
 }
 
 /* Seção "Formação Acadêmica" */
 #formacaoAcademica {
-  background-color: rgb(71, 50, 71);
+  background-image: linear-gradient(rgb(54,56,70), rgb(71, 50, 71));
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -157,7 +162,7 @@ body {
   color: #ec6948;
   width: fit-content;
   text-align: center;
-  font-size: 1.3em;
+  font-size: 1em;
   font-weight: 1000;
 }
 
@@ -171,23 +176,21 @@ body {
 
 #admPuc {
   border: solid 3px #50fa7b;
-  border-radius: 15%;
-  width: 100%;
+  border-radius: 25px;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  width: 80%;
   text-align: center;
-  margin-bottom: 4%;
-  padding-left: 1%;
-  padding-right: 1%;
-  padding-bottom: 1%;
+  margin-bottom: 6%;
+  padding: 3%;
 }
 
 #trybe {
   border: solid 3px #50fa7b;
-  border-radius: 15%;
+  border-radius: 25px;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
   text-align: center;
-  width: 100%;
-  padding-left: 1%;
-  padding-right: 1%;
-  padding-bottom: 1%;
+  width: 80%;
+  padding: 3%;
 }
 
 #faContainer2 {
@@ -195,35 +198,34 @@ body {
   flex-direction: column;
   align-items: center;
   width: 100%;
-  margin-bottom: 5%;
+  margin-top: 1%;
+  margin-bottom: 6%;
 }
 
 #intercambio {
   border: solid 3px #50fa7b;
-  border-radius: 15%;
-  width: 100%;
+  border-radius: 25px;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  width: 80%;
   text-align: center;
-  margin-bottom: 4%;
-  padding-left: 1%;
-  padding-right: 1%;
-  padding-bottom: 1%;
+  margin-bottom: 6%;
+  padding: 3%;
 }
 
 #teresiano {
   border: solid 3px #50fa7b;
-  border-radius: 15%;
-  width: 100%;
+  border-radius: 25px;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  width: 80%;
   text-align: center;
   margin-bottom: 4%;
-  padding-left: 1%;
-  padding-right: 1%;
-  padding-bottom: 1%;
+  padding: 3%;
 }
 
 /* Classes compartilhadas pelos elementos da seção Formação Acadêmica. */
 .titulosFormacaoAcademica {
   color: ghostwhite;
-  font-size: 0.95em;
+  font-size: 0.8em;
   margin-bottom: 3%;
 }
 
@@ -240,13 +242,14 @@ body {
 .falinks {
   color: #50fa7b;
   font-size: 1em;
-  text-decoration: none;
+  text-decoration: overline;
+  -webkit-tap-highlight-color:  rgba(255, 255, 255, 0);
 }
 
 .falinks:hover {
-  color: #ec6948;
+  color: #50fa7b;
   font-size: 1em;
-  text-decoration: none;
+  text-decoration: overline;
 }
 
 /* Seção "Experiências Profissionais" */
@@ -264,7 +267,7 @@ body {
 
 #xpProfissional h2 {
   color: #455481;
-  font-size: 1.3em;
+  font-size: 1.1em;
   font-weight: 1000;
   text-align: center;
   width: fit-content;
@@ -275,50 +278,57 @@ body {
   flex-direction: column;
   align-items: center;
   align-content: center;
+  width: 80%;
 }
 
 #loreal {
   background-color: rgb(114, 91, 32);
   border: solid 3px rgb(194, 146, 25);
+  border-radius: 25px;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.5), 0 17px 50px 0 rgba(0,0,0,0.5);
   text-align: center;
-  border-radius: 15%;
   margin-bottom: 8%;
-  padding: 0 2% 3%;
+  padding: 5%;
+  padding-top: 1%;
 }
 
 #loreal h3 {
-  font-size: 1.3em;
+  font-size: 0.95em;
   color: ghostwhite;
   margin-bottom: 1%;
-  margin-top: 7%;
 }
 
 #containerImgLoreal {
   display: block;
-  margin-top: 6%;
+  margin-top: 8%;
   margin-bottom: 4%;
+  -webkit-tap-highlight-color:  rgba(255, 255, 255, 0);
 }
 
 #loreal img {
+  border-radius: 10px;
   width: 50%;
 }
 
 #loreal img:hover {
   width: 50%;
+  box-shadow: none;
+  padding: 0;
 }
 
 #vinci {
   background-color: #056385;
   border: solid 3px #00b0f2;
-  border-radius: 15%;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.5), 0 17px 50px 0 rgba(0,0,0,0.5);
+  border-radius: 25px;
   width: 95%;
   text-align: center;
   margin-bottom: 8%;
-  padding: 0 2% 3%;
+  padding-left: 5%;
 }
 
 #vinci h3 {
-  font-size: 1.4em;
+  font-size: 1.1em;
   color: ghostwhite;
   margin-top: 7%;
   margin-bottom: 1%;
@@ -326,31 +336,37 @@ body {
 
 #containerImgVinci {
   display: block;
-  margin: 6% 0;
+  margin: 5% 0;
+  -webkit-tap-highlight-color:  rgba(255, 255, 255, 0);
 }
 
 #vinci img {
-  width: 40%;
+  width: 55%;
+  margin-top: 4%;
 }
 
 #vinci img:hover {
-  width: 40%;
+  width: 55%;
+  box-shadow: none;
+  padding: 0;
 }
 
 #certificadoVinci {
   color: #50fa7b;
   font-size: 1em;
-  text-decoration: none;
+  text-decoration: overline;
+  -webkit-tap-highlight-color:  rgba(255, 255, 255, 0);
 }
 
 #certificadoVinci:hover {
-  color: #ec6948;
+  color: #50fa7b;
   font-size: 1em;
+  text-decoration: overline;
 }
 
 /* Classes compartilhadas pelos elementos da seção Experiência Profissional. */
 .conteudoXpProfissional {
-  font-size: 1em;
+  font-size: 0.9em;
   line-height: 1.5em;
 }
 

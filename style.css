@@ -73,7 +73,7 @@ body {
 }
 
 .dropdown-content {
-  background-color: #343642;
+  background-image: linear-gradient(rgb(54,56,70), rgb(71, 50, 71));
   border-radius: 10%;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   display: none;

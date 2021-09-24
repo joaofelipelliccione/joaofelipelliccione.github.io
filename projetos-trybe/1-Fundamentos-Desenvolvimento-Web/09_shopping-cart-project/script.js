@@ -6,6 +6,14 @@ function cartValueContainer() { // Função que capta o elemento <output class="
   return document.querySelector('.total-price');
 }
 
+function pageRefresh() { // [Requisito Extra]: Ao clicar no título da página, ela recarrega.
+  const pageTitle = document.getElementById('pageTitle');
+
+  pageTitle.addEventListener('click', () => {
+    window.location.reload(false); 
+  });
+}
+
 function createProductImageElement(imageSource) { // Função definida pela Trybe.
   const img = document.createElement('img');
   img.className = 'item__image';
@@ -20,12 +28,13 @@ function createCustomElement(element, className, innerText) { // Função defini
   return e;
 }
 
-function createProductItemElement({ id, title, thumbnail }) { // Alterei o nome das chaves, para que elas batessem com o 'JSON' que a API retorna.
+function createProductItemElement({ id, title, price ,thumbnail }) { // Alterei o nome das chaves, para que elas batessem com o 'JSON' que a API retorna.
   const section = document.createElement('section');
   section.className = 'item';
 
   section.appendChild(createCustomElement('span', 'item__sku', id));
   section.appendChild(createCustomElement('span', 'item__title', title));
+  section.appendChild(createCustomElement('span', 'item__price', price));
   section.appendChild(createProductImageElement(thumbnail));
   section.appendChild(createCustomElement('button', 'item__add', '🛒'));
 
@@ -92,15 +101,15 @@ async function getMeliProducts(url) {
 }
 
 /* [REQUISITO 1]: Função que, a partir da createProductItemElement(), adiciona 'id', 'title' e 'thumbnail' (imagem) de cada objeto presente no array retornado por getMeliProducts(), na <section class="items"></section> do index.html. */
-async function fillHtmlItemsSection(item = 'Smartphone') { // Caso nenhum argumento for passado para o parâmetro 'item', ele será preenchido com 'Smartphone'.
+async function fillHtmlItemsSection(item) {
   const loadingElement = document.createElement('span'); // [REQUISITO 7]: Criando <span class="loading">Loading...</span>.
   loadingElement.className = 'loading';
-  loadingElement.innerHTML = 'Loading...';
+  loadingElement.innerHTML = '3... 2... 1...';
   const headerElement = document.getElementById('htmlHeader');
-  headerElement.insertAdjacentElement('afterEnd', loadingElement); // Inserindo <span class="loading">Loading...</span> como primeiro filho de <body></body>.
+  headerElement.insertAdjacentElement('beforeEnd', loadingElement); // Inserindo <span class="loading">Loading...</span> como primeiro filho de <body></body>.
 
   const pcs = await getMeliProducts(`https://api.mercadolibre.com/sites/MLB/search?q=${item}`); // Utiliza-se o 'await' pois getMeliProducts() é assíncrona e preciso esperar seu retorno para seguir com as atividades síncronas abaixo.
-  //document.querySelector('.loading').remove(); // Removendo <span class="loading">Loading...</span>, pois as informações da API já foram recebidas.
+  document.querySelector('.loading').remove(); // Removendo <span class="loading">Loading...</span>, pois as informações da API já foram recebidas.
 
   const productsContainer = document.querySelector('.items'); // Captando o elemento <section class="items"></section>.
 
@@ -166,9 +175,10 @@ function cleanShopCart() { // [REQUISITO 6]: Função que prepara o botão de de
 }
 
 window.onload = async () => { // A window.onload() é uma função como qualquer outra. Dito isso, para que possa chamar funções assíncronas dentro dela, precisei adicionar o 'async'.
-  await fillHtmlItemsSection(); // Tendo em vista que as funções abaixo precisam do HTML já com o conteúdo oriundo da API, utilizei o 'await'.
+  await fillHtmlItemsSection('smartphone'); // Tendo em vista que as funções abaixo precisam do HTML já com o conteúdo oriundo da API, utilizei o 'await'.
   addOnShopCart();
   getShopCartFromLocalStorage();
   cleanShopCart();
   searchedProduct(); // Função que permite que o usuário procure por um determinado produto.
+  pageRefresh()
 }

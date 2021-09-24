@@ -306,14 +306,17 @@ body {
 }
 
 #loreal img {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   border-radius: 10px;
   width: 50%;
+  padding: 4%;
 }
 
 #loreal img:hover {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 10px;
   width: 50%;
-  box-shadow: none;
-  padding: 0;
+  padding: 4%;
 }
 
 #vinci {
@@ -341,14 +344,17 @@ body {
 }
 
 #vinci img {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   width: 55%;
   margin-top: 4%;
+  padding: 3%;
 }
 
 #vinci img:hover {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   width: 55%;
-  box-shadow: none;
-  padding: 0;
+  margin-top: 4%;
+  padding: 3%;
 }
 
 #certificadoVinci {
@@ -372,18 +378,19 @@ body {
 
 /* Seção "Ferramentas e Idiomas" */
 #ferramentasEIdiomas {
-  background-color: rgb(71, 50, 71);
+  background-image: linear-gradient(rgb(54,56,70), rgb(71, 50, 71));
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 5% 0;
+  padding-bottom: 8%;
 }
 
 #ferramentasEIdiomas h2 {
   color: #ec6948;
   width: fit-content;
   text-align: center;
-  font-size: 1.4em;
+  font-size: 1.1em;
   font-weight: 1000;
   margin-top: 0%;
 }
@@ -397,18 +404,19 @@ body {
 
 #pacoteOffice {
   border: #747788 3px solid;
-  border-radius: 30%;
+  border-radius: 40px;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 93%;
+  width: 75%;
   margin-bottom: 5%;
 }
 
 #pacoteOffice h3 {
   color: ghostwhite;
   width: fit-content;
-  font-size: 1.3em;
+  font-size: 1em;
   text-align: center;
   margin-top: 5%;
 }
@@ -419,35 +427,37 @@ body {
   list-style-position: inside;
   width: fit-content;
   font-size: 1em;
-  line-height: 1.3em;
-  margin-top: 1%;
+  line-height: 1.2em;
+  margin-top: 5%;
   padding-left: 0%;
 }
 
 .certificadosHashtag {
   color: #50fa7b;
   text-decoration: none;
-  font-size: 0.85em;
+  font-size: 0.8em;
+  -webkit-tap-highlight-color:  rgba(255, 255, 255, 0);
 }
 
 .certificadosHashtag:hover {
-  color: #ec6948;
-  font-size: 0.85em;
+  color: #50fa7b;
+  font-size: 0.8em;
 }
 
 #idiomas {
   border: #747788 3px solid;
-  border-radius: 30%;
+  border-radius: 40px;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 91%;
-  padding: 0 3%;
+  width: 75%;
+  padding: 3%;
 }
 
 #idiomas h3 {
   color: ghostwhite;
-  font-size: 1.3em;
+  font-size: 1em;
   width: fit-content;
   text-align: center;
   margin-top: 5%;
@@ -458,31 +468,37 @@ body {
   display: block;
   margin-top: 4%;
   margin-bottom: 5%;
+  -webkit-tap-highlight-color:  rgba(255, 255, 255, 0);
 }
 
 #logoIelts a img {
+  border-radius: 4px;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
   width: 80%;
 }
 
 #logoIelts a img:hover {
-  width: 70%;
+  border-radius: 4px;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  width: 80%;
 }
 
 #idiomas span {
   color: wheat;
   font-size: 0.95em;
-  line-height: 1em;
+  line-height: 1.1em;
 }
 
 #certificadoIelts {
-  text-decoration: none;
+  text-decoration: overline;
   color: #50fa7b;
   font-size: 0.95em;
+  -webkit-tap-highlight-color:  rgba(255, 255, 255, 0);
 }
 
 #certificadoIelts:hover {
-  color: #ec6948;
-  font-size: 0.9em;
+  color: #50fa7b;
+  font-size: 0.95em;
 }
 
 /* Seção "Atividades Extracurriculares" */
@@ -492,10 +508,11 @@ body {
   background-size: cover;
   background-attachment: fixed;
   background-position-x: -570px;
+  background-position-y: 30px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 5% 0 4% 0;
+  padding: 5% 0 6% 0;
 }
 
 #ativExtraCv h2 {

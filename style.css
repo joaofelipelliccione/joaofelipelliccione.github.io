@@ -422,8 +422,8 @@ body {
 }
 
 .certificadosHashtag {
-  text-decoration: none;
   color: #50fa7b;
+  text-decoration: none;
   font-size: 0.95em;
   transition-duration: 0.4s;
 }

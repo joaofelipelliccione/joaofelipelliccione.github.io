@@ -34,7 +34,7 @@ function createProductItemElement({ id, title, price ,thumbnail }) { // Alterei 
 
   section.appendChild(createCustomElement('span', 'item__sku', id));
   section.appendChild(createCustomElement('span', 'item__title', title));
-  section.appendChild(createCustomElement('span', 'item__price', price));
+  section.appendChild(createCustomElement('span', 'item__price', `R$ ${price.toFixed(2)}`));
   section.appendChild(createProductImageElement(thumbnail));
   section.appendChild(createCustomElement('button', 'item__add', '🛒'));
 
@@ -61,8 +61,8 @@ function saveShopCart() { // [REQUISITO 4]: Função que armazena o atual estado
 function cartItemClickListener(event) { // [REQUISITO 3]: Função que permite que os produtos adicionados ao carrinho de compras, sejam removidos quando clicados.
   const cartTotalCont = cartValueContainer(); // Captando o <output class="total-price"></output> e adicionando-o à constante cartTotalCont.
   event.target.remove(); // Removendo o item do carrinho que for clicado.
-  const res = Number((Number(cartTotalCont.innerHTML) - getProductPrice(event.target)).toFixed(2)); // Captando o preço do produto recém-excluído do carrinho de compras e o subtraindo do innerHTML de <output class="total-price"></output>.
-  cartTotalCont.innerHTML = res; // Imputando o resultado da linha acima dentro de <output class="total-price"></output>.
+  const res = Number((Number(cartTotalCont.innerHTML) - getProductPrice(event.target))); // Captando o preço do produto recém-excluído do carrinho de compras e o subtraindo do innerHTML de <output class="total-price"></output>.
+  cartTotalCont.innerHTML = res.toFixed(2); // Imputando o resultado da linha acima dentro de <output class="total-price"></output>.
   
   saveShopCart();
 }
@@ -153,8 +153,8 @@ function addOnShopCart() { // [REQUISITO 2]: Função que permite a adição de 
       const clickedProdInfo = await getProductInfo(clickedProdId); // Chamando a getProductInfo() com o intuito de ter acesso às informações do produto adicionado ao carrinho.
       const newElement = createCartItemElement(clickedProdInfo); // Criando <li></li>s referentes a cada produto adicionado ao carrinho.
       shopCartContainer.appendChild(newElement); // Inserindo as <li></li>s criadas na linha acima, dentro de <ol class="cart__items"></ol>.
-      const r = Number((Number(cartTotalCont.innerHTML) + getProductPrice(newElement)).toFixed(2)); // Captando o preço do produto recém-adicionado ao carrinho de compras e o adicionando ao innerHTML de <span id="mustBePayed"></span>.
-      cartTotalCont.innerHTML = r; // Imputando o resultado da linha acima dentro de <span id="mustBePayed"></span>.
+      const r = Number((Number(cartTotalCont.innerHTML) + getProductPrice(newElement))); // Captando o preço do produto recém-adicionado ao carrinho de compras e o adicionando ao innerHTML de <span id="mustBePayed"></span>.
+      cartTotalCont.innerHTML = r.toFixed(2); // Imputando o resultado da linha acima dentro de <span id="mustBePayed"></span>.
       saveShopCart(); // Chamando a função que salva os itens do carrinho no localStorage.
     });
   });
@@ -167,7 +167,7 @@ function cleanShopCart() { // [REQUISITO 6]: Função que prepara o botão de de
     const shopCartContent = getShopCartContainer();
     shopCartContent.innerHTML = ''; // Apagando o conteúdo dentro de <ol class="cart__items"></ol>.
     const cartTotalValue = cartValueContainer();
-    cartTotalValue.innerHTML = 0; // Apagando o conteúdo dentro de <output class="total-price"></output>.
+    cartTotalValue.innerHTML = '0.00'; // Apagando o conteúdo dentro de <output class="total-price"></output>.
     localStorage.setItem('userShopCart', shopCartContent); // Salvando o conteúdo captado acima, no localStorage.
     localStorage.setItem('cartTotalValue', cartTotalValue); // Salvando o conteúdo captado acima, no localStorage.
     saveShopCart(); // Chamando a função que salva o carrinho vazio no localStorage.

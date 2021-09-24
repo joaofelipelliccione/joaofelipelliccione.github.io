@@ -639,11 +639,12 @@ footer span {
 footer span a {
   color: #50fa7b;
   text-decoration: none;
+  transition-duration: 0.4s;
 }
 
 footer span a:hover {
   color: #ec6948;
-  font-size: 0.95em;
+  font-size: 1.05em;
 }
 
 /* Classes compartilhadas pelos elementos de várias seções. */

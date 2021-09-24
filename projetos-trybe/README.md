@@ -83,7 +83,7 @@ Abaixo, é possível encontrar a grade curricular do respectivo curso, que termi
 - [x] 10-1: _Jest - Primeiros Passos_
 - [x] 10-2: _Jest - Testes Assíncronos_
 - [x] 10-3: _Jest - Simulando comportamentos_
-- [x] 10-3: _[Projeto - Jest Assíncrono e Mocking]()_
+- [x] 10-3: _Projeto Jest Assíncrono e Mocking- [Código do Projeto](https://github.com/joaofelipelliccione/joaofelipelliccione.github.io/tree/main/projetos-trybe/1-Fundamentos-Desenvolvimento-Web/10_jest-tests)_
 
 ## Desenvolvimento Front-end :hourglass_flowing_sand:
 

@@ -127,7 +127,7 @@ function searchedProduct() {
   searchBtn.addEventListener('click', async () => { // Adicionando evento de clique no elemento <button id="searchBtn"></button>.
     if(searchBox.value !== '') { // O clique só funcionará se o usuário inserir o nome de algum produto na caixa de pesquisa.
       displayedProducts.innerHTML = ""; // Sempre que o botão for clicado, os produtos atualmente mostrados são apagados.
-      const productName = searchBox.value.split(' ').join('-'); // Ex: 'Macbook Pro M1' --> 'Macbook-Pro-M1'
+      const productName = searchBox.value.split(' ').join('_'); // Ex: 'Macbook Pro M1' --> 'Macbook-Pro-M1'
   
       await fillHtmlItemsSection(productName); // A função que preenche a página é chamada e recebe o nome do produto pesquisado como argumento.
       addOnShopCart();

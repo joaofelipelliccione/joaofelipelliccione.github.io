@@ -6,6 +6,8 @@ body {
 /* Seção Cabeçalho: */
 .header {
   background-color: rgb(50, 167, 145);
+  border-radius: 15px;
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -35,12 +37,17 @@ body {
   font-size: 0.8em;
   width: 25%;
   padding: 1%;
+  transition: width 0.4s ease-in-out;
 }
 
 .trybewarts-login input:focus {
   background-color: rgb(170, 164, 214);
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  outline: none;
   color: rgb(241, 250, 140);
+  width: 35%;
 }
+
 
 .trybewarts-login button {
   background-color: indigo;
@@ -51,16 +58,19 @@ body {
   font-size: 0.9em;
   border-radius: 7px;
   text-align: center;
+  transition-duration: 0.4s;
 }
 
 .trybewarts-login button:hover {
   background-color: rgb(111, 62, 146);
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
 
 /* Seção Principal: */
 main {
   border: solid gray 2px;
   border-radius: 10px;
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
   display: flex;
   justify-content: space-evenly;
   width: 90%;
@@ -68,11 +78,14 @@ main {
 }
 
 #evaluation-form {
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 25px;
   width: 675px;
   display: flex;
   flex-direction: column;
   align-content: center;
-  margin: 1% 0;
+  margin: 2% 0;
+  padding: 2%;
 }
 
 /* Seção Principal - Form First Section: */
@@ -89,10 +102,13 @@ main {
   font-size: 0.8em;
   width: 45%;
   padding: 2% 1%;
+  transition-duration: 0.4s;
 }
 
 .firstSection input:focus {
   background-color: rgb(252, 246, 236);
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  outline: none;
   color: darkred;
 }
 
@@ -103,10 +119,13 @@ main {
   font-size: 0.8em;
   width: 35%;
   padding: 2% 1%;
+  transition-duration: 0.4s;
 }
 
 .firstSection select:focus {
   background-color: rgb(252, 246, 236);
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  outline: none;
   color: darkred;
 }
 
@@ -183,11 +202,16 @@ main {
   font-size: 0.6em;
   margin: 1% 0;
   padding: 1%;
+  width: 60%;
+  transition: width 0.4s ease-in-out;
 }
 
 .forthSection textarea:focus {
   background-color: rgb(252, 246, 236);
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  outline: none;
   color: darkred;
+  width: 100%;
 }
 
 #counter {
@@ -223,24 +247,28 @@ main {
   color: rgb(241, 250, 140);
   border: none;
   cursor: pointer;
-  width: 100%;
+  width: 50%;
   font-size: 0.8em;
   border-radius: 7px;
   padding: 1% 0;
+  transition: width 0.4s ease-in-out;
 }
 
 .submit-btn-class:hover {
-  background-color: rgb(111, 62, 146);
+  background-color: rgb(50, 167, 145);
+  color: ghostwhite;
+  width: 100%;
 }
 
 /* Seção Principal - Logo Trybewarts: */
 #trybewarts-forms-logo {
   width: 35%;
   align-self: center;
+  transition-duration: 0.4s;
 }
 
 #trybewarts-forms-logo:hover {
-  transition-delay: 0.5s;
+  transition-delay: 0.4s;
   width: 40%;
   align-self: center;
 }
@@ -248,6 +276,7 @@ main {
 /* Seção Rodapé: */
 footer {
   background-color: rgb(50, 167, 145);
+  border-radius: 15px;
   display: flex;
   flex-direction: column;
   align-content: center;
@@ -265,9 +294,10 @@ footer span a {
   text-decoration: none;
   font-size: 0.95em;
   font-weight: 700;
+  transition-duration: 0.4s;
 }
 
 footer span a:hover {
-  color: rgb(96, 41, 136);
-  font-size: 0.9em;
+  color: rgb(123, 70, 162);
+  font-size: 1.05em;
 }

@@ -5,6 +5,7 @@ html {
 
 /*  Estilização geral: */
 body {
+  box-sizing: border-box;
   background-color: #282a36;
   font-family: Source Sans Pro, sans-serif;
   font-size: 25px;
@@ -14,21 +15,20 @@ body {
 /* Cabeçalho  */
 #mainHeader {
   background-color: #282a36;
+  box-shadow: 0 10px 16px -4px black;
   position: fixed;
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
-  box-shadow: 0 0 2em black;
   top: 0;
-  left: 0;
 }
 
 #mainHeader h1 {
-  font-size: 2em;
+  font-size: 1.5em;
   width: fit-content;
   text-align: center;
-  margin: 2% 0 0.5%;
+  margin: 2% 0 1%;
 }
 
 #mainHeader h1 a {
@@ -43,7 +43,8 @@ body {
 }
 
 #desktopIndex {
-  width: 100%;
+  width: 85%;
+  margin: 0 12.5%;
 }
 
 #desktopIndex ul {
@@ -51,7 +52,6 @@ body {
   justify-content: space-evenly;
   list-style: none;
   padding-left: 0%;
-  overflow: hidden;
 }
 
 #desktopIndex ul li {
@@ -61,7 +61,7 @@ body {
 
 .notDropdown , .dropbtn {
   color: ghostwhite;
-  font-size: 1em;
+  font-size: 0.9em;
   font-weight: 900;
   text-decoration: none;
   transition-duration: 0.4s;
@@ -69,7 +69,7 @@ body {
 
 .notDropdown:hover , .dropbtn:hover {
   color: #ec6948;
-  font-size: 1.05em;
+  font-size: 0.95em;
 }
 
 .dropdown-content {
@@ -78,12 +78,12 @@ body {
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   display: none;
   position: absolute;
-  min-width: 6%;
+  min-width: 7%;
 }
 
 .dropdown-content a {
   color: #50fa7b;
-  font-size: 1em;
+  font-size: 0.9em;
   border-radius: 15%;
   text-decoration: none;
   display: block;
@@ -98,7 +98,7 @@ body {
 
 .dropdown-content a:hover {
   color: #ec6948;
-  font-size: 1.05em;
+  font-size: 0.95em;
 }
 
 #mobileIndex {
@@ -113,7 +113,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  padding-top: 7%;
+  padding-top: 9%;
   padding-bottom: 3%;
 }
 
@@ -126,7 +126,7 @@ body {
 }
 
 #apresentacao img {
-  width: 30%;
+  width: 20%;
   border-radius: 35%;
   margin: 0 25%;
   transition-duration: 0.4s;
@@ -134,19 +134,24 @@ body {
 
 #apresentacao img:hover {
   box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
-  width: 32%;
+  width: 25%;
   border-radius: 50%;
-  transition-delay: 0.2s;
+  transition-delay: 0.25s;
 }
 
 #apresentacao h2 {
+  background-color: #282a36;
+  border-radius: 15px;
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
   color: #ec6948;
   width: fit-content;
   text-align: center;
-  font-size: 2.5em;
-  font-weight: 1000;
+  font-size: 1.3em;
+  font-weight: 700;
+  font-style: italic;
   margin-top: 2%;
-  margin-bottom: 2%;
+  margin-bottom: 0.3%;
+  padding: 0.8%;
 }
 
 #apresentacao p {
@@ -156,9 +161,9 @@ body {
   width: 50%;
   text-align: justify;
   border-radius: 20px;
-  font-size: 1.3em;
+  font-size: 0.95em;
   font-weight: 500;
-  padding: 1.5%;
+  padding: 1.3%;
 }
 
 /* Seção "Formação Acadêmica" */
@@ -173,14 +178,14 @@ body {
   color: #ec6948;
   width: fit-content;
   text-align: center;
-  font-size: 2.5em;
-  font-weight: 1000;
+  font-size: 1.8em;
+  font-weight: 700;
 }
 
 #faContainer1 {
   display: flex;
   justify-content: space-evenly;
-  max-width: 90%;
+  max-width: 85%;
   margin-bottom: 4%;
 }
 
@@ -190,9 +195,7 @@ body {
   box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
   width: 40%;
   text-align: center;
-  padding-left: 1%;
-  padding-right: 1%;
-  padding-bottom: 1%;
+  padding: 0 1% 1.5% 1%;
 }
 
 #trybe {
@@ -202,15 +205,13 @@ body {
   text-align: center;
   width: 40%;
   align-self: center;
-  padding-left: 1%;
-  padding-right: 1%;
-  padding-bottom: 1%;
+  padding: 0 1% 1.5% 1%;
 }
 
 #faContainer2 {
   display: flex;
   justify-content: space-evenly;
-  max-width: 90%;
+  max-width: 85%;
   margin-bottom: 4%;
 }
 
@@ -220,9 +221,7 @@ body {
   box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
   width: 40%;
   text-align: center;
-  padding-left: 1%;
-  padding-right: 1%;
-  padding-bottom: 1%;
+  padding: 0 1% 1.5% 1%;
 }
 
 #teresiano {
@@ -232,34 +231,32 @@ body {
   text-align: center;
   align-self: center;
   width: 40%;
-  padding-left: 1%;
-  padding-right: 1%;
-  padding-bottom: 1%;
+  padding: 0 1% 1.5% 1%;
 }
 
 /* Classes compartilhadas pelos elementos da seção Formação Acadêmica. */
 .titulosFormacaoAcademica {
   color: ghostwhite;
-  font-size: 1.3em;
+  font-size: 1em;
   margin-bottom: 3%;
 }
 
 .conteudoFormacaoAcademica {
-  font-size: 1.3em;
+  font-size: 1em;
   font-weight: 550;
 }
 
 .falinks {
   color: #50fa7b;
-  font-size: 1em;
-  text-decoration: none;
-  transition-duration: 0.4s;
+  font-size: 0.9em;
+  text-decoration: overline;
+  transition-duration: 0.3s;
 }
 
 .falinks:hover {
   color: #ec6948;
-  font-size: 1.05em;
-  text-decoration: none;
+  font-size: 0.95em;
+  text-decoration: underline;
 }
 
 /* Seção "Experiências Profissionais" */
@@ -272,14 +269,13 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 2%;
-  padding-bottom: 2%;
+  padding: 2% 0;
 }
 
 #xpProfissional h2 {
   color: #455481;
-  font-size: 2.5em;
-  font-weight: 1000;
+  font-size: 1.8em;
+  font-weight: 700;
   text-align: center;
   width: fit-content;
   margin-top: 0%;
@@ -288,6 +284,7 @@ body {
 #xpProfContainer1 {
   display: flex;
   justify-content: space-evenly;
+  width: 85%;
 }
 
 #loreal {
@@ -297,11 +294,11 @@ body {
   box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.5), 0 17px 50px 0 rgba(0, 0, 0, 0.5);
   text-align: center;
   align-self: center;
-  padding: 0 2% 3%;
+  padding: 0 2% 2%;
 }
 
 #loreal h3 {
-  font-size: 1.8em;
+  font-size: 1.2em;
   color: ghostwhite;
   margin-bottom: 1%;
 }
@@ -331,11 +328,11 @@ body {
   border-radius: 25px;
   width: 50%;
   text-align: center;
-  padding: 0 2% 3%;
+  padding: 0 2% 2%;
 }
 
 #vinci h3 {
-  font-size: 1.8em;
+  font-size: 1.4em;
   color: ghostwhite;
   margin-bottom: 1%;
 }
@@ -347,12 +344,12 @@ body {
 
 #vinci img {
   border-radius: 10px;
-  width: 35%;
+  width: 30%;
   transition-duration: 0.4s;
 }
 
 #vinci img:hover {
-  width: 38%;
+  width: 33%;
   box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
   padding: 1.5%;
 }
@@ -360,18 +357,19 @@ body {
 #certificadoVinci {
   color: #50fa7b;
   font-size: 1em;
-  text-decoration: none;
-  transition-duration: 0.4s;
+  text-decoration: overline;
+  transition-duration: 0.3s;
 }
 
 #certificadoVinci:hover {
   color: yellow;
   font-size: 1.05em;
+  text-decoration: underline;
 }
 
 /* Classes compartilhadas pelos elementos da seção Experiência Profissional. */
 .conteudoXpProfissional {
-  font-size: 1.3em;
+  font-size: 1em;
   line-height: 1.4em;
 }
 
@@ -387,7 +385,7 @@ body {
 #ferramentasEIdiomas h2 {
   color: #ec6948;
   width: fit-content;
-  font-size: 2.5em;
+  font-size: 1.8em;
   font-weight: 1000;
   margin-top: 0%;
 }
@@ -402,35 +400,42 @@ body {
   border: #747788 3px solid;
   border-radius: 40px;
   box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30%;
   padding: 2%;
-  width: 35%;
 }
 
 #pacoteOffice h3 {
   color: ghostwhite;
-  font-size: 1.5em;
+  font-size: 1.2em;
   text-align: center;
   margin: 3% 0;
 }
 
-#pacoteOffice ul {
-  list-style: square;
-  list-style-position: inside;
-  font-size: 1.3em;
-  line-height: 1.5em;
+.ferramenta {
+  font-size: 1.1em;
+  text-align: center;
+  margin-top: 2%;
+  margin-bottom: 5%;
+}
+
+.certificadosHashtagCont {
+  margin-top: 2.5%;
 }
 
 .certificadosHashtag {
   color: #50fa7b;
-  text-decoration: none;
-  font-size: 0.95em;
+  text-decoration: overline;
+  font-size: 0.85em;
   transition-duration: 0.4s;
 }
 
 .certificadosHashtag:hover {
   color: #ec6948;
-  font-size: 1em;
+  text-decoration: underline;
+  font-size: 0.9em;
 }
 
 #idiomas {
@@ -440,12 +445,12 @@ body {
   text-align: center;
   align-self: center;
   width: 45%;
-  padding: 2% 0;
+  padding: 1% 0;
 }
 
 #idiomas h3 {
   color: ghostwhite;
-  font-size: 1.5em;
+  font-size: 1.3em;
   text-align: center;
 }
 
@@ -455,31 +460,32 @@ body {
 }
 
 #logoIelts a img {
-  width: 60%;
+  width: 50%;
   transition-duration: 0.4s;
 }
 
 #logoIelts a img:hover {
   box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
-  width: 63%;
+  width: 53%;
 }
 
 #idiomas span {
   color: wheat;
-  font-size: 1.2em;
+  font-size: 1em;
   line-height: 1.3em;
 }
 
 #certificadoIelts {
-  text-decoration: none;
   color: #50fa7b;
-  font-size: 1.2em;
+  font-size: 1em;
+  text-decoration: overline;
   transition-duration: 0.4s;
 }
 
 #certificadoIelts:hover {
   color: #ec6948;
-  font-size: 1.25em;
+  text-decoration: underline;
+  font-size: 1.05em;
 }
 
 /* Seção "Atividades Extracurriculares" */
@@ -503,7 +509,7 @@ body {
   color: #ec6948;
   width: fit-content;
   text-align: center;
-  font-size: 2.5em;
+  font-size: 1.8em;
   margin-top: -2%;
   padding: 0 1%;
 }
@@ -514,51 +520,53 @@ body {
   width: 80%;
 }
 
-#monitorias {
+#monitoriasCont {
   background-color: rgba(71, 50, 71, 0.796);
   border: ghostwhite 2px solid;
   border-radius: 35px;
   box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.5), 0 17px 50px 0 rgba(0, 0, 0, 0.5);
   display: flex;
   flex-direction: column;
+  align-items: center;
   align-self: center;
-  text-align: center;
-  padding: 2% 2% 0 1%;
+  padding: 2%;
 }
 
-#monitorias h3 {
+#monitoriasCont h3 {
   color: #ec6948;
-  font-size: 1.5em;
+  font-size: 1.1em;
   width: fit-content;
   text-align: center;
-  margin: 0 5% 0 15%;
-  padding-right: 4%;
+  margin: 1% 0 2% 0;
 }
 
-#monitorias h3 span {
-  font-size: 0.95em;
+#tituloIAG {
+  color: #50fa7b;
+  font-size: 0.9em;
 }
 
-#monitorias ul {
-  list-style: none;
-  font-size: 1.4em;
-  line-height: 1.5em;
-  color: ghostwhite;
-  font-weight: 600;
-  margin-top: 5%;
+.monitorias {
+  text-align: center;
+  font-size: 1.1em;
+  width: 95%;
+  margin: 2% 2.5%
+}
+
+.monitorias nav {
+  margin-top: 2%;
 }
 
 .certificadosMonitoria {
-  text-decoration: none;
   color: #50fa7b;
   font-size: 0.9em;
-  font-weight: 500;
+  text-decoration: overline;
   transition-duration: 0.4s;
 }
 
 .certificadosMonitoria:hover {
   color: #ec6948;
   font-size: 0.95em;
+  text-decoration: underline;
 }
 
 #infoAdd {
@@ -570,7 +578,7 @@ body {
   flex-direction: column;
   width: 50%;
   align-items: center;
-  padding: 3% 2% 2%;
+  padding: 1%;
 }
 
 #tituloInfoAdd {
@@ -578,9 +586,8 @@ body {
   color: #ec6948;
   width: fit-content;
   text-align: center;
-  font-size: 1.8em;
-  margin-top: -2%;
-  margin-bottom: 1%;
+  font-size: 1.2em;
+  margin: 1% 0;
 }
 
 #hackathon {
@@ -600,24 +607,25 @@ body {
 }
 
 .certificadosInfoAdd {
-  text-decoration: none;
   color: #50fa7b;
-  font-size: 1.4em;
+  font-size: 1.1em;
   font-weight: 500;
+  text-decoration: overline;
   transition-duration: 0.4s;
 }
 
 .certificadosInfoAdd:hover {
   color: #ec6948;
-  font-size: 1.45em;
+  font-size: 1.15em;
+  text-decoration: underline;
 }
 
 /* Classes compartilhadas pelos elementos da seção "Atividades Extracurriculares". */
 .titulosAtivExt {
   color: ghostwhite;
   text-align: center;
-  font-size: 1.3em;
-  margin-bottom: 3%;
+  font-size: 1em;
+  margin-bottom: 1.5%;
 }
 
 /* Seção "Rodapé" */

@@ -49,8 +49,8 @@ header div {
 }
 
 #color1 {
-  background-color: black;
-  color: ghostwhite;
+  background-color: white;
+  color: black;
   flex-grow: 0.05;
 }
 
@@ -157,7 +157,7 @@ main {
 
 #pixel-board {
   border: #50fa7b solid 5px;
-  border-radius: 25%;
+  border-radius: 35px;
   box-shadow: 0 15px 15px 0 #46506a;
   background-color: #282a36;
   display: flex;

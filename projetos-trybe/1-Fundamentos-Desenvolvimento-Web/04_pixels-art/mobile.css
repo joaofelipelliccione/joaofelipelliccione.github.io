@@ -46,8 +46,8 @@ header div {
 }
 
 #color1 {
-  background-color: black;
-  color: ghostwhite;
+  background-color: white;
+  color: black;
 }
 
 #color2 {
@@ -167,9 +167,12 @@ main {
 }
 
 footer {
+  position: fixed;
+  bottom: 1%;
   background-color: #282a36;
   display: flex;
   justify-content: center;
+  width: 95%;
 }
 
 footer span {

@@ -239,7 +239,9 @@ footer {
   justify-content: center;
   width: 85%;
   margin-left: 7.5%;
-  margin-left: 7.5%;
+  margin-right: 7.5%;
+  position: fixed;
+  bottom: 1%;
   padding: 3% 0 3% 0;
 }
 

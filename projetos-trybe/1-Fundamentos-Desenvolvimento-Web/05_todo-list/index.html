@@ -7,28 +7,31 @@
   <title>To Do List 📝</title>
   <link rel="stylesheet"  href="./style.css" type="text/css">
   <link rel="stylesheet"  href="./mobile.css" media="screen and (min-width: 360px) and (max-width: 812px)">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
 </head>
 
 <body>
   <header>
-    <h1>To Do List 📝</h1>
-    <p id="funcionamento">Clique <span style="color: #50fa7b;">uma vez</span> em um item da lista para <span style="background-color: blueviolet; color: wheat;">selecioná-lo</span></p>
-    <p id="funcionamento">Clique <span style="color: #50fa7b;">duas vezes</span> em um item da lista para marcá-lo como <span style="text-decoration: line-through solid 3px #f33737;">completo</span> (better on desktop)</p>
-    <p>Mova para 👆 ou para 👇 o item <span style="background-color: blueviolet; color: wheat;">selecionado</span></p>
-    <p>Ao realizar alterações, não se esqueça de salvá-las 💾</p>
+    <h1>To Do List</h1>
+    <p id="funcionamento"><span style="color: #50fa7b;">1 clique</span> sobre um item, o <span style="background-color: blueviolet; color: wheat; border-radius: 12px; padding: 0 3%;">seleciona</span></p>
+    <p id="funcionamento"><span style="color: #50fa7b;">2 cliques</span> sobre um item, o marca como <span style="text-decoration: line-through solid 3px #f33737;">completo</span> (better on desktop)</p>
+    <p>Mova para 👆 ou para 👇 o item <span style="background-color: blueviolet; color: wheat; border-radius: 12px; padding: 0 3%;">selecionado</span></p>
+    <p>Realizou alterações...? 💾</p>
   </header>
   <main>
     <section>
       <div id="newTaskSection">
         <input id="texto-tarefa" placeholder="Seu próximo to do é...">
-        <button id="criar-tarefa">Adicionar 📝</button>
+        <button id="criar-tarefa">+</button>
       </div>
       <ol id="lista-tarefas"></ol>
       <div id="btnsContainer1">
-        <button id="salvar-tarefas">Salvar To Do 💾</button>
-        <button id="remover-finalizados">Apagar concluídas ❌</button>
-        <button id="remover-selecionado">Apagar selecionado</button>
-        <button id="apaga-tudo">Apagar tudo 🗑️</button>
+        <button id="salvar-tarefas">💾</button>
+        <button id="remover-finalizados">remover <span>concluídas</span></button>
+        <button id="remover-selecionado">remover selecionado</button>
+        <button id="apaga-tudo">🗑️</button>
       </div>
       <div id="btnsContainer2">
         <button id="mover-cima" class="moveBtns">👆</button>

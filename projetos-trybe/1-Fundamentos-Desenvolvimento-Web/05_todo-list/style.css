@@ -1,85 +1,102 @@
 body {
-  background-color: #282a36;
-  font-family: Verdana, sans-serif;
+  background-color: wheat;
+  font-family: 'Montserrat', sans-serif;
   font-size: 22px;
 }
 
 header {
   background-color: #6272a4;
-  box-shadow: 0 15px 15px 0 rgba(0, 0, 0, .15);
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 15px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-top: 1%;
-  padding-bottom: 1.5%;
+  justify-content: space-evenly;
+  width: 85%;
+  margin: 0 5.5% 0;
+  padding: 2%;
 }
 
 header h1 {
-  color: #50fa7b;
+  background-color: wheat;
+  border-radius: 15px;
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  color: #6272a4;
+  width: 20%;
+  align-self: center;
   text-align: center;
-  margin-top: 0%;
-  margin-bottom: 0%;
+  font-size: 1.3em;
+  padding: 1%;
 }
 
 header p {
-  text-align: center;
-  font-style: italic;
   color: ghostwhite;
+  text-align: center;
+  font-size: 0.9em;
+  font-style: italic;
+  line-height: 1.6em;
   margin-bottom: 0%;
-  padding-left: 1%;
-  padding-right: 1%;
+  padding-left: 2%;
 }
 
 main section {
-  background-color: #44475a;
-  border: 5px solid #ff5555;
-  border-radius: 20%;
-  box-shadow: rgba(0, 0, 0, .15) 0 19px 38px, rgba(0, 0, 0, .15) 0 15px 12px;
+  background-color: #6272a4;
+  border-radius: 30px;
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 80%;
-  margin: 7% 10%;
+  width: 70%;
+  margin: 7% 15%;
   padding-top: 2%;
   padding-bottom: 2%;
 }
 
 #newTaskSection {
-  width: 80%;
+  width: 60%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
 
 #texto-tarefa {
-  background-color: ghostwhite;
+  background-color: wheat;
+  border-radius: 15px;
   color: #44475a;
   font-size: 0.9em;
-  width: 65%;
-  margin-bottom: 1%;
+  width: 55%;
+  margin: 1% 0;
   padding: 1%;
   outline: none;
+  transition: width ease-in-out 0.4s;
+}
+
+#texto-tarefa::placeholder {
+  color: black;
 }
 
 #texto-tarefa:focus {
-  background-color: #e7edab;
-  color: #ff5555;
+  background-color: rgb(122, 145, 82);
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  border: none;
+  color: ghostwhite;
+  width: 80%;
 }
 
 #criar-tarefa {
-  background-color: #50fa7b;
-  border-radius: 40%;
+  background-color: rgb(122, 145, 82);
+  border-radius: 12px;
   border: none;
   color: #282a36;
   cursor: pointer;
-  width: fit-content;
+  width: 5%;
   font-size: 1em;
   font-weight: 600;
-  padding: 0.4%;
+  padding: 0.5%;
+  transition-duration: 0.4s;
 }
 
 #criar-tarefa:hover {
   background-color: rgb(122, 145, 82);
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
   color: ghostwhite;
 }
 
@@ -91,86 +108,102 @@ main section {
   list-style-position: inside;
   color: wheat;
   line-height: 1.5em;
+  padding-top: 1%;
 }
 
 .completed {
   text-decoration: line-through solid 3px #f33737;
+  opacity: 0.6;
 }
 
 #btnsContainer1 {
-  width: 95%;
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  margin-bottom: 3%;
+  width: 80%;
+  margin-bottom: 2.5%;
 }
 
 #salvar-tarefas {
   background-color: cadetblue;
-  border-radius: 15%;
+  border-radius: 50%;
   border: none;
   width: fit-content;
   color: ghostwhite;
   cursor: pointer;
-  font-size: 1em;
+  font-size: 1.5em;
   font-weight: 600;
   padding: 1%;
+  transition: padding ease-in-out 0.4s;
 }
 
 #salvar-tarefas:hover {
   background-color: rgb(138, 176, 177);
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
   color: black;
+  padding: 1.5%;
 }
 
 #remover-finalizados {
   background-color: rgb(9, 9, 169);
-  border-radius: 15%;
+  border-radius: 15px;
   border: none;
-  width: fit-content;
+  width: 25%;
   color: ghostwhite;
   cursor: pointer;
-  font-size: 1em;
+  font-size: 0.8em;
   font-weight: 600;
-  padding: 1%;
+  transition: width ease-in-out 0.4s;
 }
 
 #remover-finalizados:hover {
   background-color: rgb(55, 55, 208);
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
   color: wheat;
+  width: 30%;
+}
+
+#remover-finalizados span {
+  text-decoration: line-through solid 3px #f33737;
 }
 
 #remover-selecionado {
   background-color: blueviolet;
-  border-radius: 15%;
+  border-radius: 15px;
   border: none;
-  width: fit-content;
+  width: 25%;
   color: ghostwhite;
   cursor: pointer;
-  font-size: 1em;
+  font-size: 0.8em;
   font-weight: 600;
-  padding: 1%;
+  transition: width ease-in-out 0.4s;
 }
 
 #remover-selecionado:hover {
   background-color: rgb(185, 115, 250);
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
   color: black;
+  width: 30%;
 }
 
 #apaga-tudo {
   background-color: #ffb86c;
-  border-radius: 15%;
+  border-radius: 50%;
   border: none;
   width: fit-content;
-  color: #282a36;
+  color: ghostwhite;
   cursor: pointer;
-  font-size: 1em;
+  font-size: 1.5em;
   font-weight: 600;
   padding: 1%;
+  transition: padding ease-in-out 0.4s;
 }
 
 #apaga-tudo:hover {
   background-color: #ed9f4c;
-  color: ghostwhite;
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  color: black;
+  padding: 1.5%;
 }
 
 #btnsContainer2 {
@@ -185,22 +218,29 @@ main section {
   border: none;
   width: fit-content;
   cursor: pointer;
-  font-size: 1.8em;
+  font-size: 1.3em;
   margin: 0 10%;
-  padding: 1%;
+  padding: 5%;
+  transition: padding ease-in-out 0.4s;
 }
 
 .moveBtns:hover {
   background-color: ghostwhite;
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  color: black;
+  padding: 8%;
 }
 
 footer {
   background-color: #6272a4;
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 15px;
   display: flex;
   justify-content: center;
-  margin-bottom: 0%;
-  padding-top: 5%;
-  padding-bottom: 5%;
+  width: 85%;
+  margin-left: 7.5%;
+  margin-left: 7.5%;
+  padding: 2% 0 2% 0;
 }
 
 footer span {
@@ -212,9 +252,10 @@ footer span {
 footer span a {
   color: #50fa7b;
   text-decoration: none;
+  transition-duration: 0.4s;
 }
 
 footer span a:hover {
   color: #ec6948;
-  font-size: 0.95em;
+  font-size: 1.05em;
 }

@@ -147,7 +147,7 @@ main {
   justify-content: center;
   margin-left: 5%;
   margin-right: 5%;
-  margin-bottom: 2.5%;
+  margin-bottom: 50%;
   padding: 2.5% 0;
 }
 
@@ -167,8 +167,6 @@ main {
 }
 
 footer {
-  position: fixed;
-  bottom: 1%;
   left: 0;
   background-color: #282a36;
   display: flex;

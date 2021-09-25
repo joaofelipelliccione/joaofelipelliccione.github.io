@@ -1,11 +1,24 @@
 /* Estilização geral: */
 body {
+  box-sizing: border-box;
   font-size: 25px;
 }
 
 /* Cabeçalho */
 #desktopIndex {
   display: none;
+}
+
+#mainHeader {
+  background-color: #282a36;
+  box-shadow: 0 10px 16px -4px black;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  top: 0;
+  right: 0;
 }
 
 #mainHeader h1 {
@@ -129,10 +142,12 @@ body {
 }
 
 #apresentacao h2 {
+  background-color: #282a36;
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
   color: #ec6948;
   width: 160%;
   text-align: center;
-  font-size: 1em;
+  font-size: 0.9em;
   font-weight: 1000;
   margin-top: 10%;
 }
@@ -147,7 +162,7 @@ body {
   font-size: 0.8em;
   font-weight: 500;
   margin-bottom: 0.5%;
-  padding: 8%;
+  padding: 9%;
 }
 
 #apresentacao :nth-child( 4 ) {
@@ -230,6 +245,7 @@ body {
 .titulosFormacaoAcademica {
   color: ghostwhite;
   font-size: 0.8em;
+  margin-top: 1.5%;
   margin-bottom: 3%;
 }
 
@@ -290,6 +306,7 @@ body {
   border: solid 3px rgb(194, 146, 25);
   border-radius: 25px;
   box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.5), 0 17px 50px 0 rgba(0, 0, 0, 0.5);
+  font-size: 1em;
   text-align: center;
   margin-bottom: 8%;
   padding: 5%;
@@ -328,10 +345,11 @@ body {
   border: solid 3px #00b0f2;
   box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.5), 0 17px 50px 0 rgba(0, 0, 0, 0.5);
   border-radius: 25px;
-  width: 95%;
+  font-size: 1em;
+  width: 90%;
   text-align: center;
   margin-bottom: 8%;
-  padding-left: 5%;
+  padding: 5%;
 }
 
 #vinci h3 {
@@ -363,14 +381,15 @@ body {
 
 #certificadoVinci {
   color: #50fa7b;
-  font-size: 1em;
+  font-size: 0.9em;
   text-decoration: overline;
+  margin-top: 0%;
   -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
 }
 
 #certificadoVinci:hover {
   color: #50fa7b;
-  font-size: 1em;
+  font-size: 0.9em;
   text-decoration: overline;
 }
 
@@ -386,8 +405,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 5% 0;
-  padding-bottom: 8%;
+  padding: 1%;
 }
 
 #ferramentasEIdiomas h2 {
@@ -395,7 +413,7 @@ body {
   width: fit-content;
   text-align: center;
   font-size: 1.1em;
-  margin-top: 0%;
+  margin-top: 4%;
 }
 
 #ferrEIdiContainer1 {
@@ -403,6 +421,7 @@ body {
   flex-direction: column;
   align-items: center;
   width: 100%;
+  margin-bottom: 8%;
 }
 
 #pacoteOffice {
@@ -419,89 +438,90 @@ body {
 #pacoteOffice h3 {
   color: ghostwhite;
   width: fit-content;
-  font-size: 1em;
+  font-size: 0.9em;
   text-align: center;
   margin-top: 5%;
 }
 
-#pacoteOffice ul {
+.ferramenta {
+  font-size: 0.9em;
   text-align: center;
-  list-style: square;
-  list-style-position: inside;
-  width: fit-content;
-  font-size: 1em;
-  line-height: 1.2em;
+  margin-top: 2%;
+  margin-bottom: 5%;
+}
+
+.certificadosHashtagCont {
   margin-top: 5%;
-  padding-left: 0%;
 }
 
 .certificadosHashtag {
   color: #50fa7b;
-  text-decoration: none;
-  font-size: 0.8em;
-  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  text-decoration: overline;
+  font-size: 0.85em;
+  transition-duration: 0.4s;
 }
 
 .certificadosHashtag:hover {
   color: #50fa7b;
-  font-size: 0.8em;
+  text-decoration: overline;
+  font-size: 0.85em;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
 }
 
 #idiomas {
   border: #747788 3px solid;
   border-radius: 40px;
   box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 75%;
-  padding: 3%;
+  text-align: center;
+  align-self: center;
+  width: 80%;
+  padding: 1% 0;
 }
 
 #idiomas h3 {
   color: ghostwhite;
   font-size: 1em;
-  width: fit-content;
   text-align: center;
-  margin-top: 5%;
-  margin-bottom: 5%;
 }
 
 #containerImgIelts {
   display: block;
-  margin-top: 10%;
-  margin-bottom: 12%;
+  margin-bottom: 4%;
   -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
 }
 
 #logoIelts a img {
-  border-radius: 4px;
+  border-radius: 8px;
   box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
-  width: 80%;
+  width: 70%;
+  transition-duration: 0.4s;
+  margin-bottom: 3%;
 }
 
 #logoIelts a img:hover {
-  border-radius: 4px;
+  border-radius: 8px;
   box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
-  width: 80%;
+  width: 70%;
+  margin-bottom: 3%;
 }
 
 #idiomas span {
   color: wheat;
-  font-size: 0.95em;
-  line-height: 1.1em;
+  font-size: 0.9em;
 }
 
 #certificadoIelts {
-  text-decoration: overline;
   color: #50fa7b;
-  font-size: 0.95em;
+  font-size: 0.8em;
+  text-decoration: overline;
+  transition-duration: 0.4s;
   -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
 }
 
 #certificadoIelts:hover {
   color: #50fa7b;
-  font-size: 0.95em;
+  font-size: 0.8em;
+  text-decoration: overline;
 }
 
 /* Seção "Atividades Extracurriculares" */
@@ -515,7 +535,6 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 5% 0 6%;
 }
 
 #ativExtraCv h2 {
@@ -526,7 +545,7 @@ body {
   color: #ec6948;
   width: fit-content;
   text-align: center;
-  font-size: 1.1em;
+  font-size: 1em;
   margin-top: -1%;
   padding: 2%;
 }
@@ -535,58 +554,56 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  width: 90%;
+  width: 80%;
 }
 
-#monitorias {
+#monitoriasCont {
   background-color: rgba(71, 50, 71, 0.796);
   border: ghostwhite 2px solid;
   border-radius: 35px;
   box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.5), 0 17px 50px 0 rgba(0, 0, 0, 0.5);
   display: flex;
   flex-direction: column;
-  align-self: center;
-  text-align: center;
+  align-items: center;
   width: 85%;
   margin-bottom: 8%;
-  padding: 2% 8% 0 1%;
+  padding: 5%;
 }
 
-#monitorias h3 {
+#monitoriasCont h3 {
   color: #ec6948;
-  font-size: 1.1em;
+  font-size: 1em;
   width: fit-content;
   text-align: center;
-  margin: 5% 5% 0 15%;
-  padding-right: 4%;
 }
 
-#monitorias h3 span {
-  font-size: 0.95em;
+#tituloIAG {
+  color: #50fa7b;
+  font-size: 0.8em;
 }
 
-#monitorias ul {
-  list-style: none;
-  width: 80%;
-  font-size: 1em;
-  line-height: 1.5em;
-  color: ghostwhite;
-  font-weight: 600;
+.monitorias {
+  text-align: center;
+  font-size: 0.9em;
+  width: 95%;
+  margin: 2% 2.5%
+}
+
+.monitorias nav {
+  margin-top: 5%;
 }
 
 .certificadosMonitoria {
-  text-decoration: none;
   color: #50fa7b;
-  font-size: 1em;
-  font-weight: 500;
+  font-size: 0.9em;
+  text-decoration: overline;
   -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
 }
 
 .certificadosMonitoria:hover {
-  text-decoration: none;
   color: #50fa7b;
-  font-size: 1em;
-  font-weight: 500;
+  font-size: 0.9em;
+  text-decoration: overline;
 }
 
 #infoAdd {
@@ -620,6 +637,10 @@ body {
   padding-bottom: 1%;
 }
 
+#hackathon nav {
+  margin-top: 5%;
+}
+
 #bolsa {
   display: flex;
   flex-direction: column;
@@ -628,18 +649,22 @@ body {
   padding-bottom: 1%;
 }
 
+#bolsa nav {
+  margin-top: 5%;
+}
+
 .certificadosInfoAdd {
-  text-decoration: none;
   color: #50fa7b;
-  font-size: 1em;
+  text-decoration: overline;
+  font-size: 0.8em;
   font-weight: 500;
   -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
 }
 
 .certificadosInfoAdd:hover {
-  text-decoration: none;
   color: #50fa7b;
-  font-size: 1em;
+  text-decoration: overline;
+  font-size: 0.8em;
   font-weight: 500;
 }
 
@@ -647,7 +672,7 @@ body {
 .titulosAtivExt {
   color: ghostwhite;
   text-align: center;
-  font-size: 0.9em;
+  font-size: 0.8em;
   margin-bottom: 3%;
 }
 
@@ -675,5 +700,6 @@ footer span a {
 
 footer span a:hover {
   color: #50fa7b;
+  font-size: 1em;
   text-decoration: none;
 }

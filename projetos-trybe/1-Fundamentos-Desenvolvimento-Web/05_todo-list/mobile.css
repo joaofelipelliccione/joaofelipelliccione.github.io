@@ -1,91 +1,103 @@
 body {
-  background-color: #282a36;
-  font-family: Verdana, sans-serif;
+  background-color: wheat;
+  font-family: 'Montserrat', sans-serif;
   font-size: 15px;
 }
 
 header {
   background-color: #6272a4;
-  box-shadow: 0 15px 15px 0 rgba(0, 0, 0, .15);
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 15px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 1%;
-  padding-bottom: 1.5%;
+  width: 85%;
+  margin: 0 7.5%;
+  padding: 5% 0;
 }
 
 header h1 {
-  color: #50fa7b;
-  text-align: center;
-  font-size: 1.7em;
-  margin-top: 0%;
-  margin-bottom: 0%;
+  background-color: wheat;
+  border-radius: 15px;
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  color: #6272a4;
+  width: 55%;
+  font-size: 1.3em;
+  margin-top: 0;
+  margin-bottom: 2%;
 }
 
+
 header p {
-  text-align: center;
-  font-style: italic;
   color: ghostwhite;
-  margin-bottom: 0%;
-  padding-left: 1%;
-  padding-right: 1%;
+  text-align: center;
+  font-size: 0.95em;
+  font-style: italic;
+  line-height: 1.5em;
+
 }
 
 main section {
-  background-color: #44475a;
-  border: 3px solid #ff5555;
-  border-radius: 20%;
-  box-shadow: rgba(0, 0, 0, .15) 0 19px 38px, rgba(0, 0, 0, .15) 0 15px 12px;
+  background-color: #6272a4;
+  border-radius: 30px;
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 95%;
-  margin-left: 2.5%;
-  margin-right: 2.5%;
-  padding: 2% 0;
+  width: 90%;
+  margin: 10% 5%;
+  padding-top: 2%;
+  padding-bottom: 2%;
 }
 
 #newTaskSection {
-  width: 95%;
+  width: 85%;
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-evenly;
   margin-top: 5%;
 }
 
 #texto-tarefa {
-  background-color: ghostwhite;
+  background-color: wheat;
+  border-radius: 15px;
   color: #44475a;
-  font-size: 0.9em;
-  width: 50%;
-  margin-left: 3%;
-  margin-bottom: 1%;
+  font-size: 0.8em;
+  width: 55%;
+  margin: 1% 0;
   padding: 1%;
   outline: none;
+  transition: width ease-in-out 0.4s;
+}
+
+#texto-tarefa::placeholder {
+  color: black;
 }
 
 #texto-tarefa:focus {
-  background-color: #e7edab;
-  color: #ff5555;
+  background-color: rgb(122, 145, 82);
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  border: none;
+  color: ghostwhite;
+  width: 80%;
 }
 
 #criar-tarefa {
-  background-color: #50fa7b;
-  border-radius: 40%;
+  background-color: rgb(122, 145, 82);
+  border-radius: 50%;
   border: none;
-  color: #282a36;
-  cursor: pointer;
-  width: fit-content;
-  font-size: 0.8em;
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  color: ghostwhite;
+  width: 5%;
+  text-align: center;
+  font-size: 1.2em;
   font-weight: 600;
-  margin-right: 3%;
-  margin-left: 1%;
-  padding: 0.4%;
+  padding: 1% 6% 1% 3%;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
 }
 
 #criar-tarefa:hover {
-  background-color: #50fa7b;
-  color: black;
+  background-color: rgb(122, 145, 82);
+  color: ghostwhite;
 }
 
 #lista-tarefas {

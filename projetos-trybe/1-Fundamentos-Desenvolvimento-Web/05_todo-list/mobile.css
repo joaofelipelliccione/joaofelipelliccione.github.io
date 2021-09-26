@@ -12,8 +12,8 @@ header {
   flex-direction: column;
   align-items: center;
   width: 85%;
-  margin: 0 7.5%;
-  padding: 5% 0;
+  margin: 0 5%;
+  padding: 5% 3%;
 }
 
 header h1 {

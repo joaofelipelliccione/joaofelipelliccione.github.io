@@ -6,7 +6,7 @@
 }
 
 body {
-  background-color: rgb(94, 90, 90);
+  background-color: #272626;
   color: ghostwhite;
 }
 
@@ -15,6 +15,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 2%;
   padding: 20px 60px;
 }
 
@@ -22,3 +23,62 @@ header .logo-title {
   display: flex;
   align-items: center;
 }
+
+.steps {
+  background-color: blueviolet;
+  display: flex;
+  justify-content: center;
+}
+
+.steps .step {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.steps .step h2 {
+margin-bottom: 30px;
+}
+
+.genres-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.genres-cards .genre {
+  background-color: rgb(66, 56, 56);
+  margin: 15px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.1s;
+}
+
+.genres-cards .genre:hover {
+  background-color: rgb(37, 26, 26);
+}
+
+.genres-cards .genre img {
+  background-color: rgb(66, 56, 56);
+}
+
+.text-card {
+  background-color: red;
+  border-radius: 30px;
+  padding: 10px;
+  margin: 10px;
+  cursor: pointer;
+  transition: 0.1s;
+}
+
+.playlist-cards, .track-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+

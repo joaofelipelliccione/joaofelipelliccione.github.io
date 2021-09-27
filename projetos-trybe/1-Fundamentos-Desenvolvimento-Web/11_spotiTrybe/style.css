@@ -1,5 +1,24 @@
-body {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  background-color: rgb(94, 90, 90);
+  color: ghostwhite;
+}
+
+header {
+  border: solid red 2px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+}
+
+header .logo-title {
+  display: flex;
+  align-items: center;
 }

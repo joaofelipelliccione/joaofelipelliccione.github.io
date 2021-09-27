@@ -20,7 +20,9 @@ header {
 }
 
 header .logo-title {
+  background-color: green;
   display: flex;
+  justify-content: space-between;
   align-items: center;
 }
 

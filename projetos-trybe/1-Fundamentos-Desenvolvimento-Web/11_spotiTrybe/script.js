@@ -78,8 +78,8 @@ async function getTrackFeatures(trackID) {
   })
 
   const jsonFormat = await response.json();
-  const trackDanceability = jsonFormat.danceability;
-  const trackEnergy = jsonFormat.energy;
+  const trackDanceability = (jsonFormat.danceability * 100).toFixed(0);
+  const trackEnergy = (jsonFormat.energy * 100).toFixed(0);
   resultArray.push(trackDanceability, trackEnergy);
   return resultArray;
 }
@@ -117,11 +117,11 @@ function createEachTrackElement(tracksArray) { // Função que cria os elementos
     div.appendChild(popularidade);
 
     danceability.className = 'danceability';
-    danceability.innerHTML = `Danceability: ${trackFeaturesArray[0]}`;
+    danceability.innerHTML = `Dançabilidade: ${trackFeaturesArray[0]}%`;
     div.appendChild(danceability);
 
-    energy.className = 'energy';
-    energy.innerHTML = `Energia: ${trackFeaturesArray[1]}`;
+    energy.className = 'danceability';
+    energy.innerHTML = `Energia: ${trackFeaturesArray[1]}%`;
     div.appendChild(energy);
 
     a.className = 'listenToTheMusic';

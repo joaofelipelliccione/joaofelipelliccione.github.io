@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Air</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1 class="h-title">Your Air</h1>
+  </header>
+  <main>
+    <section class="infos">
+      <section class="user-info">
+        <h2>Região do Usuário</h2>
+        <ul class="user"></ul>
+      </section>
+      <section id="map"></section>
+    </section>
+    <section class="region-info">
+      <h2>Informações acessíveis da região</h2>
+      <ul class="region"></ul>
+      <section class="pollu-weath">
+        <ul class="pollution"></ul>
+        <section id="weather-icon">
+          <ul class="weather"></ul>
+        </section>     
+      </section>
+    </section>
+    <section class='air-table'>
+      <img src="http://ambientesst.com.br/wp-content/uploads/2017/07/Tabela-de-qualidade-do-ar.png" alt="Tabela informativa do Índice de Poluição do Ar">
+    </section>
+  </main>
+  <footer>
+    <span>Developed by Guilherme Devigili, João Felipe P, Kelvin Pichinini e Renato Zanella</span>
+  </footer>
+
+  <script src="./script.js"></script>
+  <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyChikV7-QlThop5iNb5XIwMsQE277Lw0yM&libraries=places&callback=getUserInfo&v=weekly"
+      async
+    ></script>
+</body>
+</html>

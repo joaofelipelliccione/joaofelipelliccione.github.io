@@ -59,14 +59,42 @@ async function getTracksArray(trackName) {
   return resultArray; // Array com informações referente as 20 primeiras músicas que apareceram ao pesquisar 'trackName'.
 }
 
+/* REF: https://developer.spotify.com/console/get-audio-features-track/?id=06AKEBrKUckW0KREUWRnvT
+  Estruturação da função que permite a busca de determinados features, de cada música.
+*/
+async function getTrackFeatures(trackID) {
+  let resultArray = []; // Declarando variável que armazenará o array com a 'trackDanceability' e a 'trackEnergy' de cada track.
+
+  // Estruturação do Header da requisição:
+  const requestHeader = new Headers(); // Função constructor do JavaScript.
+  requestHeader.append('Content-Type', 'application/json'); // Nesse caso, o tipo do conteúdo enviado no body desse request segue o padrão 'application/json'.
+  requestHeader.append('Accept', 'application/json'); // Estou pedindo para que a response tenha o padrão 'application/json'.
+  requestHeader.append('Authorization', `Bearer ${token}`); // Aqui, estou passando o token que obtive na função getToken().
+
+  // Estruturando a requisição, que deverá ser feita para o endpoint 	https://api.spotify.com/v1/audio-features/{id}, via GET method.
+  const response = await fetch(`${BASE_URL}/audio-features/${trackID}`, {
+    method: 'GET',
+    headers: requestHeader,
+  })
+
+  const jsonFormat = await response.json();
+  const trackDanceability = jsonFormat.danceability;
+  const trackEnergy = jsonFormat.energy;
+  resultArray.push(trackDanceability, trackEnergy);
+  return resultArray;
+}
+
 function createEachTrackElement(tracksArray) { // Função que cria os elementos HTML com as informações recebidas da API do Spotify.
-  tracksArray.forEach((track) => {
+  tracksArray.forEach(async (track) => {
+    const trackFeaturesArray = await getTrackFeatures(track.id);
     const allTracksContainer = document.querySelector('.allTracksContainer');
     const div = document.createElement('div');
     const img = document.createElement('img');
     const pTrackName = document.createElement('p');
     const pArtistName = document.createElement('p');
     const popularidade = document.createElement('p');
+    const danceability = document.createElement('p');
+    const energy = document.createElement('p');
     const a = document.createElement('a');
 
     div.className = 'eachTrack';
@@ -87,6 +115,14 @@ function createEachTrackElement(tracksArray) { // Função que cria os elementos
     popularidade.className = 'popularity';
     popularidade.innerHTML = `Popularidade: ${track.popularity}%`;
     div.appendChild(popularidade);
+
+    danceability.className = 'danceability';
+    danceability.innerHTML = `Danceability: ${trackFeaturesArray[0]}`;
+    div.appendChild(danceability);
+
+    energy.className = 'energy';
+    energy.innerHTML = `Energia: ${trackFeaturesArray[1]}`;
+    div.appendChild(energy);
 
     a.className = 'listenToTheMusic';
     a.href = track.external_urls.spotify;
@@ -153,4 +189,5 @@ window.onload = async () => {
   fillTracksContainer('Imagine');
   browseSongClick();
   browseSongEnter();
+  getTrackFeatures('06AKEBrKUckW0KREUWRnvT')
 }

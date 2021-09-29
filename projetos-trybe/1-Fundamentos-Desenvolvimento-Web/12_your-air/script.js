@@ -2,7 +2,7 @@ const GEO_KEY = '6eb899499539474ab89a6dd0b92c6863';
 const GEO_BASE_URL = 'https://ipgeolocation.abstractapi.com/v1/';
 
 const AIR_KEY = '97c6fc82-c83e-44b0-b34f-2940a5c46026';
-const AIR_BASE_URL = 'http://api.airvisual.com/v2/';
+const AIR_BASE_URL = 'https://api.airvisual.com/v2/';
 
 const poluentes = {
   'p2': {

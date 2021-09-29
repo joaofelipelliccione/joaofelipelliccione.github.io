@@ -85,9 +85,10 @@ Abaixo, é possível encontrar a grade curricular do respectivo curso, que termi
 - [x] 10-3: _Jest - Simulando comportamentos_
 - [x] 10-4: _Projeto - Jest Assíncrono e Mocking - [Código do Projeto](https://github.com/joaofelipelliccione/joaofelipelliccione.github.io/tree/main/projetos-trybe/1-Fundamentos-Desenvolvimento-Web/10_jest-tests)_
 
-##### Projeto Bônus - Spotitrybe
+##### Projeto Bônus - Spotitrybe e Your Air
 
 - [x] Extra: _[Projeto - Spotitrybe](https://joaofelipelliccione.github.io/projetos-trybe/1-Fundamentos-Desenvolvimento-Web/11_spotiTrybe/index.html)_
+- [x] Extra: _[Projeto - Your Air](https://joaofelipelliccione.github.io/projetos-trybe/1-Fundamentos-Desenvolvimento-Web/12_your-air/index.html)_
 
 ## Desenvolvimento Front-end :hourglass_flowing_sand:
 

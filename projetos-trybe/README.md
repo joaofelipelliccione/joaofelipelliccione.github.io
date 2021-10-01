@@ -87,7 +87,7 @@ Abaixo, é possível encontrar a grade curricular do respectivo curso, que termi
 
 ##### Projeto Bônus - Math in Music e Your Air
 
-- [x] Extra: _[Projeto - Math in Music](https://joaofelipelliccione.github.io/projetos-trybe/1-Fundamentos-Desenvolvimento-Web/11_spotiTrybe/index.html)_
+- [x] Extra: _[Projeto - Math in Music](https://joaofelipelliccione.github.io/projetos-trybe/1-Fundamentos-Desenvolvimento-Web/11_math-in-music/index.html)_
 - [x] Extra: _[Projeto - Your Air](https://joaofelipelliccione.github.io/projetos-trybe/1-Fundamentos-Desenvolvimento-Web/12_your-air/index.html)_
 
 ## Desenvolvimento Front-end :hourglass_flowing_sand:

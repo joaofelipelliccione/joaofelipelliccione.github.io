@@ -49,7 +49,7 @@ async function getTracksArray(trackName) {
   requestHeader.append('Authorization', `Bearer ${token}`); // Aqui, estou passando o token que obtive na função getToken().
 
   // Estruturando a requisição, que deverá ser feita para o endpoint https://api.spotify.com/v1/search, via GET method.
-  const response = await fetch(`${BASE_URL}/search?q=${trackName}&type=track&market=BR&limit=6`, {
+  const response = await fetch(`${BASE_URL}/search?q=${trackName}&type=track&market=BR&limit=12`, {
     method: 'GET',
     headers: requestHeader,
   })

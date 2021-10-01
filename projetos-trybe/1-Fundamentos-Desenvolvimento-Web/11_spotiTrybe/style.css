@@ -12,7 +12,7 @@ body {
 
 header {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   width: 90%;
   margin: 2% 5%;
@@ -40,6 +40,24 @@ header .logo-title img {
 
 header .logo-title h1 {
   font-size: 1.8em;
+}
+
+header .legend {
+  border: solid 2px #29a152;
+  border-radius: 15px;
+  color: ghostwhite;
+  width: fit-content;
+  font-size: 1em;
+  line-height: 1.5em;
+  padding: 1%;
+}
+
+header .legend h4 {
+font-size: 1.1em;
+width: 60%;
+text-align: center;
+text-decoration: underline;
+margin: 1% 20% 2% 20%;
 }
 
 main {

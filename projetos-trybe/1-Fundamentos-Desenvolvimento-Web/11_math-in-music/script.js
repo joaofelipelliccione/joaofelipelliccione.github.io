@@ -3,7 +3,6 @@ Esse tipo de autenticação faz com que as chaves de acesso fiquem explícitas d
 const CLIENT_ID = '166de45747534183a240ddf829ead0f9';
 const CLIENT_SECRET = '5627899d6f114ad9ab0911a1fda15f28';
 const BASE_URL = 'https://api.spotify.com/v1'; // URL base para realizar requisições referente à músicas, artistas, albuns...
-
 let token; // Declarando variável que armazenará o token oriundo da requisição abaixo.
 
 /* REF: https://developer.spotify.com/documentation/general/guides/authorization-guide/#client-credentials-flow
@@ -33,6 +32,7 @@ async function getToken() {
 
   const jsonFormat = await response.json();
   token = jsonFormat.access_token;
+  // console.log(token);
   return token; // Ex: BQDVvlRkU9ivNOCTBOTbem-baNv8dI8VnKvu5z8DC4TmrpKGXfwpp4DIBTALfL13g0Hlc2m_nRHyAHbydfs
 }
 

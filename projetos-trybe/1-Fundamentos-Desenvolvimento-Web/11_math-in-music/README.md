@@ -1,4 +1,4 @@
-# Spotitrybe - Projeto Bônus
+# Math in Music - Projeto Bônus
 
 Projeto livre desenvolvido durante os últimos dois dias do bloco de "Fundamentos do Desenvolvimento Web".
 

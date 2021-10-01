@@ -49,7 +49,7 @@ async function getTracksArray(trackName) {
   requestHeader.append('Authorization', `Bearer ${token}`); // Aqui, estou passando o token que obtive na função getToken().
 
   // Estruturando a requisição, que deverá ser feita para o endpoint https://api.spotify.com/v1/search, via GET method.
-  const response = await fetch(`${BASE_URL}/search?q=${trackName}&type=track&market=BR&limit=20`, {
+  const response = await fetch(`${BASE_URL}/search?q=${trackName}&type=track&market=BR&limit=6`, {
     method: 'GET',
     headers: requestHeader,
   })
@@ -80,7 +80,10 @@ async function getTrackFeatures(trackID) {
   const jsonFormat = await response.json();
   const trackDanceability = (jsonFormat.danceability * 100).toFixed(0);
   const trackEnergy = (jsonFormat.energy * 100).toFixed(0);
-  resultArray.push(trackDanceability, trackEnergy);
+  const trackTempo = (jsonFormat.tempo).toFixed(1);
+  const trackValence = (jsonFormat.valence * 100).toFixed(0);
+  const trackAcoustic = (jsonFormat.acousticness * 100).toFixed(0);
+  resultArray.push(trackDanceability, trackEnergy, trackTempo, trackValence, trackAcoustic);
   return resultArray;
 }
 
@@ -92,9 +95,12 @@ function createEachTrackElement(tracksArray) { // Função que cria os elementos
     const img = document.createElement('img');
     const pTrackName = document.createElement('p');
     const pArtistName = document.createElement('p');
-    const popularidade = document.createElement('p');
+    const popularity = document.createElement('p');
     const danceability = document.createElement('p');
     const energy = document.createElement('p');
+    const tempo = document.createElement('p');
+    const valence = document.createElement('p');
+    const acoustic = document.createElement('p');
     const a = document.createElement('a');
 
     div.className = 'eachTrack';
@@ -112,17 +118,29 @@ function createEachTrackElement(tracksArray) { // Função que cria os elementos
     pArtistName.innerHTML = `Principal Compositor: ${track.artists[0].name}`;
     div.appendChild(pArtistName);
 
-    popularidade.className = 'popularity';
-    popularidade.innerHTML = `Popularidade: ${track.popularity}%`;
-    div.appendChild(popularidade);
+    popularity.className = 'popularity';
+    popularity.innerHTML = `Popularidade: ${track.popularity}%`;
+    div.appendChild(popularity);
 
     danceability.className = 'danceability';
     danceability.innerHTML = `Dançabilidade: ${trackFeaturesArray[0]}%`;
     div.appendChild(danceability);
 
-    energy.className = 'danceability';
+    energy.className = 'energy';
     energy.innerHTML = `Energia: ${trackFeaturesArray[1]}%`;
     div.appendChild(energy);
+
+    tempo.className = 'tempo';
+    tempo.innerHTML = `BPM: ${trackFeaturesArray[2]}`;
+    div.appendChild(tempo);
+
+    valence.className = 'valence';
+    valence.innerHTML = `Valência: ${trackFeaturesArray[3]}%`;
+    div.appendChild(valence);
+
+    acoustic.className = 'acoustic';
+    acoustic.innerHTML = `Acústica: ${trackFeaturesArray[4]}%`;
+    div.appendChild(acoustic);
 
     a.className = 'listenToTheMusic';
     a.href = track.external_urls.spotify;

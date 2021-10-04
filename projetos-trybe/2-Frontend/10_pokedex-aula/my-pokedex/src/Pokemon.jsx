@@ -13,7 +13,7 @@ class Pokemon extends React.Component {
             <a href={pokemon.moreInfo} target='_blank' rel="noreferrer">More Info!</a>
           </nav>
         </div>
-    ))
+    ))[this.props.pokemonDataIndex]
     )
   };
 }

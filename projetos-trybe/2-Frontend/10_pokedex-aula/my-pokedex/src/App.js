@@ -10,22 +10,40 @@ class App extends React.Component {
     this.state = {
       pokemons: pokemonsData,
       numOfClicksNextPokBtn: 0,
-      fireFilter: 'disable',
+      fireFilter: 'desativado',
+      psychicFilter: 'desativado',
     }
 
+    this.psychicBtnFunc = this.psychicBtnFunc.bind(this);
     this.fireBtnFunc = this.fireBtnFunc.bind(this);
     this.nextPokemonBtnFunc = this.nextPokemonBtnFunc.bind(this);
   }
 
   fireBtnFunc() {
-    if(this.state.fireFilter === 'disable') {
+    if(this.state.fireFilter === 'desativado') {
       this.setState(() => ({
-        fireFilter: 'enable',
+        fireFilter: 'ativado',
+        psychicFilter: 'desativado',
         pokemons: pokemonsData.filter((pokemons) => pokemons.type === 'Fire'),
       }));
     } else {
       this.setState(() => ({
-        fireFilter: 'disable',
+        fireFilter: 'desativado',
+        pokemons: pokemonsData,
+      }));
+    }
+  }
+
+  psychicBtnFunc() {
+    if(this.state.psychicFilter === 'desativado') {
+      this.setState(() => ({
+        psychicFilter: 'ativado',
+        fireFilter: 'desativado',
+        pokemons: pokemonsData.filter((pokemons) => pokemons.type === 'Psychic'),
+      }));
+    } else {
+      this.setState(() => ({
+        psychicFilter: 'desativado',
         pokemons: pokemonsData,
       }));
     }
@@ -51,8 +69,9 @@ class App extends React.Component {
         <article id='pokemonsContainer'>
           <Pokemon pokemonData={this.state.pokemons} pokemonDataIndex={this.state.numOfClicksNextPokBtn}></Pokemon>
           <section className='btnsContainer'>
-            <button onClick={this.nextPokemonBtnFunc} id='nextPokemonBtn'>Próximo Pokémon</button>
-            <button onClick={this.fireBtnFunc} id='fireBtn'>{this.state.fireFilter}</button>
+            <button onClick={this.nextPokemonBtnFunc} id='nextPokemonBtn' className='btns'>Próximo Pokémon</button>
+            <button onClick={this.fireBtnFunc} id='fireBtn' className='btns'>Fire: {this.state.fireFilter}</button>
+            <button onClick={this.psychicBtnFunc} id='psychicBtn' className='btns'>Psychic: {this.state.psychicFilter}</button>
           </section>
         </article>
       </main>

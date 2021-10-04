@@ -42,7 +42,7 @@ body {
   flex-direction: column;
   align-items: center;
   width: 35%;
-  margin: 3% 0 1% 0;
+  margin: 5% 0 3% 0;
   padding: 0 0 2% 0;
 }
 
@@ -79,4 +79,27 @@ body {
   font-size: 1.25em;
   font-weight: 600;
   text-decoration: none;
+}
+
+.btnsContainer {
+  display: flex;
+  width: 60%;
+  justify-content: space-evenly;
+  margin-bottom: 2%;
+  margin: 2% 0;
+}
+
+.btns {
+  background-color: #a27c50;
+  border: none;
+  border-radius: 15px;
+  font-size: 1em;
+  color: ghostwhite;
+  cursor: pointer;
+  padding: 2%;
+  transition-duration: 0.4s;
+}
+
+.btns:hover {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }

@@ -97,7 +97,7 @@ Abaixo, é possível encontrar a grade curricular do respectivo curso, que termi
 - [x] 11-1: _'Hello, world!' no React!_
 - [x] 11-2: _Componentes React_
 - [x] 11-3: _[Projeto - Pokédex]()_
-- [ ] 11-4: _[Projeto - Movie Cards Library]()_
+- [x] 11-4: _[Projeto - Movie Cards Library]()_
 
 ##### Bloco 12: Componentes com Estado, Eventos e Formulários com React
 

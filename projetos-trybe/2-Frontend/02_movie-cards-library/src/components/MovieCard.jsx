@@ -7,12 +7,14 @@ class MovieCard extends React.Component { // Componente React que se transformar
     const { movie: { title, subtitle, storyline, imagePath, rating } } = this.props; // Utilizando object destructuring para captar as informações necessárias para o desenvolvimento de cada card. A props 'movie', desse componente, recebe um objeto que contêm informações de um determinado filme.
 
     return (
-      <div>
-        <img src={ imagePath } alt={ title } />
-        <h4>{ title }</h4>
-        <h5>{ subtitle }</h5>
-        <p>{ storyline }</p>
-        <Rating rating={ rating } />
+      <div className='movie-card'>
+        <img src={ imagePath } alt={ title } className='movie-card-image' />
+        <div className='movie-card-body'>
+          <h4 className='movie-card-title'>{ title }</h4>
+          <h5  className='movie-card-subtitle'>{ subtitle }</h5>
+          <p className='movie-card-storyline'>{ storyline }</p>
+        </div>
+        <Rating rating={ `🌟 ${rating}` } />
       </div>
     );
   }

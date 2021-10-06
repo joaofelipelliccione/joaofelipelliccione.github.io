@@ -7,7 +7,7 @@ class MovieList extends React.Component { // Componente React que representa tod
     const { movies } = this.props; // Utilizando object destructuring para captar o array de objetos com informações de cada filme, que será passado via props.
 
     return (
-      <main>
+      <main className='movie-list'>
         { movies.map((mvObj) => <MovieCard movie={ mvObj } key={ mvObj.title } />) }
       </main>
     );

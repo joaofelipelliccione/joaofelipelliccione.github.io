@@ -1,0 +1,236 @@
+* {
+  box-sizing: border-box;
+  font-family: Verdana, sans-serif;
+  font-size: 1em;
+}
+
+header {
+  background-color: #2f6d53;
+  display: flex;
+  justify-content: center;
+  padding: 1%;
+}
+
+header h1 {
+  color: ghostwhite;
+  font-size: 2.5em;
+  text-align: center;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+#cardDevelopmentContainer {
+  display: flex;
+  width: 100%;
+}
+
+#formContainer {
+  background-color: #e4e4e4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+}
+
+#formContainer h3 {
+  color: #5d959a;
+  font-size: 1.5em;
+  text-align: center;
+  width: fit-content;
+}
+
+#newCardForm {
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  margin: 0 0 4%;
+  padding: 2%;
+}
+
+.stdLabel {
+  color: #2f6d53;
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  font-size: 1.1em;
+  margin: 0 0 1% 0;
+  padding: 1%;
+}
+
+.attrLabel {
+  color: #2f6d53;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 70%;
+  font-size: 1.1em;
+  margin: 0 0 1% 0;
+  padding: 1%;
+}
+
+.checkBoxLabel {
+  color: #2f6d53;
+  display: flex;
+  justify-content: space-evenly;
+  width: 65%;
+  text-align: center;
+  font-size: 1.1em;
+  margin: 0 0 5% 0;
+  padding: 1%;
+}
+
+#newCardForm input {
+  border: none;
+  border-radius: 4px;
+  border-bottom: solid 2px #2f6d53;
+  margin: 3% 0 0 0;
+  padding: 2%;
+}
+
+#newCardForm input:focus {
+  background-color: #d5e6df;
+  outline: none;
+}
+
+#newCardForm textarea {
+  border: none;
+  border-radius: 4px;
+  border-bottom: solid 2px #2f6d53;
+  margin: 3% 0 0 0;
+}
+
+#newCardForm textarea:focus {
+  background-color: #d5e6df;
+  outline: none;
+}
+
+#newCardForm select {
+  background-color: white;
+  border: none;
+  border-radius: 4px;
+  border-bottom: solid 2px #2f6d53;
+  margin: 3% 0 0 0;
+}
+
+#newCardForm select:focus {
+  background-color: #d5e6df;
+  outline: none;
+}
+
+#save-button {
+  background-color: #2f6d53;
+  color: ghostwhite;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1em;
+  padding: 2.5%;
+  transition-duration: 0.4s;
+}
+
+#save-button:hover {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+#cardPreviewContainer {
+  background-color: #14342d;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+}
+
+#cardPreviewContainer h3 {
+  color: ghostwhite;
+  text-align: center;
+  width: fit-content;
+  font-size: 1.5em;
+}
+
+#cardPreview {
+  background-image: linear-gradient(to bottom right, #aeaeaf, #43846e);
+  border: solid 4px gold;
+  border-radius: 15px;
+  box-shadow: rgba(255, 255, 255, 0.24) 0px 3px 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 345px;
+  padding: 15px;
+}
+
+#cardPreview h4 {
+  background-color: #304d4b;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 5px;
+  color: ghostwhite;
+  font-size: 1.3em;
+  width: 100%;
+  text-align: end;
+  margin-top: -3px;
+  margin-bottom: 0;
+  padding: 3%;
+}
+
+#cardPreview img {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 5px;
+  height: 200px;
+  width: 100%;
+  margin-top: 5px;
+  margin-bottom: 0;
+}
+
+#cardDescription {
+  color: ghostwhite;
+  background-image: linear-gradient(to bottom right, #7ab39f, #57947f, #436967);
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  text-align: justify;
+  font-size: 0.9em;
+  line-height: 1.35;
+  width: 100%;
+  margin-top: 15px;
+  margin-bottom: 25px;
+  padding: 2%;
+}
+
+.attrs {
+  background-color: #6f7272;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  color: ghostwhite;
+  font-size: 0.9em;
+  padding: 2%;
+}
+
+#cardRarity {
+  color: gold;
+  font-size: 1.1em;
+  margin: 2% 0;
+}
+
+#savedCardsContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+#filtersContainer {
+  background-color: #2f6d53;
+  display: flex;
+  padding: 2%;
+}
+
+#cardsDisplay {
+  background-color: #14342d;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding: 2%;
+}

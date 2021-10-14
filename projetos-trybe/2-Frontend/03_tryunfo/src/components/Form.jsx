@@ -147,7 +147,7 @@ class Form extends Component {
           >
             <option>Normal</option>
             <option>Raro</option>
-            <option>Muito raro</option>
+            <option>Muito Raro</option>
           </select>
         </label>
 

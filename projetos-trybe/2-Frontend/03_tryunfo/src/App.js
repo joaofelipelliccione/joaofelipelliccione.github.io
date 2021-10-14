@@ -19,6 +19,7 @@ const INITIAL_STATE = {
   isSaveButtonDisabled: true,
   savedCards: [],
   searchBoxData: '',
+  rarityFilter: 'Todas'
 };
 
 class App extends React.Component {
@@ -131,11 +132,20 @@ class App extends React.Component {
   }
 
   filtersFunction = () => { // Tal função sempre retornará um array de objetos, que acumula informações de cada uma das cartas. Por outro lado, dependendo dos filtros aplicados pelo usuário, o respectivo array apresentará uma quantidade reduzida de objetos.
-    const { savedCards, searchBoxData } = this.state;
+    const { savedCards, searchBoxData, rarityFilter } = this.state;
 
     if (searchBoxData.length >= 1) {
       return savedCards.filter(({ cardName }) =>
         cardName.toLowerCase().includes(searchBoxData.toLowerCase())); // Retornado quando o usuário pesquisar por uma determinada carta na searchbox.
+    }
+    if (rarityFilter === 'Normal') {
+      return savedCards.filter(({ cardRare }) => cardRare === 'Normal'); // Retornado quando o usuário selecionar 'Normal', no dropdown.
+    }
+    if (rarityFilter === 'Raro') {
+      return savedCards.filter(({ cardRare }) => cardRare === 'Raro'); // Retornado quando o usuário selecionar 'Raro', no dropdown.
+    }
+    if (rarityFilter === 'Muito Raro') {
+      return savedCards.filter(({ cardRare }) => cardRare === 'Muito Raro'); // Retornado quando o usuário selecionar 'Muito Raro', no dropdown.
     }
     return savedCards; // Retornado quando o usuário não aplicar nenhum filtro.
 
@@ -154,7 +164,9 @@ class App extends React.Component {
       cardTrunfo,
       hasTrunfo,
       isSaveButtonDisabled,
+      savedCards,
       searchBoxData,
+      rarityFilter,
     } = this.state;
 
     return (
@@ -187,9 +199,10 @@ class App extends React.Component {
           <section id="savedCardsContainer">
             <Filters 
               searchBoxData={ searchBoxData } onInputChange={ this.onInputChange }
+              rarityFilter={ rarityFilter }
             />
             <div id="cardsDisplay">
-              { searchBoxData !== undefined 
+              { savedCards !== undefined 
                 && this.filtersFunction().map((cardInfo) => (
                 <div key={ cardInfo.cardName } id="eachDisplayedCard">
                   <Card

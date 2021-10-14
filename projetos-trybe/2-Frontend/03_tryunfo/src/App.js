@@ -134,7 +134,8 @@ class App extends React.Component {
     const { savedCards, searchBoxData } = this.state;
 
     if (searchBoxData.length >= 1) {
-      return savedCards.filter((cardInfo) => cardInfo.cardName.includes(searchBoxData)); // Retornado quando o usuário pesquisar por uma determinada carta na searchbox.
+      return savedCards.filter(({ cardName }) =>
+        cardName.toLowerCase().includes(searchBoxData.toLowerCase())); // Retornado quando o usuário pesquisar por uma determinada carta na searchbox.
     }
     return savedCards; // Retornado quando o usuário não aplicar nenhum filtro.
 

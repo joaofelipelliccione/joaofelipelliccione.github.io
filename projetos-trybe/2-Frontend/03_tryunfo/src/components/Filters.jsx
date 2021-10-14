@@ -30,4 +30,10 @@ class Filters extends Component {
   }
 }
 
+Filters.propTypes = {
+  onInputChange: PropTypes.func.isRequired,
+  searchBoxData: PropTypes.string.isRequired,
+  rarityFilter: PropTypes.string.isRequired,
+};
+
 export default Filters;

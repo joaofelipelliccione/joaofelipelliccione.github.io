@@ -28,6 +28,13 @@ class App extends React.Component {
     this.state = INITIAL_STATE;
   }
 
+  componentDidMount() {
+    const userSavedCards = localStorage.getItem('savedCards');
+    if (userSavedCards !== null) {
+      this.setState({ savedCards: JSON.parse(userSavedCards) });
+    }
+  }
+
   verifyAllInputs = () => { // Função que habilita o botão 'salvar', quando todos os campos do formulário forem preenchidos corretamente. Será chamada dentro da função onInputChange(), que é chamada dentro de escutadores do tipo 'onChange'.
     const {
       cardName,
@@ -111,7 +118,7 @@ class App extends React.Component {
       cardRare: 'Normal',
       cardTrunfo: false,
       isSaveButtonDisabled: true,
-    }));
+    }), () => localStorage.setItem('savedCards', JSON.stringify(this.state.savedCards))); // Salvando o estado 'savedCards', no Local Storage.
   }
 
   deleteDisplayedCard = ({ target }) => { // Função que possibilita a exclusão de uma carta criada anteriormente.
@@ -125,9 +132,9 @@ class App extends React.Component {
       this.setState({
         savedCards: newSC,
         hasTrunfo: false,
-      });
+      }, localStorage.setItem('savedCards', JSON.stringify(newSC))); // Salvando o estado 'savedCards', após a deleção, no Local Storage.
     }
-    this.setState({ savedCards: newSC });
+    this.setState({ savedCards: newSC }, localStorage.setItem('savedCards', JSON.stringify(newSC)));
     // OBS: Caso a carta 'Super Trunfo' seja excluída, além de atualizar o estado 'savedCards' com o novo array de objetos 'newSC', o estado 'hasTrunfo' voltará a ser igual a False. Isso é importante para que o usuário seja capaz de criar uma nova carta do tipo 'Super Trunfo'.
   }
 

@@ -221,7 +221,7 @@ main {
   flex-direction: column;
 }
 
-#filters {
+#filtersContainer {
   background-color: #2f6d53;
   display: flex;
   padding: 2%;

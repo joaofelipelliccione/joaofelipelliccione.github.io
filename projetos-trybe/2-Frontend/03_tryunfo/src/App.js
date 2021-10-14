@@ -18,6 +18,7 @@ const INITIAL_STATE = {
   hasTrunfo: false,
   isSaveButtonDisabled: true,
   savedCards: [],
+  searchBoxData: '',
 };
 
 class App extends React.Component {
@@ -129,6 +130,17 @@ class App extends React.Component {
     // OBS: Caso a carta 'Super Trunfo' seja excluída, além de atualizar o estado 'savedCards' com o novo array de objetos 'newSC', o estado 'hasTrunfo' voltará a ser igual a False. Isso é importante para que o usuário seja capaz de criar uma nova carta do tipo 'Super Trunfo'.
   }
 
+  filtersFunction = () => { // Tal função sempre retornará um array de objetos, que acumula informações de cada uma das cartas. Por outro lado, dependendo dos filtros aplicados pelo usuário, o respectivo array apresentará uma quantidade reduzida de objetos.
+    const { savedCards, searchBoxData } = this.state;
+
+    if (searchBoxData.length >= 1) {
+      return savedCards.filter((cardInfo) => cardInfo.cardName.includes(searchBoxData)); // Retornado quando o usuário pesquisar por uma determinada carta na searchbox.
+    }
+    return savedCards; // Retornado quando o usuário não aplicar nenhum filtro.
+
+    // OBS: A função filtersFunction() será chamada dentro da <div><div /> "cardsDisplay", acompanhada de um .map().
+  }
+
   render() {
     const {
       cardName,
@@ -141,7 +153,7 @@ class App extends React.Component {
       cardTrunfo,
       hasTrunfo,
       isSaveButtonDisabled,
-      savedCards,
+      searchBoxData,
     } = this.state;
 
     return (
@@ -172,9 +184,12 @@ class App extends React.Component {
             </div>
           </section>
           <section id="savedCardsContainer">
-            <Filters />
+            <Filters 
+              searchBoxData={ searchBoxData } onInputChange={ this.onInputChange }
+            />
             <div id="cardsDisplay">
-              { savedCards.map((cardInfo) => (
+              { searchBoxData !== undefined 
+                && this.filtersFunction().map((cardInfo) => (
                 <div key={ cardInfo.cardName } id="eachDisplayedCard">
                   <Card
                     cardName={ cardInfo.cardName } cardDescription={ cardInfo.cardDescription }

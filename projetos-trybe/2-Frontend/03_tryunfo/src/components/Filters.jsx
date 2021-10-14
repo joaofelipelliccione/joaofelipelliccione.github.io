@@ -3,9 +3,18 @@ import PropTypes from 'prop-types';
 
 class Filters extends Component {
   render() {
+    const { onInputChange, searchBoxData } = this.props;
+
     return(
-      <div id="filters">
-        <h3>Filtros</h3>
+      <div id="filtersContainer">
+        <input
+            id="searchBoxFilter"
+            data-testid="name-filter"
+            name="searchBoxData"
+            type="text"
+            value={ searchBoxData }
+            onChange={ onInputChange }
+          />
       </div>
     );
   }

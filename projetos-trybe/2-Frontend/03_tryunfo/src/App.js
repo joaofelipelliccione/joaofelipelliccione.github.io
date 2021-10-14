@@ -1,9 +1,12 @@
 import React from 'react';
+import Header from './components/Header';
 import Form from './components/Form';
+import Filters from './components/Filters';
 import Card from './components/Card';
+import Footer from './components/Footer';
 import './App.css';
 
-const INITIAL_STATE = { // Resolvi declarar o Estado da aplicação no respectivo arquivo pois os componentes filhos <Form /> e <Card /> também irão utilizá-los.
+const INITIAL_STATE = {
   cardName: '',
   cardDescription: '',
   cardAttr1: '0',
@@ -47,13 +50,13 @@ class App extends React.Component {
     && (Number(cardAttr2) >= attrMin && Number(cardAttr2) <= attrMax)
     && (Number(cardAttr3) >= attrMin && Number(cardAttr3) <= attrMax)
     && (attrSum <= attrSumMaxValue)) {
-      return this.setState(({
+      return this.setState({
         isSaveButtonDisabled: false,
-      }));
+      });
     }
-    return this.setState(({
+    return this.setState({
       isSaveButtonDisabled: true,
-    }));
+    });
   }
 
   onInputChange = ({ target }) => { // Função que altera o valor de qualquer estado, sempre que um input for realizado no elemento onde ela está sendo chamada. || OBS: Para que tal função funcione, os 'name' de cada um dos elementos do Forms devem ser iguais ao nome dos estados.
@@ -143,59 +146,41 @@ class App extends React.Component {
 
     return (
       <div className="app">
-        <header>
-          <h1>Tryufo</h1>
-        </header>
+        <Header />
         <main>
           <section id="cardDevelopmentContainer">
             <div id="formContainer">
               <h3>Estruturar Nova Carta</h3>
               <Form
-                cardName={ cardName }
-                cardDescription={ cardDescription }
-                cardAttr1={ cardAttr1 }
-                cardAttr2={ cardAttr2 }
-                cardAttr3={ cardAttr3 }
-                cardImage={ cardImage }
-                cardRare={ cardRare }
-                cardTrunfo={ cardTrunfo }
-                hasTrunfo={ hasTrunfo }
-                isSaveButtonDisabled={ isSaveButtonDisabled }
-                onInputChange={ this.onInputChange }
-                onCardTrunfoClick={ this.onCardTrunfoClick }
+                cardName={ cardName } cardDescription={ cardDescription }
+                cardAttr1={ cardAttr1 } cardAttr2={ cardAttr2 }
+                cardAttr3={ cardAttr3 } cardImage={ cardImage }
+                cardRare={ cardRare } cardTrunfo={ cardTrunfo }
+                hasTrunfo={ hasTrunfo } isSaveButtonDisabled={ isSaveButtonDisabled }
+                onInputChange={ this.onInputChange } onCardTrunfoClick={ this.onCardTrunfoClick }
                 onSaveButtonClick={ this.onSaveButtonClick }
               />
             </div>
             <div id="cardPreviewContainer">
               <h3>Preview da Nova Carta</h3>
               <Card
-                cardName={ cardName }
-                cardDescription={ cardDescription }
-                cardAttr1={ cardAttr1 }
-                cardAttr2={ cardAttr2 }
-                cardAttr3={ cardAttr3 }
-                cardImage={ cardImage }
-                cardRare={ cardRare }
-                cardTrunfo={ cardTrunfo }
+                cardName={ cardName } cardDescription={ cardDescription }
+                cardAttr1={ cardAttr1 } cardAttr2={ cardAttr2 }
+                cardAttr3={ cardAttr3 } cardImage={ cardImage }
+                cardRare={ cardRare } cardTrunfo={ cardTrunfo }
               />
             </div>
           </section>
           <section id="savedCardsContainer">
-            <div id="filters">
-              <h3>Filtros</h3>
-            </div>
+            <Filters />
             <div id="cardsDisplay">
               { savedCards.map((cardInfo) => (
                 <div key={ cardInfo.cardName } id="eachDisplayedCard">
                   <Card
-                    cardName={ cardInfo.cardName }
-                    cardDescription={ cardInfo.cardDescription }
-                    cardAttr1={ cardInfo.cardAttr1 }
-                    cardAttr2={ cardInfo.cardAttr2 }
-                    cardAttr3={ cardInfo.cardAttr3 }
-                    cardImage={ cardInfo.cardImage }
-                    cardRare={ cardInfo.cardRare }
-                    cardTrunfo={ cardInfo.cardTrunfo }
+                    cardName={ cardInfo.cardName } cardDescription={ cardInfo.cardDescription }
+                    cardAttr1={ cardInfo.cardAttr1 } cardAttr2={ cardInfo.cardAttr2 }
+                    cardAttr3={ cardInfo.cardAttr3 } cardImage={ cardInfo.cardImage }
+                    cardRare={ cardInfo.cardRare } cardTrunfo={ cardInfo.cardTrunfo }
                   />
                   <button
                     id={ cardInfo.cardName }
@@ -210,9 +195,7 @@ class App extends React.Component {
             </div>
           </section>
         </main>
-        <footer>
-          <h3>Developed By JF</h3>
-        </footer>
+          <Footer />
       </div>
     );
   }

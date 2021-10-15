@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/trybe_frontend_3-tryunfo/static/css/main.bc643fef.chunk.css",
+    "main.js": "/trybe_frontend_3-tryunfo/static/js/main.31be1b69.chunk.js",
+    "main.js.map": "/trybe_frontend_3-tryunfo/static/js/main.31be1b69.chunk.js.map",
+    "runtime-main.js": "/trybe_frontend_3-tryunfo/static/js/runtime-main.c1374f7f.js",
+    "runtime-main.js.map": "/trybe_frontend_3-tryunfo/static/js/runtime-main.c1374f7f.js.map",
+    "static/js/2.32bbb711.chunk.js": "/trybe_frontend_3-tryunfo/static/js/2.32bbb711.chunk.js",
+    "static/js/2.32bbb711.chunk.js.map": "/trybe_frontend_3-tryunfo/static/js/2.32bbb711.chunk.js.map",
+    "static/js/3.564fb09a.chunk.js": "/trybe_frontend_3-tryunfo/static/js/3.564fb09a.chunk.js",
+    "static/js/3.564fb09a.chunk.js.map": "/trybe_frontend_3-tryunfo/static/js/3.564fb09a.chunk.js.map",
+    "index.html": "/trybe_frontend_3-tryunfo/index.html",
+    "static/css/main.bc643fef.chunk.css.map": "/trybe_frontend_3-tryunfo/static/css/main.bc643fef.chunk.css.map",
+    "static/js/2.32bbb711.chunk.js.LICENSE.txt": "/trybe_frontend_3-tryunfo/static/js/2.32bbb711.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c1374f7f.js",
+    "static/js/2.32bbb711.chunk.js",
+    "static/css/main.bc643fef.chunk.css",
+    "static/js/main.31be1b69.chunk.js"
+  ]
+}

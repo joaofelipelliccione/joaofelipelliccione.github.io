@@ -4,7 +4,7 @@ class Header extends Component {
   render() {
     return(
       <header>
-        <h1>Tryufo</h1>
+        <h1>Super Trunfo Constructor</h1>
       </header>
     );
   }

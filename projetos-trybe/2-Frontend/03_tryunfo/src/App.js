@@ -30,8 +30,13 @@ class App extends React.Component {
 
   componentDidMount() {
     const userSavedCards = localStorage.getItem('savedCards');
+    const userHasTrunfo = localStorage.getItem('hasTrunfo');
+
     if (userSavedCards !== null) {
       this.setState({ savedCards: JSON.parse(userSavedCards) });
+    }
+    if (userSavedCards !== null) {
+      this.setState({ hasTrunfo: JSON.parse(userHasTrunfo) });
     }
   }
 
@@ -104,7 +109,7 @@ class App extends React.Component {
     };
 
     if (cardTrunfo === true) {
-      this.setState({ hasTrunfo: true });
+      this.setState({ hasTrunfo: true }, () => localStorage.setItem('hasTrunfo', true));
     }
 
     this.setState((prevState) => ({
@@ -132,7 +137,10 @@ class App extends React.Component {
       this.setState({
         savedCards: newSC,
         hasTrunfo: false,
-      }, localStorage.setItem('savedCards', JSON.stringify(newSC))); // Salvando o estado 'savedCards', após a deleção, no Local Storage.
+      }, () => {
+        localStorage.setItem('savedCards', JSON.stringify(newSC));
+        localStorage.setItem('hasTrunfo', false)
+      }); // Salvando o estado 'savedCards', após a deleção, no Local Storage.
     }
     this.setState({ savedCards: newSC }, localStorage.setItem('savedCards', JSON.stringify(newSC)));
     // OBS: Caso a carta 'Super Trunfo' seja excluída, além de atualizar o estado 'savedCards' com o novo array de objetos 'newSC', o estado 'hasTrunfo' voltará a ser igual a False. Isso é importante para que o usuário seja capaz de criar uma nova carta do tipo 'Super Trunfo'.
@@ -195,12 +203,14 @@ class App extends React.Component {
             </div>
             <div id="cardPreviewContainer">
               <h3>Preview da Nova Carta</h3>
-              <Card
-                cardName={ cardName } cardDescription={ cardDescription }
-                cardAttr1={ cardAttr1 } cardAttr2={ cardAttr2 }
-                cardAttr3={ cardAttr3 } cardImage={ cardImage }
-                cardRare={ cardRare } cardTrunfo={ cardTrunfo }
-              />
+              <div id="cardPrevOutsideBorder">
+                <Card
+                  cardName={ cardName } cardDescription={ cardDescription }
+                  cardAttr1={ cardAttr1 } cardAttr2={ cardAttr2 }
+                  cardAttr3={ cardAttr3 } cardImage={ cardImage }
+                  cardRare={ cardRare } cardTrunfo={ cardTrunfo }
+                />
+              </div>
             </div>
           </section>
           <section id="savedCardsContainer">
@@ -211,7 +221,7 @@ class App extends React.Component {
             <div id="cardsDisplay">
               { savedCards !== undefined 
                 && this.filtersFunction().map((cardInfo) => (
-                <div key={ cardInfo.cardName } id="eachDisplayedCard">
+                <div key={ cardInfo.cardName } className="eachDisplayedCard">
                   <Card
                     cardName={ cardInfo.cardName } cardDescription={ cardInfo.cardDescription }
                     cardAttr1={ cardInfo.cardAttr1 } cardAttr2={ cardInfo.cardAttr2 }
@@ -219,7 +229,7 @@ class App extends React.Component {
                     cardRare={ cardInfo.cardRare } cardTrunfo={ cardInfo.cardTrunfo }
                   />
                   <button
-                    id={ cardInfo.cardName }
+                    className="deleteBtn"
                     data-testid="delete-button"
                     type="button"
                     onClick={ this.deleteDisplayedCard }

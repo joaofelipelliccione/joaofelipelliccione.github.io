@@ -7,15 +7,15 @@ class Filters extends Component {
 
     return(
       <div id="filtersContainer">
+        <h4>Filtros</h4>
         <input
-            id="searchBoxFilter"
             name="searchBoxData"
             type="text"
             value={ searchBoxData }
             onChange={ onInputChange }
+            placeholder="Nome da carta..."
           />
           <select
-            id="raritySelectFilter"
             name="rarityFilter"
             value={ rarityFilter }
             onChange={ onInputChange }

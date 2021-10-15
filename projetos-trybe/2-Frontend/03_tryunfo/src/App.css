@@ -1,0 +1,381 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  font-family: 'Nunito', sans-serif;
+  font-size: 1em;
+}
+
+header {
+  background-color: #2f6d53;
+  display: flex;
+  justify-content: center;
+  padding: 0.5%;
+}
+
+header h1 {
+  color: ghostwhite;
+  font-size: 2em;
+  text-align: center;
+}
+
+main {
+  background-color: rgb(240, 225, 145);
+  display: flex;
+  flex-direction: column;
+}
+
+#cardDevelopmentContainer {
+  display: flex;
+  width: 100%;
+}
+
+#formContainer {
+  border-radius: -0 0 150px 0;
+  background-color: #e4e4e4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+}
+
+#formContainer h3 {
+  color: #5d959a;
+  font-size: 1.6em;
+  text-align: center;
+  width: fit-content;
+}
+
+#newCardForm {
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 45%;
+  margin: 0 0 4%;
+  padding: 2%;
+}
+
+.stdLabel {
+  color: #2f6d53;
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  font-size: 1.1em;
+  margin: 0 0 1% 0;
+  padding: 1%;
+}
+
+.attrLabel {
+  color: #2f6d53;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 70%;
+  font-size: 1.1em;
+  margin: 0 0 1% 0;
+  padding: 1%;
+}
+
+.checkBoxLabel {
+  color: #2f6d53;
+  display: flex;
+  justify-content: center;
+  width: 65%;
+  text-align: center;
+  font-size: 1.1em;
+  margin: 0 0 5% 0;
+  padding: 1%;
+}
+
+#newCardForm input[type = "text"] {
+  border: none;
+  border-radius: 4px;
+  border-bottom: solid 2px #2f6d53;
+  margin: 1.5% 0 0 0;
+  padding: 2%;
+}
+
+#newCardForm input[type = "text"]:focus {
+  background-color: #d5e6df;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  outline: none;
+}
+
+#newCardForm textarea {
+  border: none;
+  border-bottom: solid 2px #2f6d53;
+  border-radius: 4px;
+  margin: 1.5% 0 0 0;
+}
+
+#newCardForm textarea:focus {
+  background-color: #d5e6df;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  outline: none;
+}
+
+#newCardForm input[type = "number"] {
+  border: none;
+  border-radius: 4px;
+  border-bottom: solid 2px #2f6d53;
+  margin: 0 0 0 -10%;
+  padding: 1%;
+}
+
+#newCardForm input[type = "number"]:focus {
+  background-color: #d5e6df;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  outline: none;
+}
+
+#newCardForm select {
+  background-color: white;
+  border: none;
+  border-radius: 4px;
+  border-bottom: solid 2px #2f6d53;
+  margin: 1.5% 0 0 0;
+}
+
+#newCardForm select:focus {
+  background-color: #d5e6df;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  outline: none;
+}
+
+#newCardForm input[type = "checkbox"] {
+  width: 15px;
+  height: 15px;
+}
+
+#newCardForm input[type = "checkbox"]:checked {
+  background-color: #2f6d53;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  outline: none;
+}
+
+#save-button {
+  background-color: #2f6d53;
+  color: ghostwhite;
+  border: none;
+  border-radius: 8px;
+  width: 30%;
+  cursor: pointer;
+  font-size: 1em;
+  padding: 2.5%;
+  transition: 0.4s width ease-in-out;
+}
+
+#save-button:hover {
+  background-color: #99ceb8;
+  color: black;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  width: 45%;
+}
+
+#cardPreviewContainer {
+  background-color: #14342d;
+  border-radius: 150px 0 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+}
+
+#cardPreviewContainer h3 {
+  color: ghostwhite;
+  text-align: center;
+  width: fit-content;
+  font-size: 1.6em;
+  margin-top: 15%;
+}
+
+#cardPrevOutsideBorder {
+  background-color: #ccc9c9;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.5%;
+}
+
+#cardPreview {
+  background-image: linear-gradient(to bottom right, #aeaeaf, #43846e);
+  border: solid 4px gold;
+  border-radius: 0 30px 0 30px;
+  box-shadow: rgba(255, 255, 255, 0.24) 0px 3px 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 345px;
+  padding: 15px;
+}
+
+#cardPreview h4 {
+  background-color: #304d4b;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 5px;
+  color: ghostwhite;
+  font-size: 1.3em;
+  width: 100%;
+  text-align: end;
+  margin-top: -3px;
+  margin-bottom: 0;
+  padding: 3%;
+}
+
+#cardPreview img {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 5px;
+  height: 200px;
+  width: 100%;
+  margin-top: 5px;
+  margin-bottom: 0;
+}
+
+#cardDescription {
+  color: ghostwhite;
+  background-image: linear-gradient(to bottom right, #7ab39f, #57947f, #436967);
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  text-align: justify;
+  font-size: 0.9em;
+  line-height: 1.35;
+  width: 100%;
+  margin-top: 15px;
+  margin-bottom: 25px;
+  padding: 2%;
+}
+
+.attrs {
+  background-color: #6f7272;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  color: ghostwhite;
+  font-size: 0.9em;
+  padding: 2%;
+}
+
+#cardRarity {
+  color: gold;
+  font-size: 1.1em;
+  margin: 2% 0;
+}
+
+#filtersContainer {
+  background-color: #2f6d53;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 1%;
+}
+
+#filtersContainer h4 {
+  color: ghostwhite;
+  font-size: 2.3em;
+  text-align: center;
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+
+#filtersContainer input[type = "text"] {
+  border: none;
+  border-radius: 4px;
+  border-bottom: solid 2px #2f6d53;
+  width: 10%;
+  margin: -0.5% 0 1% 0;
+  padding: 0.5%;
+  transition: 0.4s width ease-in-out;
+}
+
+#filtersContainer input[type = "text"]:focus {
+  background-color: rgb(240, 225, 145);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  outline: none;
+  width: 15%;
+}
+
+#filtersContainer select {
+  border: none;
+  border-radius: 4px;
+  border-bottom: solid 2px #2f6d53;
+  width: 10%;
+  margin: -0.5% 0 1% 0;
+  padding: 0.5%;
+}
+
+#filtersContainer select:focus {
+  background-color: rgb(240, 225, 145);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  outline: none;
+}
+
+#savedCardsContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+#cardsDisplay {
+  background-color: #14342d;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding: 1%;
+}
+
+.eachDisplayedCard {
+  background-color: #ccc9c9;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1%;
+  padding: 0.5%;
+}
+
+.deleteBtn {
+  background-color: ghostwhite;
+  color: #2f6d53;
+  border: none;
+  border-radius: 5px;
+  align-self: center;
+  width: 30%;
+  cursor: pointer;
+  font-size: 1em;
+  margin: 4% 0 2%;
+  padding: 2%;
+  transition: 0.4s width ease-in-out;
+}
+
+.deleteBtn:hover {
+  background-color: rgb(221, 144, 144);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  color: black;
+  width: 45%;
+}
+
+footer {
+  background-color: #2f6d53;
+  display: flex;
+  justify-content: center;
+  padding: 2%;
+}
+
+footer span {
+  font-size: 1.5em;
+  text-align: center;
+}
+
+footer span a {
+  color: ghostwhite;
+  text-decoration: none;
+  font-weight: 700;
+  transition-duration: 0.4s;
+}
+
+footer span a:hover {
+  color: rgb(240, 225, 145);
+  font-size: 1.05em;
+}
+

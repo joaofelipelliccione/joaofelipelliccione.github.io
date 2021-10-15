@@ -9,14 +9,37 @@
 header {
   background-color: #2f6d53;
   display: flex;
-  justify-content: center;
+  justify-content:space-between;
   padding: 0.5%;
 }
 
 header h1 {
   color: ghostwhite;
+  align-self: center;
   font-size: 2em;
   text-align: center;
+  margin-left: 1%;
+}
+
+header button {
+  align-self:center;
+  background-color: rgb(240, 225, 145);
+  color: black;
+  border: none;
+  border-radius: 8px;
+  width: 10%;
+  cursor: pointer;
+  font-size: 1em;
+  margin-right: 1%;
+  padding: 0.5%;
+  transition: 0.4s width ease-in-out;
+}
+
+header button:hover {
+  background-color: #a6e0c8;
+  color: rgb(100, 98, 98);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  width: 15%;
 }
 
 main {
@@ -172,6 +195,25 @@ main {
   color: black;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   width: 45%;
+}
+
+#save-button:disabled {
+  background-color: rgba(170, 170, 170, 0.466);
+  color: ghostwhite;
+  border: none;
+  border-radius: 8px;
+  width: 30%;
+  font-size: 1em;
+  padding: 2.5%;
+  transition: 0.4s width ease-in-out;
+}
+
+#save-button:disabled:hover {
+  background-color: rgba(170, 170, 170, 0.466);
+  color: ghostwhite;
+  cursor: default;
+  box-shadow: none;
+  width: 30%;
 }
 
 #cardPreviewContainer {

@@ -354,3 +354,27 @@ main {
   color: black;
   width: 45%;
 }
+
+footer {
+  background-color: #2f6d53;
+  display: flex;
+  justify-content: center;
+  padding: 2%;
+}
+
+footer span {
+  font-size: 1.5em;
+  text-align: center;
+}
+
+footer span a {
+  color: ghostwhite;
+  text-decoration: none;
+  font-weight: 700;
+  transition-duration: 0.4s;
+}
+
+footer span a:hover {
+  color: rgb(240, 225, 145);
+  font-size: 1.05em;
+}

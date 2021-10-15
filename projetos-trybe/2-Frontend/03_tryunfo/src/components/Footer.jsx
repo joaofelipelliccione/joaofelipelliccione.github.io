@@ -4,7 +4,9 @@ class Footer extends Component {
   render() {
     return(
       <footer>
-        <h3>Developed By JF</h3>
+        <span>
+          Developed by <a href="https://github.com/joaofelipelliccione" rel="noopener noreferrer" target="_blank">João Felipe Pelliccione</a>
+        </span>
       </footer>
     );
   }

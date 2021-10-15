@@ -231,7 +231,6 @@ class App extends React.Component {
                   <button
                     id={ cardInfo.cardName }
                     className="deleteBtn"
-                    data-testid="delete-button"
                     type="button"
                     onClick={ this.deleteDisplayedCard }
                   >

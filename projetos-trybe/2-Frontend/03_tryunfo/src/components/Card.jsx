@@ -29,6 +29,8 @@ class Card extends Component {
         <br />
         <span className="attrs">{`3° Atributo......................... ${cardAttr3}`}</span>
         <br />
+        <span className="attrs">{`Total.......... ${Number(cardAttr1) + Number(cardAttr2) + Number(cardAttr3)}`}</span>
+        <br />
 
         <span id="cardRarity">{ `Raridade: ${cardRare}` }</span>
       </div>

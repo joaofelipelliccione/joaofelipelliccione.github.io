@@ -14,23 +14,23 @@ class Card extends Component {
       cardTrunfo,
     } = this.props;
 
-    const trunfoCard = <h4 data-testid="name-card">{ `🌟 ${ cardName }` }</h4>
-    const regularCard = <h4 data-testid="name-card">{ cardName }</h4>
+    const trunfoCard = <h4>{ `🌟 ${ cardName }` }</h4>
+    const regularCard = <h4>{ cardName }</h4>
 
     return (
       <div id="cardPreview">
         { cardTrunfo ? trunfoCard : regularCard }
-        <img data-testid="image-card" src={ cardImage } alt={ cardName } />
-        <p data-testid="description-card" id="cardDescription">{ cardDescription }</p>
+        <img src={ cardImage } alt={ cardName } />
+        <p id="cardDescription">{ cardDescription }</p>
 
-        <span data-testid="attr1-card" className="attrs">{`1° Atributo......................... ${cardAttr1}`}</span>
+        <span className="attrs">{`1° Atributo......................... ${cardAttr1}`}</span>
         <br />
-        <span data-testid="attr2-card" className="attrs">{`2° Atributo......................... ${cardAttr2}`}</span>
+        <span className="attrs">{`2° Atributo......................... ${cardAttr2}`}</span>
         <br />
-        <span data-testid="attr3-card" className="attrs">{`3° Atributo......................... ${cardAttr3}`}</span>
+        <span className="attrs">{`3° Atributo......................... ${cardAttr3}`}</span>
         <br />
 
-        <span data-testid="rare-card" id="cardRarity">{ `Raridade: ${cardRare}` }</span>
+        <span id="cardRarity">{ `Raridade: ${cardRare}` }</span>
       </div>
     );
   }

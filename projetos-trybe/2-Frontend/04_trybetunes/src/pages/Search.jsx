@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import Header from '../components/Header';
 import Loading from '../components/Loading';
 import searchAlbumsAPI from '../services/searchAlbumsAPI';
+import '../styles/Search.css';
 
 class Search extends React.Component {
   constructor() {
@@ -45,7 +46,7 @@ class Search extends React.Component {
     const numOfCharacters = 2;
 
     return (
-      <form>
+      <form id="searchArtistForm">
         <input
           id="searchBar"
           data-testid="search-artist-input"
@@ -56,12 +57,13 @@ class Search extends React.Component {
           placeholder="Nome do Artista"
         />
         <button
+          id="search-button"
           data-testid="search-artist-button"
           type="button"
           disabled={ userSearch.length < numOfCharacters } // O botão só será habilitado quando o estado 'username' tiver 3 caracteres ou mais.
           onClick={ this.onSearchClick }
         >
-          Pesquisar
+          🔎
         </button>
       </form>
     );
@@ -71,8 +73,8 @@ class Search extends React.Component {
     const { lastSearchedArtist, albuns } = this.state;
 
     return (
-      <div>
-        <h4>{`Resultado de álbuns de: ${lastSearchedArtist}`}</h4>
+      <div id="apiResultContainer2">
+        <h3>{`Retorno da pesquisa por: ${lastSearchedArtist}`}</h3>
         <div id="albunsContainer">
           {albuns.map(({ collectionId, artworkUrl100, collectionName, artistName }) => (
             <div id="eachAlbum" key={ collectionId }>
@@ -83,7 +85,7 @@ class Search extends React.Component {
                 to={ `/album/${collectionId}` }
                 data-testid={ `link-to-album-${collectionId}` }
               >
-                Ver Mais
+                Abrir Álbum
               </Link>
             </div>
           ))}
@@ -93,9 +95,9 @@ class Search extends React.Component {
   }
 
   displayWarning = () => ( // Função que retorna o elemento HTML a ser renderizado quando o artista pesquisado não é achado.
-    <section id="apiResultContainer">
+    <section id="apiResultContainer2">
       {}
-      <h4>Nenhum álbum foi encontrado</h4>
+      <h3>Nenhum álbum foi encontrado até agora...</h3>
     </section>
   );
 

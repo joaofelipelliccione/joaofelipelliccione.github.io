@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  font-family: 'Nunito', sans-serif;
+  font-size: 1em;
+}
+
+body {
+  background-color: #43b293;
+}
+
+#searchPageMain {
+  background-color: #43b293;
+  display: flex;
+  flex-direction: column;
+  margin-top: 5%;
+}
+
+#searchBarContainer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 0.5%;
+}
+
+#searchBarContainer span { /* loading... */
+  background-color: #e3e3e6;
+  border-radius: 7px;
+  width: 15%;
+  text-align: center;
+  font-size: 1em;
+  margin: 0.8% 42.5%;
+  padding: 1% 5%;
+}
+
+#searchArtistForm {
+  border-radius: 5px;
+  box-shadow: none;
+  display: flex;
+  flex-direction: row;
+  width: fit-content;
+  margin-bottom: 2%;
+  padding: 0 1%;
+}
+
+#searchArtistForm input[type = "text"] {
+  border: solid 1.5px #43b293;
+  border-radius: 4px;
+  font-size: 0.9em;
+  width: 500px;
+  margin-right: 5px;
+  padding: 0.5%;
+  transition: 0.4s width ease-in-out;
+}
+
+#searchArtistForm input[type = "text"]:focus {
+  background-color: #e4eeea;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  outline: none;
+  width: 550px;
+}
+
+#search-button {
+  background-color: #003BE5;
+  border: none;
+  border-radius: 5px;
+  width: 30px;
+  cursor: pointer;
+  font-size: 0.7em;
+  margin-left: 5px;
+  padding: 0.8%;
+  transition: 0.3s width ease-in-out;
+}
+
+#search-button:hover {
+  background-color: #3768fb;
+  color: black;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  width: 35px;
+}
+
+#search-button:disabled {
+  background-color: rgba(170, 170, 170, 0.466);
+  color: ghostwhite;
+  border: none;
+  border-radius: 8px;
+  width: 30px;
+  cursor: pointer;
+  font-size: 0.7em;
+  margin-left: 5px;
+  padding: 0.8%;
+  transition: 0.3s width ease-in-out;
+}
+
+#search-button:disabled:hover {
+  background-color: rgba(170, 170, 170, 0.466);
+  color: ghostwhite;
+  cursor: default;
+  box-shadow: none;
+  width: 30px;
+}
+
+#apiResultContainer {
+  width: 95%;
+  margin: 0 2.5%;
+}
+
+#apiResultContainer2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  margin: 0 5%;
+}
+
+#apiResultContainer2  h3 {
+  color: #E5E5E5;
+  font-size: 1.2em;
+  width: fit-content;
+  margin-top: 0;
+  margin-bottom: 3%;
+}
+
+#albunsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+#eachAlbum {
+  background-image: linear-gradient(to bottom right,ghostwhite, #a9b4a7, #6b756d);
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 150px;
+  margin-bottom: 1.5%;
+}
+
+#eachAlbum img {
+  border-radius: 8px 8px 0 0;
+  width: 100%;
+  margin-bottom: 0;
+}
+
+#eachAlbum p {
+  text-align: center;
+  font-size: 0.9em;
+  margin-top: 8px;
+  margin-bottom: 0;
+}
+
+#eachAlbum a {
+  background-color: #036B52;
+  color: white;
+  text-align: center;
+  font-size: 0.9em;
+  text-decoration: none;
+  width: 100%;
+  margin-top: 7%;
+  margin-bottom: 0;
+  flex-grow: 1;
+  transition-duration: 0.4s;
+}
+
+#eachAlbum a:hover {
+  background-color: #e3e3e6;
+  color: #2FC18C;
+  font-size: 0.95em;
+}

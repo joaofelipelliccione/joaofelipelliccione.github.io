@@ -2,6 +2,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Loading from './Loading';
 import { getUser } from '../services/userAPI';
+import logo from '../images/trybetunesLogoWhite.png'
+import '../styles/Header.css';
 
 class Header extends React.Component {
   constructor() {
@@ -33,14 +35,11 @@ class Header extends React.Component {
     const { loading, username } = this.state;
 
     // A mensagem "Carregando", contida no componente React de classe Loading, será renderizada quando o estado "loading" for true.
-    if (loading) {
-      return (<Loading />);
-    }
 
     return (
       <header data-testid="header-component">
         <div id="logoAndUserBar">
-          <h1>Logo Cabeçalho</h1>
+          <img src={logo} alt="trybetunes-logo" />
           <div data-testid="header-user-name">{username}</div>
         </div>
         <div id="linksBar">
@@ -48,6 +47,11 @@ class Header extends React.Component {
           <Link to="/favorites" data-testid="link-to-favorites">Favoritas</Link>
           <Link to="/profile" data-testid="link-to-profile">Perfil</Link>
         </div>
+        { loading &&
+          <div id="loadingContainer">
+            <Loading />
+          </div>
+        }
       </header>
     );
   }

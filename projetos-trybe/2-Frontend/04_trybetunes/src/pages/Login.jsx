@@ -2,6 +2,8 @@ import React from 'react';
 import { Redirect } from 'react-router-dom';
 import Loading from '../components/Loading';
 import { createUser } from '../services/userAPI';
+import logo from '../images/trybetunesLogo.png'
+import '../styles/Login.css';
 
 class Login extends React.Component {
   constructor() {
@@ -48,10 +50,10 @@ class Login extends React.Component {
     }
 
     return (
-      <div data-testid="page-login">
+      <main data-testid="page-login">
+        <img src={logo} alt="trybetunes-logo" />
         <form>
           <label htmlFor="login-name-input">
-            Insira seu nome:
             <input
               id="login-name-input"
               data-testid="login-name-input"
@@ -59,10 +61,12 @@ class Login extends React.Component {
               name="username"
               value={ username }
               onChange={ this.onInputChange }
+              placeholder="Nome"
             />
           </label>
           <br />
           <button
+            id="login-button"
             data-testid="login-submit-button"
             type="button"
             disabled={ username.length < numOfCharacters } // O botão só será habilitado quando o estado 'username' tiver 3 caracteres ou mais.
@@ -71,7 +75,7 @@ class Login extends React.Component {
             Entrar
           </button>
         </form>
-      </div>
+      </main>
     );
   }
 }

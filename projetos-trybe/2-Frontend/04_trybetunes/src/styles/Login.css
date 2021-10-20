@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  font-family: 'Nunito', sans-serif;
+  font-size: 1em;
+}
+
+body {
+  background-color: #43b293;
+}
+
+main {
+  background-color: ghostwhite;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 30%;
+  margin-top: 8%;
+  padding-bottom: 6%;
+}
+
+main img {
+  width: 150px;
+  margin-bottom: 2%;
+}
+
+form {
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4% 8%;
+}
+
+form label {
+  text-align: center;
+}
+
+form input[type = "text"] {
+  border: solid 1.5px #43b293;
+  border-radius: 4px;
+  font-size: 0.9em;
+  width: 85%;
+  padding: 2%;
+  transition: 0.4s width ease-in-out;
+}
+
+form input[type = "text"]:focus {
+  background-color: #e4eeea;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  outline: none;
+  width: 100%;
+}
+
+#login-button {
+  background-color: #43b293;
+  color: ghostwhite;
+  border: none;
+  border-radius: 5px;
+  width: 40%;
+  cursor: pointer;
+  font-size: 0.9em;
+  padding: 2.5%;
+  transition: 0.4s width ease-in-out;
+}
+
+#login-button:hover {
+  background-color: #99ceb8;
+  color: black;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  width: 55%;
+}
+
+#login-button:disabled {
+  background-color: rgba(170, 170, 170, 0.466);
+  color: ghostwhite;
+  border: none;
+  border-radius: 8px;
+  width: 30%;
+  font-size: 1em;
+  padding: 2.5%;
+  transition: 0.4s width ease-in-out;
+}
+
+#login-button:disabled:hover {
+  background-color: rgba(170, 170, 170, 0.466);
+  color: ghostwhite;
+  cursor: default;
+  box-shadow: none;
+  width: 30%;
+}

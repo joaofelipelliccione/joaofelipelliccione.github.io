@@ -1,0 +1,56 @@
+import React from 'react';
+import { Link } from 'react-router-dom';
+import Loading from './Loading';
+import { getUser } from '../services/userAPI';
+
+class Header extends React.Component {
+  constructor() {
+    super();
+
+    this.state = {
+      loading: false,
+      username: '',
+    };
+  }
+
+  componentDidMount() {
+    this.getUserInfo();
+  }
+
+  getUserInfo = async () => { // Engloba, entre outras coisas, a função assíncrona getUser(). Essa última, capta as informações do usuário no local storage. Por esse motivo, é importante que seja chamada assim que o componente for montado.
+    this.setState({ loading: true });
+
+    const response = await getUser();
+    const { name } = response;
+
+    this.setState({
+      loading: false,
+      username: name,
+    });
+  }
+
+  render() {
+    const { loading, username } = this.state;
+
+    // A mensagem "Carregando", contida no componente React de classe Loading, será renderizada quando o estado "loading" for true.
+    if (loading) {
+      return (<Loading />);
+    }
+
+    return (
+      <header data-testid="header-component">
+        <div id="logoAndUserBar">
+          <h1>Logo Cabeçalho</h1>
+          <div data-testid="header-user-name">{username}</div>
+        </div>
+        <div id="linksBar">
+          <Link to="/search" data-testid="link-to-search">Pesquisa</Link>
+          <Link to="/favorites" data-testid="link-to-favorites">Favoritas</Link>
+          <Link to="/profile" data-testid="link-to-profile">Perfil</Link>
+        </div>
+      </header>
+    );
+  }
+}
+
+export default Header;

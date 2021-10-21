@@ -25,14 +25,12 @@ body {
   margin-bottom: 0.5%;
 }
 
-#searchBarContainer span { /* loading... */
+#searchBarContainer span { /* Carregando... */
   background-color: #e3e3e6;
   border-radius: 7px;
-  width: 15%;
+  width: 13%;
   text-align: center;
   font-size: 1em;
-  margin: 0.8% 42.5%;
-  padding: 1% 5%;
 }
 
 #searchArtistForm {
@@ -156,7 +154,10 @@ body {
 #eachAlbum a {
   background-color: #036B52;
   color: white;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
   font-size: 0.9em;
   text-decoration: none;
   width: 100%;

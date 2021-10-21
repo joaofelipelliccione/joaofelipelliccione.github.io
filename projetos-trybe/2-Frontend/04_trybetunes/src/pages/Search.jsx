@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Header from '../components/Header';
-import Loading from '../components/Loading';
 import searchAlbumsAPI from '../services/searchAlbumsAPI';
 import '../styles/Search.css';
 
@@ -41,6 +40,11 @@ class Search extends React.Component {
     });
   }
 
+  searchWithEnter = (e) => { // Permite pesquisar pressionando a tecla Enter.
+    e.preventDefault();
+    this.onSearchClick();
+  }
+
   displaySearchBar = () => { // Função que retorna os elementos HTML para que o usuário consiga pesquisar um determinado artista.
     const { userSearch } = this.state;
     const numOfCharacters = 2;
@@ -54,6 +58,7 @@ class Search extends React.Component {
           name="userSearch"
           value={ userSearch }
           onChange={ this.onInputChange }
+          onKeyPress={ (event) => event.key === 'Enter' && this.searchWithEnter(event) }
           placeholder="Nome do Artista"
         />
         <button
@@ -85,7 +90,7 @@ class Search extends React.Component {
                 to={ `/album/${collectionId}` }
                 data-testid={ `link-to-album-${collectionId}` }
               >
-                Abrir Álbum
+                <span>Abrir Álbum</span>
               </Link>
             </div>
           ))}
@@ -109,7 +114,7 @@ class Search extends React.Component {
         <Header />
         <main id="searchPageMain">
           <section id="searchBarContainer">
-            { loading ? <Loading /> : this.displaySearchBar() }
+            { loading ? <span>Carregando...</span> : this.displaySearchBar() }
           </section>
           <section id="apiResultContainer">
             { albuns.length > 0 ? this.displayAlbuns() : this.displayWarning() }

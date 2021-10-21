@@ -1,6 +1,7 @@
 import React from 'react';
 import { Redirect } from 'react-router-dom';
 import Loading from '../components/Loading';
+import Footer from '../components/Footer';
 import { createUser } from '../services/userAPI';
 import logo from '../images/trybetunesLogo.png'
 import '../styles/Login.css';
@@ -35,6 +36,11 @@ class Login extends React.Component {
     });
   }
 
+  registerWithEnter = (e) => { // Permite fazer o login pressionando a tecla Enter.
+    e.preventDefault();
+    this.onRegisterClick();
+  }
+
   render() {
     const { username, loading, redirectToSearch } = this.state;
     const numOfCharacters = 3; // O React pede para que declare uma constante, ao invés de utilizar o número na condicional.
@@ -50,32 +56,36 @@ class Login extends React.Component {
     }
 
     return (
-      <main data-testid="page-login">
-        <img src={logo} alt="trybetunes-logo" />
-        <form>
-          <label htmlFor="login-name-input">
-            <input
-              id="login-name-input"
-              data-testid="login-name-input"
-              type="text"
-              name="username"
-              value={ username }
-              onChange={ this.onInputChange }
-              placeholder="Nome"
-            />
-          </label>
-          <br />
-          <button
-            id="login-button"
-            data-testid="login-submit-button"
-            type="button"
-            disabled={ username.length < numOfCharacters } // O botão só será habilitado quando o estado 'username' tiver 3 caracteres ou mais.
-            onClick={ this.onRegisterClick }
-          >
-            Entrar
-          </button>
-        </form>
-      </main>
+      <div>
+        <main data-testid="page-login">
+          <img src={logo} alt="trybetunes-logo" />
+          <form>
+            <label htmlFor="login-name-input">
+              <input
+                id="login-name-input"
+                data-testid="login-name-input"
+                type="text"
+                name="username"
+                value={ username }
+                onChange={ this.onInputChange }
+                onKeyPress={ (event) => event.key === 'Enter' && this.registerWithEnter(event) }
+                placeholder="Nome"
+              />
+            </label>
+            <br />
+            <button
+              id="login-button"
+              data-testid="login-submit-button"
+              type="button"
+              disabled={ username.length < numOfCharacters } // O botão só será habilitado quando o estado 'username' tiver 3 caracteres ou mais.
+              onClick={ this.onRegisterClick }
+            >
+              Entrar
+            </button>
+          </form>
+        </main>
+        <Footer />
+      </div>
     );
   }
 }

@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  font-family: 'Nunito', sans-serif;
+  font-size: 1em;
+}
+
+#profilePageMain {
+  background-color: ghostwhite;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  width: 80%;
+  margin: 5% 10%;
+  padding: 1.5%;
+}
+
+#profilePageMsg {
+  font-size: 1.1em;
+  color: #474b54;
+  width: fit-content;
+  margin-top: 0;
+}
+
+#profilePageIllust {
+  width: 500px;
+  margin-bottom: 0;
+}

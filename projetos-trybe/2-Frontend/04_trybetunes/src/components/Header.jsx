@@ -39,7 +39,7 @@ class Header extends React.Component {
       <header data-testid="header-component">
         <div id="logoAndUserBar">
           <img src={logo} alt="trybetunes-logo" />
-          <div data-testid="header-user-name">{username}</div>
+          <Link to='/' data-testid="header-user-name">Sair</Link>
         </div>
         <div id="linksBar">
           <Link to="/search" data-testid="link-to-search">Pesquisa</Link>

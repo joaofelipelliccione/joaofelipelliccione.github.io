@@ -1,12 +1,44 @@
 import React from 'react';
 import Header from '../components/Header';
+import { getUser } from '../services/userAPI'
+import illustration from '../images/ilustracaoProfile.svg'
+import '../styles/Profile.css';
 
 class Profile extends React.Component {
+  constructor() {
+    super();
+
+    this.state = {
+      loading: false,
+      userInfo: {},
+    }
+  }
+
+  componentDidMount() {
+    this.getUserInfo();
+  }
+
+  getUserInfo = async () => {
+    this.setState({ loading: true });
+
+    const response = await getUser();
+
+    this.setState({
+      loading: false,
+      userInfo: response,
+    });
+  }
+
   render() {
+    const { loading, userInfo: { name } } = this.state;
+
     return (
-      <div data-testid="page-profile">
+      <div id="profilePage" data-testid="page-profile">
         <Header />
-        Página do Perfil.
+        <main id="profilePageMain">
+          { !loading && <h3 id="profilePageMsg">{`${name}, tudo certo com sua conta! Aproveite o Trybe Tunes!`}</h3> }
+          { !loading && <img src={illustration} alt="Ilustração SVG" id="profilePageIllust" /> }
+        </main>
       </div>
     );
   }

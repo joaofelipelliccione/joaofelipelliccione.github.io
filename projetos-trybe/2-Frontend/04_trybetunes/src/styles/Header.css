@@ -25,13 +25,23 @@ header {
   margin-left: 2%;
 }
 
-#logoAndUserBar div {
+#logoAndUserBar a {
   background-color: ghostwhite;
+  color: #42464f;
   border-radius: 15px;
-  font-size: 0.8em;
+  width: 70px;
+  font-size: 0.85em;
+  text-align: center;
+  text-decoration: none;
   margin-top: 25px;
   margin-right: 2%;
   padding: 0.5% 2%;
+  transition: 0.3s width ease-in-out;
+}
+
+#logoAndUserBar a:hover {
+  color: rgb(182, 69, 69);
+  width: 85px;
 }
 
 #linksBar {

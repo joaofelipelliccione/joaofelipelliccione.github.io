@@ -31,7 +31,7 @@ class Header extends React.Component {
   }
 
   render() {
-    const { loading, username } = this.state;
+    const { loading } = this.state;
 
     // A mensagem "Carregando", contida no componente React de classe Loading, será renderizada quando o estado "loading" for true.
 

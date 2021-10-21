@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import Header from '../components/Header';
 import getMusics from '../services/musicsAPI';
 import MusicCard from '../components/MusicCard';
+import '../styles/Album.css';
 
 class Album extends React.Component {
   constructor() {
@@ -33,10 +34,10 @@ class Album extends React.Component {
   render() {
     const { musics, albumImg, albumName, artist } = this.state;
     return (
-      <div data-testid="page-album">
+      <div id="page-album" data-testid="page-album">
         <Header />
-        <main>
-          <section className="albumInfoContainer">
+        <main id="albumPageMain">
+          <section id="albumInfoContainer">
             <img src={ albumImg } alt={ albumName } />
             <h4 data-testid="album-name">{ albumName }</h4>
             <p data-testid="artist-name">{ artist }</p>

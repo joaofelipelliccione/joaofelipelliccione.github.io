@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  font-family: 'Nunito', sans-serif;
+  font-size: 1em;
+}
+
+#page-album {
+  background-color: #43b293;
+  display: flex;
+  flex-direction: column;
+}
+
+#albumPageMain {
+  background-color: #43b293;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 85%;
+  margin: 5% 7.5%;
+  padding: 2%;
+}
+
+#albumInfoContainer {
+  background-image: linear-gradient(to bottom right,ghostwhite, #a9b4a7, #6b756d);
+  border-radius: 8px 8px 0 0;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 180px;
+  padding-bottom: 5px;
+}
+
+#albumInfoContainer img {
+  border-radius: 8px 8px 0 0;
+  width: 100%;
+  margin-bottom: 0;
+}
+
+#albumInfoContainer h4 {
+  text-align: center;
+  font-size: 1em;
+  margin-top: 5px;
+  margin-bottom: 0;
+  padding: 1%;
+}
+
+#albumInfoContainer p {
+  text-align: center;
+  font-size: 0.9em;
+  margin-top: 5px;
+  margin-bottom: 0;
+  padding: 1%;
+}
+
+#tracksListContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: auto;
+  height: 400px;
+  width: 60%;
+}
+
+#tracksListContainer::-webkit-scrollbar {
+  width: 5px;
+}
+
+#tracksListContainer::-webkit-scrollbar-track {
+  background: #73e2c2; 
+}
+
+#tracksListContainer::-webkit-scrollbar-thumb {
+  background: #193937; 
+}
+
+#tracksListContainer::-webkit-scrollbar-thumb:hover {
+  background: ghostwhite; 
+}

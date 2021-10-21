@@ -18,7 +18,7 @@ class Profile extends React.Component {
     this.getUserInfo();
   }
 
-  getUserInfo = async () => {
+  getUserInfo = async () => { // Engloba, entre outras coisas, a função assíncrona getUser(). Essa última, capta as informações do usuário no local storage. Por esse motivo, é importante que seja chamada assim que o componente for montado.
     this.setState({ loading: true });
 
     const response = await getUser();

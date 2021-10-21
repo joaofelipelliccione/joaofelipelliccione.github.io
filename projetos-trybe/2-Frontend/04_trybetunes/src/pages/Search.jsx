@@ -59,7 +59,7 @@ class Search extends React.Component {
           value={ userSearch }
           onChange={ this.onInputChange }
           onKeyPress={ (event) => event.key === 'Enter' && this.searchWithEnter(event) }
-          placeholder="Nome do Artista"
+          placeholder="Nome do Artista ou do Álbum"
         />
         <button
           id="search-button"

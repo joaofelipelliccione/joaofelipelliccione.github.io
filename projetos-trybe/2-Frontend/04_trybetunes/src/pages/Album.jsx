@@ -39,7 +39,7 @@ class Album extends React.Component {
         <main id="albumPageMain">
           <section id="albumInfoContainer">
             <img src={ albumImg } alt={ albumName } />
-            <h data-testid="album-name">{ albumName }</h>
+            <h4 data-testid="album-name">{ albumName }</h4>
             <p data-testid="artist-name">{ artist }</p>
           </section>
           <section id="tracksListContainer">

@@ -2,6 +2,7 @@ import React from 'react';
 import Header from '../components/Header';
 import MusicCard from '../components/MusicCard';
 import { getFavoriteSongs } from '../services/favoriteSongsAPI';
+import '../styles/Favorites.css';
 
 class Favorites extends React.Component {
   constructor() {
@@ -32,13 +33,13 @@ class Favorites extends React.Component {
     const { favoriteSongs } = this.state;
 
     return (
-      <div data-testid="page-favorites">
+      <div id="page-favorites" data-testid="page-favorites">
         <Header />
-        <main>
+        <main id="favoritesPageMain">
           {favoriteSongs.map((microObj) => (
             <div key={ microObj.trackId } className="eachFavTrack">
-              <img src={ microObj.artworkUrl30 } alt={ microObj.collectionName } />
-              <p>{ microObj.artistName }</p>
+              <img src={ microObj.artworkUrl60 } alt={ microObj.collectionName } />
+              <span id="artistNameFav" >{ microObj.artistName }</span>
               <MusicCard trackInfo={ microObj } key={ microObj.trackId } />
             </div>
           ))}

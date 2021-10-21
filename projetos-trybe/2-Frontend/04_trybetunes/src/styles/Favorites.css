@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  font-family: 'Nunito', sans-serif;
+  font-size: 1em;
+}
+
+#page-favorites {
+  background-color: #43b293;
+  display: flex;
+  flex-direction: column;
+}
+
+#favoritesPageMain {
+  background-color: #43b293;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  display: flex;
+  flex-direction: column;
+  width: 85%;
+  height: 400px;
+  overflow: auto;
+  margin: 5% 7.5%;
+  padding: 20px 0;
+}
+
+#favoritesPageMain::-webkit-scrollbar {
+  width: 5px;
+}
+
+#favoritesPageMain::-webkit-scrollbar-track {
+  background: #73e2c2; 
+}
+
+#favoritesPageMain::-webkit-scrollbar-thumb {
+  background: #193937; 
+}
+
+#favoritesPageMain::-webkit-scrollbar-thumb:hover {
+  background: ghostwhite; 
+}
+
+.eachFavTrack {
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 85%;
+  margin-bottom: 15px;
+  padding: 5px 10px;
+}
+
+.eachFavTrack img {
+  border-radius: 50px;
+  width: 45px;
+  height: 45px;
+  align-self: center;
+  margin-top: 13px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+#artistNameFav {
+  align-self: center;
+  text-align: center;
+  font-size: 0.9em;
+  width: 130px;
+  margin-right: 10px;
+}

@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Loading from './Loading';
 import { getUser } from '../services/userAPI';
 import logo from '../images/trybetunesLogoWhite.png'
 import '../styles/Header.css';
@@ -49,7 +48,7 @@ class Header extends React.Component {
         </div>
         { loading &&
           <div id="loadingContainer">
-            <Loading />
+            <span>Carregando...</span>
           </div>
         }
       </header>

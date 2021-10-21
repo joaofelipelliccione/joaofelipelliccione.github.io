@@ -1,6 +1,5 @@
 import React from 'react';
 import { Redirect } from 'react-router-dom';
-import Loading from '../components/Loading';
 import Footer from '../components/Footer';
 import { createUser } from '../services/userAPI';
 import logo from '../images/trybetunesLogo.png'
@@ -47,7 +46,7 @@ class Login extends React.Component {
 
     // A mensagem "Carregando", contida no componente React de classe Loading, será renderizada quando o estado "loading" for true.
     if (loading) {
-      return (<Loading />);
+      return (<span id="enteringMessage">Entrando...</span>);
     }
 
     // O usuário será redirecionado para o path "/search" após se cadastrar na plataforma, ou seja, quando o estado "redirectToSearch" for true.

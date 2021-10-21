@@ -1,0 +1,18 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Nunito', sans-serif;
+  font-size: 1em;
+}
+
+#notFoundPage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#notFoundImg {
+  border-radius: 15px;
+  width: 400px;
+  align-self: center;
+  margin-top: 5%;
+}

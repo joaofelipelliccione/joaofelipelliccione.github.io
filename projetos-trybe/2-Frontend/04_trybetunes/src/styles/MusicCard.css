@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&display=swap');
+
+.eachTrack {
+  border-top: 1.5px solid #193937;
+  display: flex;
+  justify-content: space-evenly;
+  width: 520px;
+  margin-bottom: 5px;
+  padding: 5px;
+}
+
+.eachTrack p {
+  color: #F0F2F5;
+  width: 120px;
+  font-size: 0.9em;
+  text-align: center;
+}
+
+.eachTrack audio {
+  background-color: #43b293;
+  align-self: center;
+  height: 21px;
+  margin: 0 5px;
+}
+
+.eachTrack audio::-webkit-media-controls-panel {
+  background-color: #d3d4d6;
+  align-self: center;
+}
+
+.eachTrack label {
+  background-color: #43b293;
+  align-self: center;
+  text-align: center;
+  font-size: 0.9em;
+  width: fit-content;
+}
+
+.eachTrack input[type = "checkbox"] {
+  font-size: 0.5em;
+  margin-top: 5px;
+}
+
+.eachTrack span { /*... */
+  color: #F0F2F5;
+  font-weight: 600;
+  align-self: center;
+  width: fit-content;
+  text-align: center;
+  font-size: 0.9em;
+  padding: 0;
+}

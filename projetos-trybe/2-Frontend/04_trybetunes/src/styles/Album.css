@@ -19,8 +19,8 @@
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  width: 85%;
-  margin: 5% 7.5%;
+  width: 90%;
+  margin: 5% 5%;
   padding: 2%;
 }
 
@@ -63,7 +63,7 @@
   align-items: center;
   overflow: auto;
   height: 400px;
-  width: 60%;
+  width: 70%;
 }
 
 #tracksListContainer::-webkit-scrollbar {

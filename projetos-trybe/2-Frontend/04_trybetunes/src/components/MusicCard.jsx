@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Loading from './Loading';
 import { addSong, removeSong, getFavoriteSongs } from '../services/favoriteSongsAPI';
+import '../styles/MusicCard.css';
 
 class MusicCard extends React.Component { // É chamado dentro de <Album /> e <Favorites />.
   constructor() {
@@ -50,14 +50,13 @@ class MusicCard extends React.Component { // É chamado dentro de <Album /> e <F
     return (
       <div className="eachTrack">
         <p>{trackName}</p>
-        {loading && <Loading />}
         <audio data-testid="audio-component" src={ previewUrl } controls>
           <track kind="captions" />
           O seu navegador não suporta o elemento
           <code>audio</code>
         </audio>
         <label htmlFor={ trackId }>
-          Favorita
+          ❤️
           <input
             id={ trackId }
             data-testid={ `checkbox-music-${trackId}` }
@@ -67,6 +66,7 @@ class MusicCard extends React.Component { // É chamado dentro de <Album /> e <F
             checked={ favoriteSongs.some((microObj) => microObj.trackId === trackId) } // Se a 'trackId' do momento for encontrada na lista de favoritas, o checkbox será marcado (true).
           />
         </label>
+        {loading && <span>...</span>}
       </div>
     );
   }

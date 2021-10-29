@@ -4,7 +4,7 @@ Este diretório contém todas as atividades de aprendizagem desenvolvidas por _[
 
 _"A Trybe é uma escola do futuro para qualquer pessoa que queira melhorar de vida e construir uma carreira de sucesso em tecnologia, onde a pessoa só paga quando conseguir um bom trabalho."_
 
-O programa conta com mais de 1.500 horas de aulas online e aborda introdução ao desenvolvimento de software, front-end, back-end, ciência da computação, engenharia de software, metodologias ágeis e habilidades comportamentais.
+O programa conta com mais de 1.500 horas de online e aborda introdução ao desenvolvimento de software, front-end, back-end, ciência da computação, engenharia de software, metodologias ágeis e habilidades comportamentais.
 
 Abaixo, é possível encontrar a grade curricular do respectivo curso, que terminará em meados de 2022!
 
@@ -106,19 +106,19 @@ Abaixo, é possível encontrar a grade curricular do respectivo curso, que termi
 
 ##### Bloco 13: Ciclo de Vida de Componentes e React Router
 
-- [ ] 13-1: _Ciclo de vida de componentes em React_
-- [ ] 13-2: _React Router_
-- [ ] 13-3: _[Projeto - Trybetunes]()_
+- [x] 13-1: _Ciclo de vida de componentes em React_
+- [x] 13-2: _React Router_
+- [x] 13-3: _[Projeto - Trybetunes](https://joaofelipelliccione.github.io/trybe_frontend_4-trybetunes/)_
 
 ##### Bloco 14: Metodologias Ágeis
 
-- [ ] 14-1: _Metodologias Ágeis_
-- [ ] 14-2: _[Projeto - Frontend Online Store]()_
+- [x] 14-1: _Metodologias Ágeis_
+- [x] 14-2: _Projeto em Grupo_
 
 ##### Bloco 15: Testes automatizados com React Testing Library
 
-- [ ] 15-1: _React Testing Library - Primeiros Passos_
-- [ ] 15-2: _React Testing Library - Mocks e Inputs_
+- [x] 15-1: _React Testing Library - Primeiros Passos_
+- [x] 15-2: _React Testing Library - Mocks e Inputs_
 - [ ] 15-3: _React Testing Library - Testando React Router_
 - [ ] 15-4: _[Projeto - Testes em React]()_
 

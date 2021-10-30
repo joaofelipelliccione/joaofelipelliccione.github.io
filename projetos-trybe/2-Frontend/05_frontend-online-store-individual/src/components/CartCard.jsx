@@ -42,13 +42,17 @@ class CartCard extends React.Component {
     localStorage.setItem("purchaseTotalValue", JSON.stringify(total));
   }
 
-  addItem = ({ target }) => { // Função que atualiza, no local storage, as chaves "userCart", "totalItemsOnCart" e "purchaseTotalValue" quando o usuário aumenta o número de unidades que deseja comprar, do produto.
+  addItem = ({ target }) => { // Função que atualiza, no local storage, as chaves "userCart", "totalItemsOnCart" e "purchaseTotalValue" quando o usuário aumenta o número de unidades que deseja comprar, do produto. A chave "productQuant", do estado, também é atualizada com a nova quantidade.
     const userCartFromLocSt = JSON.parse(localStorage.getItem("userCart"));
 
     userCartFromLocSt.forEach((microObj) => {
       if (microObj.productId === target.id) {
-        microObj.quantity += 1;
-        microObj.totalValue = microObj.price * microObj.quantity;
+        if (microObj.quantity < microObj.availableQuantity) { // Condicional que limita o número de unidades dependendo de quantas estão disponíveis em estoque.
+          microObj.quantity += 1;
+          microObj.totalValue = microObj.price * microObj.quantity;
+        } else {
+          window.alert(`Sentimos muito, só temos ${microObj.availableQuantity} unidades disponíveis em estoque.`)
+        }
       }
     });
 
@@ -58,10 +62,10 @@ class CartCard extends React.Component {
     localStorage.setItem("userCart", JSON.stringify(userCartFromLocSt));
     this.itemsOnCartCalculator()
     this.purchaseTVCalculator();
-    window.location.reload();
+    window.location.reload(); // Necessário para que o cabeçalho mostre a quantidade e o valor total da compra, a cada nova adição.
   }
 
-  subItem = ({ target }) => { // Função que atualiza, no local storage, as chaves "userCart", "totalItemsOnCart" e "purchaseTotalValue" quando o usuário reduz o número de unidades que deseja comprar, do produto.
+  subItem = ({ target }) => { // Função que atualiza, no local storage, as chaves "userCart", "totalItemsOnCart" e "purchaseTotalValue" quando o usuário reduz o número de unidades que deseja comprar, do produto. A chave "productQuant", do estado, também é atualizada com a nova quantidade.
     const userCartFromLocSt = JSON.parse(localStorage.getItem("userCart"));
 
     userCartFromLocSt.forEach((microObj) => {
@@ -78,7 +82,7 @@ class CartCard extends React.Component {
       localStorage.setItem("userCart", JSON.stringify(userCartFromLocSt));
       this.itemsOnCartCalculator();
       this.purchaseTVCalculator();
-      window.location.reload();
+      window.location.reload(); // Necessário para que o cabeçalho mostre a quantidade e o valor total da compra, a cada nova subtração..
     }
   }
 

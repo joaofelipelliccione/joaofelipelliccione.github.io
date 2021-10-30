@@ -26,7 +26,7 @@ class Home extends React.Component {
       localStorage.setItem('userCart', JSON.stringify([]));
       localStorage.setItem('totalItemsOnCart', JSON.stringify(0));
       localStorage.setItem('purchaseTotalValue', JSON.stringify(0));
-    } 
+    }
   }
 
   componentDidMount() {
@@ -51,7 +51,7 @@ class Home extends React.Component {
       didSearch: true,
       results: response.results,
       loading: false,
-    });
+    }, () => localStorage.setItem("searchResults", JSON.stringify(this.state.results)));
   }
 
   onInputChange = ({ target }) => { // Função que altera o estado 'userSearchedItem', no momento que o usuário realiza uma busca. Será chamada no onChange de #searchBar.
@@ -66,7 +66,11 @@ class Home extends React.Component {
     this.setState({ loading: true, categoryId: target.id });
 
     const response = await getProductsFromCategoryAndQuery(target.id, userSearchedItem);
-    this.setState({ results: response.results, didSearch: true, loading: false });
+    this.setState(
+      { results: response.results,
+        didSearch: true,
+        loading: false,
+      }, () => localStorage.setItem("searchResults", JSON.stringify(this.state.results)));
   }
 
   setLocStOnAddToCart = (updatedCartItems) => { // Função que aloca, no local storage, importantes informações, sempre que um novo item for adicionado ao carrinho. É chamada dentro da addToCart() abaixo, após a atualização do estado cuja key é "cartItems".
@@ -146,6 +150,7 @@ class Home extends React.Component {
                     title={ item.title }
                     thumbnail={ item.thumbnail }
                     price={ item.price }
+                    availableQuantity={ item.available_quantity }
                     address={ item.address }
                     productIndex={ index }
                     addToCart={ this.addToCart }

@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 class Card extends React.Component {
   render() {
-    const { productId, title, thumbnail, price, address, productIndex, addToCart } = this.props;
+    const { productId, title, thumbnail, price, availableQuantity, address, productIndex, addToCart } = this.props;
 
     return (
       <div className="cardContainer2">
@@ -12,12 +12,13 @@ class Card extends React.Component {
           to={ {
             pathname: `/products/${productId}`, // É importante pontuar que, cada Card, possui sua própria página ProductDetails, cuja URL será /products/Id-do-item-clicado.
             state: { // A página ProductDetails, que é um componente, recebe informações (title, thumbnail, price...) referentes ao produto. Essas informações são passadas via <Link /> e encontradas em "const { location: { state: { title, thumbnail, price, idItem } } } = this.props".
+              productId,
               title,
               thumbnail,
               price,
+              availableQuantity,
               address,
               productIndex,
-              productId,
             },
           } }
           data-testid="product-detail-link"
@@ -43,10 +44,11 @@ class Card extends React.Component {
 }
 
 Card.propTypes = {
+  productId: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
   thumbnail: PropTypes.string.isRequired,
   price: PropTypes.number.isRequired,
-  productId: PropTypes.string.isRequired,
+  availableQuantity: PropTypes.number.isRequired,
   productIndex: PropTypes.number.isRequired,
   addToCart: PropTypes.func.isRequired,
 };

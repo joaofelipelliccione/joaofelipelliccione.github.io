@@ -1,7 +1,7 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import Review from '../components/Review';
+import Header from '../components/Header';
 
 class ProductDetails extends React.Component {
   constructor(props) {
@@ -14,7 +14,7 @@ class ProductDetails extends React.Component {
   }
 
   componentDidMount() {
-    this.insertResults();
+    this.insertItensInTheCart();
   }
 
   componentWillUnmount() {
@@ -22,9 +22,9 @@ class ProductDetails extends React.Component {
     localStorage.setItem('userCart', JSON.stringify(cartItems));
   }
 
-  insertResults = () => {
-    const results = JSON.parse(localStorage.getItem('results'));
-    this.setState({ results });
+  insertItensInTheCart = () => { // Função que capta os itens do carrinho salvos no local storage, sempre que a página Cart for montada.
+    const cartItems = JSON.parse(localStorage.getItem('userCart'));
+    this.setState({ cartItems });
   }
 
   addToCart = ({ target }) => {
@@ -47,15 +47,16 @@ class ProductDetails extends React.Component {
     const { location: { state: { title, thumbnail, price, productIndex, productId } } } = this.props;
     const { match } = this.props;
     const { id } = match.params;
+    const { cartItems } = this.state;
+
     return (
       <div>
-        <Link to="/">Voltar</Link>
+        <Header cartItems={ cartItems } />
         <div>
           <h3 data-testid="product-detail-name">{title}</h3>
           <img src={ thumbnail } alt={ title } />
           <span>{price}</span>
         </div>
-        <Link to="/cart" data-testid="shopping-cart-button">Carrinho</Link>
         <button
           data-testid="product-detail-add-to-cart"
           type="button"

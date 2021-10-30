@@ -14,7 +14,7 @@ class CartCard extends React.Component {
     this.initialProductQuant();
   }
 
-  initialProductQuant = () => {
+  initialProductQuant = () => { // PAREI AQUI
     const { productId } = this.props;
     const userCartFromLocSt = JSON.parse(localStorage.getItem("userCart"));
     const quantOnMount = userCartFromLocSt.find((microObj) => microObj.productId === productId).quantity;
@@ -22,8 +22,27 @@ class CartCard extends React.Component {
     this.setState({ productQuant: quantOnMount });
   }
 
+  itemsOnCartCalculator = () => {
+    const userCartFromLocSt = JSON.parse(localStorage.getItem("userCart"));
+
+    const quantitiesArray = userCartFromLocSt.map((microObj) => microObj.quantity);
+
+    const total = quantitiesArray.reduce((result, value) => result + value);
+
+    localStorage.setItem("totalItemsOnCart", JSON.stringify(total));
+  }
+
+  purchaseTVCalculator = () => {
+    const userCartFromLocSt = JSON.parse(localStorage.getItem("userCart"));
+
+    const totalValuesArray = userCartFromLocSt.map((microObj) => microObj.totalValue);
+
+    const total = totalValuesArray.reduce((result, value) => result + value);
+
+    localStorage.setItem("purchaseTotalValue", JSON.stringify(total));
+  }
+
   addItem = ({ target }) => {
-    const { itemsOnCartCalculator, purchaseTVCalculator } = this.props
     const userCartFromLocSt = JSON.parse(localStorage.getItem("userCart"));
 
     userCartFromLocSt.forEach((microObj) => {
@@ -37,13 +56,12 @@ class CartCard extends React.Component {
 
     this.setState({ productQuant: newQuantity });
     localStorage.setItem("userCart", JSON.stringify(userCartFromLocSt));
-    itemsOnCartCalculator()
-    purchaseTVCalculator();
+    this.itemsOnCartCalculator()
+    this.purchaseTVCalculator();
     window.location.reload();
   }
 
   subItem = ({ target }) => {
-    const { itemsOnCartCalculator, purchaseTVCalculator } = this.props
     const userCartFromLocSt = JSON.parse(localStorage.getItem("userCart"));
 
     userCartFromLocSt.forEach((microObj) => {
@@ -58,8 +76,8 @@ class CartCard extends React.Component {
     if (newQuantity > 0) { // A respectiva condicional evita que o <output> contido entre "-" e "+" mostre um número menor que 1.
       this.setState({ productQuant: newQuantity });
       localStorage.setItem("userCart", JSON.stringify(userCartFromLocSt));
-      itemsOnCartCalculator();
-      purchaseTVCalculator();
+      this.itemsOnCartCalculator();
+      this.purchaseTVCalculator();
       window.location.reload();
     }
   }

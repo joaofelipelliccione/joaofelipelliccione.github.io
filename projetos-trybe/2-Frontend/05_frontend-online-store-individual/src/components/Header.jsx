@@ -3,26 +3,34 @@ import { Link } from 'react-router-dom';
 import '../styles/Header.css';
 
 class Header extends React.Component {
-  constructor(props) {
-    super(props);
-    this.settingLocalStorage();
+  numOfCartItems = () => { // Função que capta o número de itens adicionados ao carrinho.
+    const { cartItems } = this.props; // OBS: A props cartItems vêm da página Home ou da página Cart.
+    let numberOfCartItems = 0;
+
+    if (cartItems.length > 0) {
+      const quantitiesArray = cartItems.map((microObj) => microObj.quantity);
+      const totalQuant = quantitiesArray.reduce((result, value) => result + value);
+      numberOfCartItems = totalQuant;
+    }
+
+    return numberOfCartItems;
   }
 
-  settingLocalStorage = () => {
-    const userCart = JSON.parse(localStorage.getItem("userCart"));
-    // const purchaseTotalValue = JSON.parse(localStorage.getItem("purchaseTotalValue"));
+  cartTotalValue = () => { // Função que calcula o valor total do carrinho.
+    const { cartItems } = this.props; // OBS: A props cartItems vêm da página Home ou da página Cart.
+    let cartTotalValueResult = 0;
 
-    if (userCart === null || userCart.length === 0) {
-      localStorage.setItem('userCart', JSON.stringify([]));
-      localStorage.setItem('totalItemsOnCart', JSON.stringify(0));
-      localStorage.setItem('purchaseTotalValue', JSON.stringify(0));
-    } 
+    if (cartItems.length > 0) {
+      const totalValuesArray = cartItems.map((microObj) => microObj.totalValue);
+      const totalValue = totalValuesArray.reduce((result, value) => result + value);
+      cartTotalValueResult = totalValue;
+    }
+
+    return cartTotalValueResult.toFixed(2);
   }
 
   render() {
     const { loading } = this.props;
-    const totalItemsOnCart = JSON.parse(localStorage.getItem("totalItemsOnCart"));
-    const purchaseTotalValue = JSON.parse(localStorage.getItem("purchaseTotalValue"));
 
     return (
       <header data-testid="header-component">
@@ -32,7 +40,7 @@ class Header extends React.Component {
         </div>
         <div id="linksBar">
           <Link to="/">Pesquisa</Link>
-          <Link to="/cart">{`Carrinho - ${totalItemsOnCart} produto(s) - R$ ${purchaseTotalValue.toFixed(2)}`} </Link>
+          <Link to="/cart">{`Carrinho - ${this.numOfCartItems()} produto(s) - R$ ${this.cartTotalValue()}`}</Link>
         </div>
         { loading &&
           <div id="loadingContainer">

@@ -21,15 +21,32 @@ class Cart extends React.Component {
 
   insertItensInTheCart = () => { // Função que capta os itens do carrinho salvos no local storage, sempre que a página Cart for montada.
     const cartItems = JSON.parse(localStorage.getItem('userCart'));
-
-    if (Array.isArray(cartItems)) { // Caso a key "userCart", de local storage, NÃO seja um array vazio...
-      this.setState({ cartItems });
-    }
+    this.setState({ cartItems });
   }
 
-  updateLocStUserCart = () => { // Função que atualiza a key "userCart", de local storage, sempre que algum estado da página Cart for atualizado [componentDidUpdate()].
+  updateLocStUserCart = () => { // Função que atualiza as keys "userCart", "totalItemsOnCart" e "purchaseTotalValue", contidas no local storage, sempre que algum estado da página Cart for atualizado (ou seja, quando há adição, subtração ou deleção de produto).
     const { cartItems } = this.state;
-    localStorage.setItem('userCart', JSON.stringify(cartItems));
+
+    if (cartItems.length === 0) {
+      localStorage.setItem('userCart', JSON.stringify([]));
+      localStorage.setItem("totalItemsOnCart", JSON.stringify(0));
+      localStorage.setItem("purchaseTotalValue", JSON.stringify(0));
+    }
+
+    if (cartItems.length !== 0) {
+      // Atualização do carrinho:
+      localStorage.setItem('userCart', JSON.stringify(cartItems));
+
+      // Atualização da quantidade de itens no carrinho:
+      const quantitiesArray = cartItems.map((microObj) => microObj.quantity);
+      const totalQuant = quantitiesArray.reduce((result, value) => result + value);
+      localStorage.setItem("totalItemsOnCart", JSON.stringify(totalQuant));
+
+      // Atualização do atual valor total (R$) do carrinho:
+      const totalValuesArray = cartItems.map((microObj) => microObj.totalValue);
+      const totalValue = totalValuesArray.reduce((result, value) => result + value);
+      localStorage.setItem("purchaseTotalValue", JSON.stringify(totalValue));
+    }
   }
 
   deleteCartItem = ({ target }) => { // Função que deleta produtos do carrinho.
@@ -42,32 +59,12 @@ class Cart extends React.Component {
     });
   }
 
-  itemsOnCartCalculator = () => {
-    const userCartFromLocSt = JSON.parse(localStorage.getItem("userCart"));
-
-    const quantitiesArray = userCartFromLocSt.map((microObj) => microObj.quantity);
-
-    const total = quantitiesArray.reduce((result, value) => result + value);
-
-    localStorage.setItem("totalItemsOnCart", JSON.stringify(total));
-  }
-
-  purchaseTVCalculator = () => {
-    const userCartFromLocSt = JSON.parse(localStorage.getItem("userCart"));
-
-    const totalValuesArray = userCartFromLocSt.map((microObj) => microObj.totalValue);
-
-    const total = totalValuesArray.reduce((result, value) => result + value);
-
-    localStorage.setItem("purchaseTotalValue", JSON.stringify(total));
-  }
-
   render() {
-    const { cartItems, purchaseTotalValue } = this.state;
+    const { cartItems } = this.state;
 
     return (
       <div id="cartPage">
-        <Header />
+        <Header cartItems={ cartItems } />
 
         <main id="cartProductsDisplay">
           {cartItems.length === 0
@@ -80,8 +77,6 @@ class Cart extends React.Component {
                   productPrice={ cartItem.price }
                   productId={ cartItem.productId }
                   deleteCartItem={ this.deleteCartItem }
-                  itemsOnCartCalculator={ this.itemsOnCartCalculator }
-                  purchaseTVCalculator={ this.purchaseTVCalculator }
                 />
               </div>
             ))}

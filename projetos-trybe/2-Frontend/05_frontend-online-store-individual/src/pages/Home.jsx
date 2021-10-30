@@ -7,6 +7,8 @@ import Header from '../components/Header';
 class Home extends React.Component {
   constructor() {
     super();
+    this.settingLocalStorage();
+
     this.state = {
       loading: false,
       userSearchedItem: '',
@@ -17,8 +19,26 @@ class Home extends React.Component {
     };
   }
 
+  settingLocalStorage = () => { // Função que define o local storage do usuário, em seu primeiro acesso ao website. É chamada no Constructor(), logo, é como se estivesse sendo chamada no antigo componentWillMount().
+    const userCart = JSON.parse(localStorage.getItem("userCart"));
+
+    if (userCart === null || userCart.length === 0) {
+      localStorage.setItem('userCart', JSON.stringify([]));
+      localStorage.setItem('totalItemsOnCart', JSON.stringify(0));
+      localStorage.setItem('purchaseTotalValue', JSON.stringify(0));
+    } 
+  }
+
   componentDidMount() {
     this.getLocStUserCart();
+  }
+
+  getLocStUserCart = () => { // Função que capta os itens do carrinho salvos no local storage, sempre que a página Home for montada. Tal função evita que o carrinho do usuário seja restaurado sempre que ele vá para a página Cart ou para a ProductDetails.
+    const cartItemsFromLocSt = JSON.parse(localStorage.getItem('userCart'));
+
+    if (Array.isArray(cartItemsFromLocSt)) { // Caso a key "userCart", de local storage, NÃO seja um array vazio...
+      this.setState({ cartItems: cartItemsFromLocSt }); // ...o estado é definido.
+    }
   }
 
   handleClick = async () => { // Função que realiza a requisição para API getProductsFromCategoryAndQuery(), baseada no termo pesquisado. Será chamada no onClick do botão de pesquisar.
@@ -49,15 +69,8 @@ class Home extends React.Component {
     this.setState({ results: response.results, didSearch: true, loading: false });
   }
 
-  getLocStUserCart = () => { // Função que capta os itens do carrinho salvos no local storage, sempre que a página Home for montada. Tal função evita que o carrinho do usuário seja restaurado.
-    const cartItemsFromLocSt = JSON.parse(localStorage.getItem('userCart'));
+  setLocStOnAddToCart = (updatedCartItems) => { // Função que aloca, no local storage, importantes informações, sempre que um novo item for adicionado ao carrinho. É chamada dentro da addToCart() abaixo, após a atualização do estado cuja key é "cartItems".
 
-    if (Array.isArray(cartItemsFromLocSt)) { // Caso a key "userCart", de local storage, NÃO seja um array vazio...
-      this.setState({ cartItems: cartItemsFromLocSt });
-    }
-  }
-
-  setLocStOnAddToCart = (updatedCartItems) => { // Função que aloca, no local storage, importantes informações, sempre que um novo item for adicionado ao carrinho. É chamada dentro da addToCart(), abaixo.
     // Atualização do carrinho, que passa a ter um novo item:
     localStorage.setItem('userCart', JSON.stringify(updatedCartItems));
 
@@ -70,6 +83,7 @@ class Home extends React.Component {
     const totalValuesArray = updatedCartItems.map((microObj) => microObj.totalValue);
     const totalValue = totalValuesArray.reduce((result, value) => result + value);
     localStorage.setItem("purchaseTotalValue", JSON.stringify(totalValue));
+
   }
 
   addToCart = ({ target }) => { // Função que permite a adição de um determinado produto ao carrinho de compras. Será passada para o componente Card, via props, e chamada no OnClick do botão "Adicionar ao Carrinho". || OBS: O Id do botão "Adicionar ao Carrinho", de cada Card, é igual ao índice do produto no array results.
@@ -88,16 +102,16 @@ class Home extends React.Component {
     if (!cartItems.some((item) => item.title === objProduct.title)) { // Condicional que evita a adição de 2 produtos iguais ao carrinho.
       this.setState((prevState) => ({
         cartItems: [...prevState.cartItems, objProduct],
-      }), () => this.setLocStOnAddToCart(this.state.cartItems));
+      }), () => this.setLocStOnAddToCart(this.state.cartItems)); // Após atualização do estado de key igual à cartItems, atualiza-se o local storage.
     }
   }
 
   render() {
-    const { loading, userSearchedItem, results, didSearch } = this.state;
+    const { loading, userSearchedItem, results, didSearch, cartItems } = this.state;
 
     return (
       <div id="homepage">
-        <Header loading={ loading } />
+        <Header loading={ loading } cartItems={ cartItems } />
 
         <section id="homepageCenter">
           <div id="searchContainer">

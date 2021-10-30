@@ -94,8 +94,9 @@ class Home extends React.Component {
       title: results[id].title,
       thumbnail: results[id].thumbnail,
       price: results[id].price,
+      availableQuantity: results[id].available_quantity, // Quantidade disponível daquele produto.
       address: results[id].address,
-      quantity: 1,
+      quantity: 1, // Quantidade adquirida pelo usuário
       totalValue: results[id].price,
     };
 

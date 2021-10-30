@@ -14,7 +14,7 @@ class CartCard extends React.Component {
     this.initialProductQuant();
   }
 
-  initialProductQuant = () => { // PAREI AQUI
+  initialProductQuant = () => { // Função que pega, do local storage, a quantidade de unidades do produto. É acionada na montagem do componente.
     const { productId } = this.props;
     const userCartFromLocSt = JSON.parse(localStorage.getItem("userCart"));
     const quantOnMount = userCartFromLocSt.find((microObj) => microObj.productId === productId).quantity;
@@ -22,7 +22,7 @@ class CartCard extends React.Component {
     this.setState({ productQuant: quantOnMount });
   }
 
-  itemsOnCartCalculator = () => {
+  itemsOnCartCalculator = () => { // Função que realiza o cálculo de quantos produtos há no carrinho e, feito isso, atualiza a chave "totalItemsOnCart" do local storage. É chamada nas funções addItem() e subItem() abaixo.
     const userCartFromLocSt = JSON.parse(localStorage.getItem("userCart"));
 
     const quantitiesArray = userCartFromLocSt.map((microObj) => microObj.quantity);
@@ -32,7 +32,7 @@ class CartCard extends React.Component {
     localStorage.setItem("totalItemsOnCart", JSON.stringify(total));
   }
 
-  purchaseTVCalculator = () => {
+  purchaseTVCalculator = () => { // Função que realiza o cálculo do valor total (R$) do carrinho e, feito isso, atualiza a chave "purchaseTotalValue" do local storage. É chamada nas funções addItem() e subItem() abaixo.
     const userCartFromLocSt = JSON.parse(localStorage.getItem("userCart"));
 
     const totalValuesArray = userCartFromLocSt.map((microObj) => microObj.totalValue);
@@ -42,7 +42,7 @@ class CartCard extends React.Component {
     localStorage.setItem("purchaseTotalValue", JSON.stringify(total));
   }
 
-  addItem = ({ target }) => {
+  addItem = ({ target }) => { // Função que atualiza, no local storage, as chaves "userCart", "totalItemsOnCart" e "purchaseTotalValue" quando o usuário aumenta o número de unidades que deseja comprar, do produto.
     const userCartFromLocSt = JSON.parse(localStorage.getItem("userCart"));
 
     userCartFromLocSt.forEach((microObj) => {
@@ -61,7 +61,7 @@ class CartCard extends React.Component {
     window.location.reload();
   }
 
-  subItem = ({ target }) => {
+  subItem = ({ target }) => { // Função que atualiza, no local storage, as chaves "userCart", "totalItemsOnCart" e "purchaseTotalValue" quando o usuário reduz o número de unidades que deseja comprar, do produto.
     const userCartFromLocSt = JSON.parse(localStorage.getItem("userCart"));
 
     userCartFromLocSt.forEach((microObj) => {

@@ -185,9 +185,9 @@ class Home extends React.Component {
             <div id="productsDisplay">
               { !didSearch
                 ? (
-                  <p data-testid="home-initial-message">
+                  <h2 id="initialMessage" data-testid="home-initial-message">
                     Busque um produto ou escolha uma categoria!
-                  </p>)
+                  </h2>)
                 : results.map((item, index) => (
                   <div className="cardContainer1" key={ item.id } data-testid="product">
                     <Card

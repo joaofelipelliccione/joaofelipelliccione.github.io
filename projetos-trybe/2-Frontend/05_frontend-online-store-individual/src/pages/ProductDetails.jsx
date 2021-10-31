@@ -75,7 +75,7 @@ class ProductDetails extends React.Component {
               Adicionar ao Carrinho
             </button>
           </div>
-          <Review id={ productId } />
+          <Review productId={ productId } />
         </main>
       </div>
 

@@ -10,17 +10,6 @@ class Home extends React.Component {
     const searchResults = JSON.parse(localStorage.getItem("searchResults"));
     this.settingLocalStorage();
 
-    if (searchResults === null) { // Configurando o estado quando o usuário acessa o website pela primeira vez.
-      this.state = {
-        loading: false,
-        userSearchedItem: '',
-        categoryId: '',
-        results: [],
-        didSearch: false,
-        cartItems: [],
-      };
-    }
-
     if (searchResults !== null) { // Configurando o estado quando o usuário já realizou, anteriormente, buscas no website.
       this.state = {
         loading: false,
@@ -28,6 +17,17 @@ class Home extends React.Component {
         categoryId: '',
         results: searchResults,
         didSearch: true,
+        cartItems: [],
+      };
+    }
+
+    if (searchResults === null || searchResults.length === 0 ) { // Configurando o estado quando o usuário acessa o website pela primeira vez.
+      this.state = {
+        loading: false,
+        userSearchedItem: '',
+        categoryId: '',
+        results: [],
+        didSearch: false,
         cartItems: [],
       };
     }

@@ -7,16 +7,30 @@ import Header from '../components/Header';
 class Home extends React.Component {
   constructor() {
     super();
+    const searchResults = JSON.parse(localStorage.getItem("searchResults"));
     this.settingLocalStorage();
 
-    this.state = {
-      loading: false,
-      userSearchedItem: '',
-      categoryId: '',
-      results: [],
-      didSearch: false,
-      cartItems: [],
-    };
+    if (searchResults === null) { // Configurando o estado quando o usuário acessa o website pela primeira vez.
+      this.state = {
+        loading: false,
+        userSearchedItem: '',
+        categoryId: '',
+        results: [],
+        didSearch: false,
+        cartItems: [],
+      };
+    }
+
+    if (searchResults !== null) { // Configurando o estado quando o usuário já realizou, anteriormente, buscas no website.
+      this.state = {
+        loading: false,
+        userSearchedItem: '',
+        categoryId: '',
+        results: searchResults,
+        didSearch: true,
+        cartItems: [],
+      };
+    }
   }
 
   settingLocalStorage = () => { // Função que define o local storage do usuário, em seu primeiro acesso ao website. É chamada no Constructor(), logo, é como se estivesse sendo chamada no antigo componentWillMount().
@@ -51,7 +65,7 @@ class Home extends React.Component {
       didSearch: true,
       results: response.results,
       loading: false,
-    }, () => localStorage.setItem("searchResults", JSON.stringify(this.state.results)));
+    }, () => localStorage.setItem("searchResults", JSON.stringify(this.state.results))); // Salvando os resultados de pesquisa no estado "results."
   }
 
   onInputChange = ({ target }) => { // Função que altera o estado 'userSearchedItem', no momento que o usuário realiza uma busca. Será chamada no onChange de #searchBar.
@@ -70,7 +84,7 @@ class Home extends React.Component {
       { results: response.results,
         didSearch: true,
         loading: false,
-      }, () => localStorage.setItem("searchResults", JSON.stringify(this.state.results)));
+      }, () => localStorage.setItem("searchResults", JSON.stringify(this.state.results))); // Salvando os resultados de pesquisa no estado "results."
   }
 
   setLocStOnAddToCart = (updatedCartItems) => { // Função que aloca, no local storage, importantes informações, sempre que um novo item for adicionado ao carrinho. É chamada dentro da addToCart() abaixo, após a atualização do estado cuja key é "cartItems".
@@ -111,6 +125,15 @@ class Home extends React.Component {
     }
   }
 
+  cleanSearch = () => { // Função que limpa a pesquisa realizada pelo usuário. Será chamada no onClick do botão de limpar (X).
+    this.setState({
+      userSearchedItem: '',
+      categoryId: '',
+      results: [],
+      didSearch: false,
+    }, () => localStorage.setItem("searchResults", JSON.stringify(this.state.results))); // Limpando os resultados de pesquisa no estado "results."
+  }
+
   render() {
     const { loading, userSearchedItem, results, didSearch, cartItems } = this.state;
 
@@ -120,6 +143,13 @@ class Home extends React.Component {
 
         <section id="homepageCenter">
           <div id="searchContainer">
+            <button
+              type="button"
+              onClick={ this.cleanSearch }
+              data-testid="query-button"
+            >
+              <span role="img" aria-label="emoji-lupa">❌</span>
+            </button>
             <label htmlFor="search">
               <input
                 id="searchBar"

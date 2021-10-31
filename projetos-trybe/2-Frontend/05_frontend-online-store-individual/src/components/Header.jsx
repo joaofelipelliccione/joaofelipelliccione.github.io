@@ -4,7 +4,7 @@ import '../styles/Header.css';
 
 class Header extends React.Component {
   numOfCartItems = () => { // Função que capta o número de itens adicionados ao carrinho.
-    const { cartItems } = this.props; // OBS: A props cartItems vêm da página Home ou da página Cart.
+    const { cartItems } = this.props; // OBS: A props cartItems vêm da página Home, da página Cart ou da página ProductDetails.
     let numberOfCartItems = 0;
 
     if (cartItems.length > 0) {

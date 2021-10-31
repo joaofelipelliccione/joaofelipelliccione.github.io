@@ -69,6 +69,11 @@ class Home extends React.Component {
     }, () => localStorage.setItem("searchResults", JSON.stringify(this.state.results))); // Salvando os resultados de pesquisa no estado "results."
   }
 
+  searchWithEnter = (e) => { // Permite fazer uma busca pressionando a tecla Enter.
+    e.preventDefault();
+    this.handleClick();
+  }
+
   onInputChange = ({ target }) => { // Função que altera o estado 'userSearchedItem', no momento que o usuário realiza uma busca. Será chamada no onChange de #searchBar.
     const { name } = target;
     const formElementValue = target.type === 'checkbox' ? target.checked : target.value;
@@ -126,7 +131,7 @@ class Home extends React.Component {
     }
   }
 
-  cleanSearch = () => { // Função que limpa a pesquisa realizada pelo usuário. Será chamada no onClick do botão de limpar (X).
+  cleanSearch = () => { // Função que limpa a pesquisa realizada pelo usuário. Será chamada no onClick do botão 'Limpar'.
     this.setState({
       userSearchedItem: '',
       categoryId: '',
@@ -142,14 +147,15 @@ class Home extends React.Component {
       <div id="homepage">
         <Header loading={ loading } cartItems={ cartItems } />
 
-        <section id="homepageCenter">
+        <section id="homepageMain">
           <div id="searchContainer">
             <button
+              id="clearBtn"
               type="button"
               onClick={ this.cleanSearch }
               data-testid="query-button"
             >
-              <span role="img" aria-label="emoji-lupa">❌</span>
+              <span role="img" aria-label="emoji-lupa">Limpar</span>
             </button>
             <label htmlFor="search">
               <input
@@ -157,41 +163,47 @@ class Home extends React.Component {
                 data-testid="query-input"
                 name="userSearchedItem"
                 value={ userSearchedItem }
+                placeholder="Busque por um produto..."
                 onChange={ this.onInputChange }
+                onKeyPress={ (event) => event.key === 'Enter' && this.searchWithEnter(event) }
               />
             </label>
             <button
+              id="searchBtn"
               type="button"
+              disabled={ (userSearchedItem === '') }
               onClick={ this.handleClick }
               data-testid="query-button"
             >
               <span role="img" aria-label="emoji-lupa">🔎</span>
             </button>
           </div>
-          <div id="productsDisplay">
-            { !didSearch
-              ? (
-                <p data-testid="home-initial-message">
-                  Busque um produto ou escolha uma categoria!
-                </p>)
-              : results.map((item, index) => (
-                <div className="cardContainer1" key={ item.id } data-testid="product">
-                  <Card
-                    productId={ item.id }
-                    title={ item.title }
-                    thumbnail={ item.thumbnail }
-                    price={ item.price }
-                    availableQuantity={ item.available_quantity }
-                    address={ item.address }
-                    productIndex={ index }
-                    addToCart={ this.addToCart }
-                  />
-                </div>
-              ))}
-          </div>
-          <aside id="categoriesContainer1">
-            <Categories categoryChecked={ this.categoryChecked } />
-          </aside>
+          <section id="homepageCenter">
+            <aside id="categoriesContainer1">
+              <Categories categoryChecked={ this.categoryChecked } />
+            </aside>
+            <div id="productsDisplay">
+              { !didSearch
+                ? (
+                  <p data-testid="home-initial-message">
+                    Busque um produto ou escolha uma categoria!
+                  </p>)
+                : results.map((item, index) => (
+                  <div className="cardContainer1" key={ item.id } data-testid="product">
+                    <Card
+                      productId={ item.id }
+                      title={ item.title }
+                      thumbnail={ item.thumbnail }
+                      price={ item.price }
+                      availableQuantity={ item.available_quantity }
+                      address={ item.address }
+                      productIndex={ index }
+                      addToCart={ this.addToCart }
+                    />
+                  </div>
+                ))}
+            </div>
+          </section>
         </section>
       </div>
     );

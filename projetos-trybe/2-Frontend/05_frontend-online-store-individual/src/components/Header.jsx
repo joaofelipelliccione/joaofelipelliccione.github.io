@@ -35,8 +35,7 @@ class Header extends React.Component {
     return (
       <header data-testid="header-component">
         <div id="logoAndUserBar">
-          {/* <img src={logo} alt="trybetunes-logo" /> */}
-          <h1>Logo</h1>
+          <h1>e-shop</h1>
         </div>
         <div id="linksBar">
           <Link to="/">Pesquisa</Link>

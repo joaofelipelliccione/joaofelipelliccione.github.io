@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { getCategories } from '../services/api';
+import '../styles/Categories.css';
 
 class Categories extends React.Component {
   constructor(props) {

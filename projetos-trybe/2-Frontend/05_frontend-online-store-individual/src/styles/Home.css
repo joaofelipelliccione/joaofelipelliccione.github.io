@@ -15,14 +15,14 @@ body {
 }
 
 #homepageMain {
-  border: solid 3px red;
   display: flex;
   flex-direction: column;
 }
 
 #searchContainer {
   background-image: linear-gradient(to bottom right, #334257, #476072, #8796a1);
-  width: 100%;
+  border-radius: 16px 40px;
+  width: 70%;
   align-self: center;
   margin: 1.5% 0;
   padding: 2% 0;
@@ -77,14 +77,15 @@ body {
 }
 
 #homepageCenter {
-  /* border: solid 3px purple; */
   background-image: linear-gradient(#334257, #476072, #8796a1);
   display: flex;
   flex-direction: row;
   width: 100%;
 }
 
-#categoriesContainer1{
+#categoriesContainer1 {
+  background-image: linear-gradient(#334257, #476072);
+  border-right: solid 4px #FFDA77;
   width: 20%;
 }
 
@@ -97,9 +98,10 @@ body {
 }
 
 #initialMessage {
-  color: ghostwhite;
+  color: #FFDA77;
   font-size: 1.5em;
   text-decoration: overline;
   width: fit-content;
   height: fit-content;
+  margin-top: 2%;
 }

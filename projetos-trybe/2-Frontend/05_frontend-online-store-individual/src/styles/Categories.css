@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  font-family: 'Nunito', sans-serif;
+  font-size: 1em;
+}
+
+#categoriesContainer2 {
+  display: flex;
+  flex-direction: column;
+}
+
+#eachCategory {
+  color: #FFDA77;
+  width: 85%;
+  align-self: center;
+  font-size: 1.35em;
+  margin-top: 3%;
+  padding: 1% 0;
+  transition: 0.05s font-size ease-in-out;
+}
+
+#eachCategory:hover {
+  color: #C7E2B2;
+  font-size: 1.45em;
+  margin-top: 3%;
+  padding: 1% 0;
+}

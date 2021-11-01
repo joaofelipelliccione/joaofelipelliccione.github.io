@@ -21,7 +21,7 @@ header {
 }
 
 #logoAndUserBar h1 {
-  color: #EEEEEE;
+  color: #FFDA77;
   font-size: 2.4em;
   font-style: italic;
   padding: 8px 0;
@@ -47,13 +47,13 @@ header {
 
 #linksBar a:hover {
   background-color: #8796a1;
-  color: #3F3351;
+  color: #FFDA77;
   font-size: 1.45em;
 }
 
 #loadingContainer {
   background-color: #708797;
-  color: ghostwhite;
+  color: #FFDA77;
   border-radius: 7px;
   width: 15%;
   text-align: center;

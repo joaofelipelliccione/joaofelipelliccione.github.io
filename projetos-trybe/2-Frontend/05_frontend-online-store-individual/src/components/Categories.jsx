@@ -28,6 +28,7 @@ class Categories extends React.Component {
 
     return (
       <div id="categoriesContainer2">
+        <h3>Categorias</h3>
         {categoriesList.map((microObj) => (
           <div id="eachCategory" key={ microObj.id }>
             <label data-testid="category" htmlFor={ microObj.id }>

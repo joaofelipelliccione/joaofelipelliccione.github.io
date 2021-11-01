@@ -11,6 +11,18 @@
   flex-direction: column;
 }
 
+#categoriesContainer2 h3 {
+  background-color: #FFDA77;
+  color: black;
+  width: 100%;
+  align-self: center;
+  font-size: 1.6em;
+  font-style: italic;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 3% 0;
+}
+
 #eachCategory {
   color: #FFDA77;
   width: 85%;

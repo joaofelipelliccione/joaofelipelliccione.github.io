@@ -202,6 +202,7 @@ class Home extends React.Component {
                     />
                   </div>
                 ))}
+                {(didSearch && results.length === 0) && <h2 id="nothingFound">Nenhum produto encontrado :(</h2>}
             </div>
           </section>
         </section>

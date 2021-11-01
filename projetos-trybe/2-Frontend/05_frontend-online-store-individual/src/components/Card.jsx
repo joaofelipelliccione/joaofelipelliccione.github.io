@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
-import '../styles/Home.css';
+import '../styles/Card.css';
 
 class Card extends React.Component {
   render() {
@@ -33,6 +33,7 @@ class Card extends React.Component {
         </Link>
         <button
           id={ productIndex }
+          className="addToCartBtn"
           data-testid="product-add-to-cart"
           type="button"
           onClick={ addToCart }

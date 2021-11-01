@@ -90,14 +90,14 @@ body {
 }
 
 #productsDisplay {
-  border: solid 3px black;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
   width: 80%;
+  padding-bottom: 2%;
 }
 
-#initialMessage {
+#initialMessage, #nothingFound {
   color: #FFDA77;
   font-size: 1.5em;
   text-decoration: overline;

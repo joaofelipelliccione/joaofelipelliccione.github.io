@@ -3,6 +3,7 @@ import { getProductsFromCategoryAndQuery } from '../services/api';
 import Card from '../components/Card';
 import Categories from '../components/Categories';
 import Header from '../components/Header';
+import Footer from '../components/Footer';
 import waitingForSearch from '../images/waitingForSearch.svg';
 import noResults from '../images/noResults.svg';
 import '../styles/Home.css';
@@ -215,6 +216,7 @@ class Home extends React.Component {
             </div>
           </section>
         </section>
+        <Footer />
       </div>
     );
   }

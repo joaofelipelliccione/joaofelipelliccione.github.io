@@ -156,7 +156,6 @@ class Home extends React.Component {
               id="clearBtn"
               type="button"
               onClick={ this.cleanSearch }
-              data-testid="query-button"
             >
               <span role="img" aria-label="emoji-lupa">Limpar</span>
             </button>

@@ -7,11 +7,10 @@ describe('2 - Crie uma página de listagem de produtos vazia', () => {
     render(<App />);
   });
 
-  it(`A tela contém a mensagem pedida: 'Digite algum termo de pesquisa ou escolha uma
-      categoria.'`, () => {
+  it(`A tela contém a mensagem pedida: 'Busque um produto ou escolha uma categoria!'`, () => {
     render(<App />);
     expect(screen.getByTestId('home-initial-message')).toHaveTextContent(
-      'Digite algum termo de pesquisa ou escolha uma categoria.',
+      'Busque um produto ou escolha uma categoria!',
     );
   });
 });

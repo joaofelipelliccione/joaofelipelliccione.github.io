@@ -3,6 +3,8 @@ import { getProductsFromCategoryAndQuery } from '../services/api';
 import Card from '../components/Card';
 import Categories from '../components/Categories';
 import Header from '../components/Header';
+import waitingForSearch from '../images/waitingForSearch.svg';
+import noResults from '../images/noResults.svg';
 import '../styles/Home.css';
 
 class Home extends React.Component {
@@ -185,9 +187,12 @@ class Home extends React.Component {
             <div id="productsDisplay">
               { !didSearch
                 ? (
-                  <h2 id="initialMessage" data-testid="home-initial-message">
-                    Busque um produto ou escolha uma categoria!
-                  </h2>)
+                  <div id="initialMessage">
+                    <h2 data-testid="home-initial-message">
+                      Busque um produto ou escolha uma categoria!
+                    </h2>
+                    <img src={ waitingForSearch } alt="waitingForSearch"/>
+                  </div>)
                 : results.map((item, index) => (
                   <div className="cardContainer1" key={ item.id } data-testid="product">
                     <Card
@@ -202,7 +207,11 @@ class Home extends React.Component {
                     />
                   </div>
                 ))}
-                {(didSearch && results.length === 0) && <h2 id="nothingFound">Nenhum produto encontrado :(</h2>}
+                {(didSearch && results.length === 0)
+                  && <div id="nothingFound">
+                      <h2>Nenhum produto encontrado</h2>
+                      <img src={ noResults } alt="noResultsFound"/>
+                    </div>}
             </div>
           </section>
         </section>

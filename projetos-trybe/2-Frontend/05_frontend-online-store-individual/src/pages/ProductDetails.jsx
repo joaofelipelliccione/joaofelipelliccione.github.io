@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Review from '../components/Review';
 import Header from '../components/Header';
+import '../styles/ProductDetails.css';
 
 class ProductDetails extends React.Component {
   constructor(props) {
@@ -67,6 +68,7 @@ class ProductDetails extends React.Component {
             <p>{ `R$ ${price.toFixed(2)}` }</p>
             <p>{ `${address.city_name}, ${address.state_name}` }</p>
             <button
+              className="addToCartBtn"
               data-testid="product-detail-add-to-cart"
               type="button"
               id={ productIndex }

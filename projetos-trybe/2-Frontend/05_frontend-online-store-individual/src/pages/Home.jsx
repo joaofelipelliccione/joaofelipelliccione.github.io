@@ -191,7 +191,7 @@ class Home extends React.Component {
                     <h2 data-testid="home-initial-message">
                       Busque um produto ou escolha uma categoria!
                     </h2>
-                    <img src={ waitingForSearch } alt="waitingForSearch"/>
+                    <img src={ waitingForSearch } alt="Waiting For Search"/>
                   </div>)
                 : results.map((item, index) => (
                   <div className="cardContainer1" key={ item.id } data-testid="product">
@@ -210,7 +210,7 @@ class Home extends React.Component {
                 {(didSearch && results.length === 0)
                   && <div id="nothingFound">
                       <h2>Nenhum produto encontrado</h2>
-                      <img src={ noResults } alt="noResultsFound"/>
+                      <img src={ noResults } alt="No Products Found"/>
                     </div>}
             </div>
           </section>

@@ -1,6 +1,8 @@
 import React from 'react';
 import CartCard from '../components/CartCard';
 import Header from '../components/Header';
+import emptyCart from '../images/emptyCart.svg';
+import '../styles/Cart.css';
 
 class Cart extends React.Component {
   constructor(props) {
@@ -68,7 +70,12 @@ class Cart extends React.Component {
 
         <main id="cartProductsDisplay">
           {cartItems.length === 0
-            ? <h3 data-testid="shopping-cart-empty-message">Seu carrinho está vazio</h3>
+            ? <div id="emptyShopCart">
+                <h2 data-testid="shopping-cart-empty-message">
+                  Seu carrinho está vazio
+                </h2>
+                <img src={ emptyCart } alt="Empty Cart"/>
+              </div>
             : cartItems.map((cartItem) => (
               <div className="eachCartCardContainer" key={ cartItem.title }>
                 <CartCard

@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import '../styles/CartCard.css';
 
 class CartCard extends React.Component {
   constructor(props) {
@@ -95,34 +96,39 @@ class CartCard extends React.Component {
         <h3>{ title }</h3>
         <img src={ thumbnail } alt={ title } width="170px" />
         <p>{ `R$ ${ productPrice.toFixed(2) }` }</p>
-        <button
-          id={ productId }
-          type="button"
-          onClick={ deleteCartItem }
-        >
-          X
-        </button>
-        <button
-          id={ productId }
-          type="button"
-          onClick={ this.subItem }
-          data-testid="product-decrease-quantity"
-        >
-          -
-        </button>
-        <output
-          data-testid="shopping-cart-product-quantity"
-        >
-          {productQuant}
-        </output>
-        <button
-          id={ productId }
-          type="button"
-          onClick={ this.addItem }
-          data-testid="product-increase-quantity"
-        >
-          +
-        </button>
+        <div id="cartCardBtnsContainer">
+          <button
+            className="deleteBtn"
+            id={ productId }
+            type="button"
+            onClick={ deleteCartItem }
+          >
+            X
+          </button>
+          <button
+            className="quantityBtn"
+            id={ productId }
+            type="button"
+            onClick={ this.subItem }
+            data-testid="product-decrease-quantity"
+          >
+            -
+          </button>
+          <output
+            data-testid="shopping-cart-product-quantity"
+          >
+            {productQuant}
+          </output>
+          <button
+            className="quantityBtn"
+            id={ productId }
+            type="button"
+            onClick={ this.addItem }
+            data-testid="product-increase-quantity"
+          >
+            +
+          </button>
+        </div>
       </div>
     );
   }

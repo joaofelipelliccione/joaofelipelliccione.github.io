@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import '../styles/Review.css';
 
 class Review extends React.Component {
   constructor(props) {
@@ -60,7 +61,7 @@ class Review extends React.Component {
     return (
       <div id="reviewFormContainer">
         <form id="reviewForm" onSubmit={ this.handleSubmit }>
-          <label htmlFor="name">
+          <label id="nameLabel" htmlFor="name">
             <input
               id="name"
               type="text"
@@ -71,70 +72,68 @@ class Review extends React.Component {
               required
             />
           </label>
-          <br />
-
-          <label htmlFor="1">
-            1
-            <input
-              id="1"
-              type="radio"
-              name="reviewStar"
-              value="1"
-              onClick={ this.handleChange }
-              required
-            />
-          </label>
-          <label htmlFor="2">
-            2
-            <input
-              id="2"
-              type="radio"
-              name="reviewStar"
-              value="2"
-              onClick={ this.handleChange }
-              required
-            />
-          </label>
-          <label htmlFor="3">
-            3
-            <input
-              id="3"
-              type="radio"
-              name="reviewStar"
-              value="3"
-              onClick={ this.handleChange }
-              required
-            />
-          </label>
-          <label htmlFor="4">
-            4
-            <input
-              id="4"
-              type="radio"
-              name="reviewStar"
-              value="4"
-              onClick={ this.handleChange }
-              required
-            />
-          </label>
-          <label htmlFor="5">
-            5
-            <input
-              id="5"
-              type="radio"
-              name="reviewStar"
-              value="5"
-              onClick={ this.handleChange }
-              required
-            />
-          </label>
-          <br />
+          <div id="reviewStarContainer">
+            <label htmlFor="1">
+              <span role="img" aria-label="starEmoji">1🌟</span>
+              <input
+                id="1"
+                type="radio"
+                name="reviewStar"
+                value="1"
+                onClick={ this.handleChange }
+                required
+              />
+            </label>
+            <label htmlFor="2">
+            <span role="img" aria-label="starEmoji">2🌟</span>
+              <input
+                id="2"
+                type="radio"
+                name="reviewStar"
+                value="2"
+                onClick={ this.handleChange }
+                required
+              />
+            </label>
+            <label htmlFor="3">
+            <span role="img" aria-label="starEmoji">3🌟</span>
+              <input
+                id="3"
+                type="radio"
+                name="reviewStar"
+                value="3"
+                onClick={ this.handleChange }
+                required
+              />
+            </label>
+            <label htmlFor="4">
+            <span role="img" aria-label="starEmoji">4🌟</span>
+              <input
+                id="4"
+                type="radio"
+                name="reviewStar"
+                value="4"
+                onClick={ this.handleChange }
+                required
+              />
+            </label>
+            <label htmlFor="5">
+            <span role="img" aria-label="starEmoji">5🌟</span>
+              <input
+                id="5"
+                type="radio"
+                name="reviewStar"
+                value="5"
+                onClick={ this.handleChange }
+                required
+              />
+            </label>
+          </div>
 
           <textarea
             data-testid="product-detail-evaluation"
-            rows="8"
-            cols="40"
-            placeholder="Mensagem (opcional)"
+            rows="5"
+            placeholder="Mensagem de Avaliação (opcional)"
             onChange={ this.handleChange }
             name="comment"
             value={ comment }
@@ -145,9 +144,9 @@ class Review extends React.Component {
         </form>
         {reviews.length > 0
         && reviews.map((review) => (
-          <div key={ review.comment }>
+          <div id="commentContainer" key={ review.comment }>
             <h2>{ review.name }</h2>
-            <h3>{ `Nota: ${review.reviewStar}` }</h3>
+            <h3>{ `${review.reviewStar} 🌟` }</h3>
             <p>{ review.comment }</p>
           </div>
         ))}

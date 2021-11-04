@@ -113,7 +113,7 @@ Abaixo, é possível encontrar a grade curricular do respectivo curso, que termi
 ##### Bloco 14: Metodologias Ágeis
 
 - [x] 14-1: _Metodologias Ágeis_
-- [x] 14-2: _Projeto em Grupo_
+- [x] 14-2: _[Projeto - Front-end Online Store](https://joaofelipelliccione.github.io/trybe_frontend_5-online_store/)_
 
 ##### Bloco 15: Testes automatizados com React Testing Library
 

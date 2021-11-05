@@ -119,8 +119,8 @@ Abaixo, é possível encontrar a grade curricular do respectivo curso, que termi
 
 - [x] 15-1: _React Testing Library - Primeiros Passos_
 - [x] 15-2: _React Testing Library - Mocks e Inputs_
-- [ ] 15-3: _React Testing Library - Testando React Router_
-- [ ] 15-4: _[Projeto - Testes em React]()_
+- [x] 15-3: _React Testing Library - Testando React Router_
+- [x] 15-4: _Projeto - React Testing Library - [Código do Projeto](https://github.com/joaofelipelliccione/joaofelipelliccione.github.io/tree/main/projetos-trybe/2-Frontend/06-project-react-testing-library/src/tests)_
 
 ##### Bloco 16: Gerenciamento de estado com Redux
 

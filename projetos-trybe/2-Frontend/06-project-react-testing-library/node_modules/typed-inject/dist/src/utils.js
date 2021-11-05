@@ -1,0 +1,7 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+function isDisposable(maybeDisposable) {
+    return maybeDisposable && maybeDisposable.dispose && typeof maybeDisposable.dispose === 'function';
+}
+exports.isDisposable = isDisposable;
+//# sourceMappingURL=utils.js.map

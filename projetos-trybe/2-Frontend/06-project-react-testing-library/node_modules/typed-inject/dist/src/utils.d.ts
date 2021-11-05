@@ -1,0 +1,3 @@
+import { Disposable } from './api/Disposable';
+export declare function isDisposable(maybeDisposable: any): maybeDisposable is Disposable;
+//# sourceMappingURL=utils.d.ts.map

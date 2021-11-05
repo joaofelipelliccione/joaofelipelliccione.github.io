@@ -1,0 +1,3 @@
+import { Injector } from './api/Injector';
+export declare const rootInjector: Injector<{}>;
+//# sourceMappingURL=InjectorImpl.d.ts.map

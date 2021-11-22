@@ -124,12 +124,12 @@ Abaixo, é possível encontrar a grade curricular do respectivo curso, que termi
 
 ##### Bloco 16: Gerenciamento de estado com Redux
 
-- [ ] 16-1: _Introdução ao Redux_
-- [ ] 16-2: _React com Redux - Parte 1_
-- [ ] 16-3: _React com Redux - Prática_
-- [ ] 16-4: _React com Redux - Actions Assíncronas_
-- [ ] 16-5: _Testes em React-Redux_
-- [ ] 16-6: _[Projeto - Trybe Wallet]()_
+- [x] 16-1: _Introdução ao Redux_
+- [x] 16-2: _React com Redux - Parte 1_
+- [x] 16-3: _React com Redux - Prática_
+- [x] 16-4: _React com Redux - Actions Assíncronas_
+- [x] 16-5: _Testes em React-Redux_
+- [x] 16-6: _[Projeto - Trybe Wallet](https://joaofelipelliccione.github.io/trybe_frontend_6-trybewallet/#/)_
 
 ##### Bloco 17: Projeto React
 

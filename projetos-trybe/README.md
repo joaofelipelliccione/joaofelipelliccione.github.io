@@ -133,7 +133,7 @@ Abaixo, é possível encontrar a grade curricular do respectivo curso, que termi
 
 ##### Bloco 17: Projeto React
 
-- [ ] 17-1: _[Projeto - Jogo de Trivia]()_
+- [x] 17-1: _[Projeto - Jogo de Trivia](https://joaofelipelliccione.github.io/trybe_frontend_7-trivia_game/#/)_
 
 ##### Bloco 18: Context API & React Hooks
 

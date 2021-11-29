@@ -1,0 +1,4 @@
+ignore_files:
+  - .eslintignore
+  - .eslintrc.json
+  - reporter.json

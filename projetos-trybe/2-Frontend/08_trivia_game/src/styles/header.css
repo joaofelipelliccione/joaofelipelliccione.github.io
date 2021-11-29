@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  font-family: Nunito , sans-serif;
+  font-size: 1em;
+}
+
+#websiteHeader {
+  background-image: linear-gradient(#189ab4, #86BBD8);
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0 3px 8px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2%;
+  padding: 1.5%;
+}
+
+#headerPlayerInfo {
+  background-color: rgb(242, 229, 205);
+  border-radius: 30px 15px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0 3px 8px;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0.8%;
+  width: fit-content;
+}
+
+#headerPlayerInfo img {
+  border-radius: 25px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0 3px 8px;
+  width: 60px;
+}
+
+#headerPlayerInfo span {
+  align-self: center;
+  color: #05445e;
+  font-size: 1.2em;
+  font-weight: 600;
+  margin-left: 15px;
+  margin-right: 8px;
+  text-align: center;
+}
+
+#scoreContainer {
+  align-items: center;
+  background-color: rgb(242, 229, 205);
+  border-radius: 15px 30px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0 3px 8px;
+  display: flex;
+  font-size: 1.3em;
+  justify-content: space-evenly;
+  width: 12%;
+}
+
+#scoreContainer output {
+  font-weight: 700;
+  text-align: center;
+  width: fit-content;
+}

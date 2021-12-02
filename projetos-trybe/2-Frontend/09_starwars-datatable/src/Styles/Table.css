@@ -1,0 +1,58 @@
+#loadingSpan {
+  color: ghostwhite;
+  display: flex;
+  font-size: 1.3em;
+  font-style: italic;
+  justify-content: center;
+  margin: 1% 40%;
+  width: 20%;
+}
+
+#SWPlanetsTableContainer {
+  display: flex;
+  overflow: auto;
+}
+
+#SWPlanetsTableContainer::-webkit-scrollbar {
+  width: 8px;
+}
+
+#SWPlanetsTableContainer::-webkit-scrollbar-track {
+  background: wheat;
+}
+
+#SWPlanetsTableContainer::-webkit-scrollbar-thumb {
+  background: #e4b732;
+}
+
+#SWPlanetsTableContainer::-webkit-scrollbar-thumb:hover {
+  background: rgba(172, 164, 164, 0.87);
+}
+
+#SWPlanetsTable {
+  margin-top: 1%;
+  width: 100%;
+}
+
+#SWPlanetsTable thead {
+  background-color: #e4b732;
+  color: black;
+  font-size: 1.3em;
+  font-weight: 600;
+}
+
+#SWPlanetsTable tbody {
+  color: ghostwhite;
+  font-size: 1.2em;
+  text-align: center;
+}
+
+#SWPlanetsTable td {
+  border: dashed 1px #d5a40c;
+}
+
+.filmsContainer {
+  list-style: none;
+  margin: 5px 8px;
+  padding: 0;
+}

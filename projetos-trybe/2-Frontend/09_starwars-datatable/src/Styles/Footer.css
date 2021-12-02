@@ -1,0 +1,24 @@
+footer {
+  background-color: #e4b732;
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5%;
+  padding: 1%;
+}
+
+footer span {
+  font-size: 1.5em;
+  text-align: center;
+}
+
+footer span a {
+  color: ghostwhite;
+  font-weight: 700;
+  text-decoration: none;
+  transition-duration: 0.3s;
+}
+
+footer span a:hover {
+  color: black;
+  font-size: 1.05em;
+}

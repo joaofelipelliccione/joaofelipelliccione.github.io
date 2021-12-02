@@ -1,0 +1,96 @@
+#numericFilterContainer {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0.5%;
+}
+
+#numericFilterForm {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 0.3%;
+  width: 60%;
+}
+
+#numericFilterForm select {
+  background-color: #fce08d;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1.15em;
+  padding: 1%;
+  width: 20%;
+}
+
+#numericFilterForm select:focus {
+  background-color: #d4f1f4;
+  outline: none;
+}
+
+#numericFilterForm input[ type = 'number' ] {
+  align-self: center;
+  background-color: #fce08d;
+  border-radius: 4px;
+  font-size: 1.15em;
+  padding: 1%;
+  transition: 0.3s ease-in-out;
+  width: 20%;
+}
+
+#numericFilterForm input[ type = 'number' ]:focus {
+  background-color: #d4f1f4;
+  outline: none;
+}
+
+#filterBtn {
+  background-color: #d4f1f4;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.15em;
+  transition: 0.3s width ease-in-out;
+  width: 15%;
+}
+
+#filterBtn:hover {
+  background-color: #d4f1f4;
+  width: 18%;
+}
+
+#filterBtn:disabled {
+  background-color: rgba(170, 170, 170, 0.466);
+  border: none;
+  border-radius: 5px;
+  color: ghostwhite;
+  font-size: 1.15em;
+  transition: 0.3s width ease-in-out;
+  width: 15%;
+}
+
+#filterBtn:disabled:hover {
+  background-color: rgba(170, 170, 170, 0.466);
+  box-shadow: none;
+  color: ghostwhite;
+  cursor: default;
+  width: 15%;
+}
+
+#eachChosenFilter {
+  background-color: #d4f1f4;
+  border-radius: 5px;
+  color: black;
+  display: flex;
+  font-size: 1.15em;
+  font-style: italic;
+  margin-top: 0.8%;
+  padding: 6px;
+  text-align: center;
+}
+
+#eachChosenFilter button {
+  background-color: #d4f1f4;
+  border: none;
+  color: red;
+  cursor: pointer;
+  font-size: 0.9em;
+  margin-left: 5px;
+}

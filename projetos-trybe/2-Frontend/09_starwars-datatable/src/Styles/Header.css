@@ -1,0 +1,32 @@
+#pageHeader {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1%;
+  padding: 1.5%;
+}
+
+#headerCentralContainer {
+  display: flex;
+  justify-content: space-evenly;
+  width: 40%;
+}
+
+#headerCentralContainer img {
+  width: 250px;
+}
+
+#headerCentralContainer input[ type = 'text' ] {
+  align-self: center;
+  background-color: #fce08d;
+  border-radius: 4px;
+  font-size: 1.15em;
+  padding: 1%;
+  transition: 0.3s width ease-in-out;
+  width: 33%;
+}
+
+#headerCentralContainer input[ type = 'text' ]:focus {
+  background-color: #d4f1f4;
+  outline: none;
+  width: 40%;
+}

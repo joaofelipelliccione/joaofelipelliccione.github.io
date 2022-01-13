@@ -90,7 +90,7 @@ Abaixo, é possível encontrar a grade curricular do respectivo curso, que termi
 - [x] Extra: _[Projeto - Math in Music](https://joaofelipelliccione.github.io/projetos-trybe/1-Fundamentos-Desenvolvimento-Web/11_math-in-music/index.html)_
 - [x] Extra: _[Projeto - Your Air](https://joaofelipelliccione.github.io/projetos-trybe/1-Fundamentos-Desenvolvimento-Web/12_your-air/index.html)_
 
-## Desenvolvimento Front-end :hourglass_flowing_sand:
+## Desenvolvimento Front-end :white_check_mark:
 
 ##### Bloco 11: Introdução - React
 
@@ -144,7 +144,7 @@ Abaixo, é possível encontrar a grade curricular do respectivo curso, que termi
 
 ##### Bloco 19: Projeto Final de Front-end
 
-- [ ] 19-1: _[Projeto - App de Receitas]()_
+- [x] 19-1:  _Projeto Próprio - izi tech_
 
 ## Desenvolvimento Back-end :hourglass_flowing_sand:
 

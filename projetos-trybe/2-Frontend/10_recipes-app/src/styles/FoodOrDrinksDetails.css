@@ -1,0 +1,27 @@
+.startRecipeBtn {
+  background-color: #6ce34f;
+  bottom: 0;
+  color: black;
+  font-size: 1.2rem;
+  left: 0;
+  padding: 0.5%;
+  position: fixed;
+  text-align: center;
+  width: 100%;
+}
+
+.scroll {
+  height: 280px;
+  margin-bottom: 50px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  width: 300px;
+}
+
+.scroll div {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.scroll img { border: 0;}

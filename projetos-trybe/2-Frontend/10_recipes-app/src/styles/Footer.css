@@ -1,0 +1,16 @@
+.websiteFooter {
+  background-color: #c4c4c4;
+  bottom: 0;
+  color: white;
+  left: 0;
+  position: fixed;
+  text-align: center;
+  width: 100%;
+}
+
+.websiteFooter div {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0 35%;
+  width: 30%;
+}

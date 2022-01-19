@@ -8,7 +8,7 @@ O programa conta com mais de 1.500 horas de online e aborda introdução ao dese
 
 Abaixo, é possível encontrar a grade curricular do respectivo curso, que terminará em meados de 2022!
 
-**[Clique](https://joaofelipelliccione.github.io/personal-portfolio_react/), para ter acesso ao meu *CV* e portfólio 🧑‍💼**
+**[Clique](https://joaofelipelliccione.github.io/professional-portfolio_react/), para ter acesso ao meu *CV* e portfólio 🧑‍💼**
 
 ## Fundamentos do Desenvolvimento Web :white_check_mark:
 

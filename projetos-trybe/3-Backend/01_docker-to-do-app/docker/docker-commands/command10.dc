@@ -1,0 +1,1 @@
+docker image build -t todofrontend:latest ./todo-app/front-end

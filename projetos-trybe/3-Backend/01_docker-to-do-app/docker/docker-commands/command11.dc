@@ -1,0 +1,1 @@
+docker image build -t todotests:latest ./todo-app/tests

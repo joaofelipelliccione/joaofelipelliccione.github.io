@@ -131,159 +131,166 @@ Abaixo, é possível encontrar a grade curricular do respectivo curso, que termi
 - [x] 16-5: _Testes em React-Redux_
 - [x] 16-6: _[Projeto - Trybe Wallet](https://joaofelipelliccione.github.io/trybe_frontend_6-trybewallet/#/)_
 
-##### Bloco 17: Projeto React
+##### Projeto React
 
-- [x] 17-1: _[Projeto - Jogo de Trivia](https://joaofelipelliccione.github.io/trybe_frontend_7-trivia_game/#/)_
+- [x] Projeto React: _[Jogo de Trivia](https://joaofelipelliccione.github.io/trybe_frontend_7-trivia_game/#/)_
 
-##### Bloco 18: Context API & React Hooks
+##### Bloco 17: Context API & React Hooks
 
-- [x] 18-1: _Context API do React_
-- [x] 18-2: _React Hooks - useState e useContext_
-- [x] 18-3: _React Hooks - useEffect e Hooks customizados_
-- [x] 18-4: _[Projeto - StarWars Datatable com Context API e Hooks](https://joaofelipelliccione.github.io/trybe_frontend_8-starwars_planets_search/)_
+- [x] 17-1: _Context API do React_
+- [x] 17-2: _React Hooks - useState e useContext_
+- [x] 17-3: _React Hooks - useEffect e Hooks customizados_
+- [x] 17-4: _[Projeto - StarWars Datatable com Context API e Hooks](https://joaofelipelliccione.github.io/trybe_frontend_8-starwars_planets_search/)_
 
-##### Bloco 19: Projeto Final de Front-end
+##### Projeto Final de Front-end
 
-- [x] 19-1:  _Projeto Próprio - izi tech_
+- [x] Projeto Final de Front-end: _Projeto Próprio - izi tech_
 
 ## Desenvolvimento Back-end :hourglass_flowing_sand:
 
-##### Bloco 20: Introdução - Bancos de dados relacionais
+##### Bloco 18: Docker - Utilizando Containers
 
-- [ ] 20-1: _Banco de dados SQL_
-- [ ] 20-2: _Encontrando dados em um banco de dados_
-- [ ] 20-3: _Filtrando dados de forma específica_
-- [ ] 20-4: _Manipulando tabelas_
-- [ ] 20-5: _[Projeto - All For One]()_
+- [x] 18-1: _Utilizando Containers - Docker_
+- [x] 18-2: _Manipulação e Criação de Imagens no Docker_
+- [x] 18-3: _Orquestrando Containers com Docker Compose_
+- [x] 18-4: _[Projeto - Docker To-Do List](https://github.com/joaofelipelliccione/joaofelipelliccione.github.io/tree/main/projetos-trybe/3-Backend/01_docker-to-do-app)_
 
-##### Bloco 21: Funções SQL, Joins e Subqueries
+##### Bloco 19: Introdução - Bancos de dados relacionais
 
-- [ ] 21-1: _Funções mais usadas no SQL_
-- [ ] 21-2: _Descomplicando JOINs e UNIONs_
-- [ ] 21-3: _Stored Routines & Stored Functions_
-- [ ] 21-4: _[Projeto - Vocabulary Booster]()_
+- [ ] 19-1: _Banco de dados SQL_
+- [ ] 19-2: _Encontrando dados em um banco de dados_
+- [ ] 19-3: _Filtrando dados de forma específica_
+- [ ] 19-4: _Manipulando tabelas_
+- [ ] 19-5: _[Projeto - All For One]()_
 
-##### Bloco 22: Normalização e Modelagem de Banco de Dados
+##### Bloco 20: Funções SQL, Joins e Subqueries
 
-- [ ] 22-1: _Transformando ideias em um modelo de banco de dados_
-- [ ] 22-2: _Normalização, Formas Normais e Dumps_
-- [ ] 22-3: _Transformando ideias em um modelo de banco de dados - Parte 2_
-- [ ] 22-4: _[Projeto - One For All]()_
+- [ ] 20-1: _Funções mais usadas no SQL_
+- [ ] 20-2: _Descomplicando JOINs e UNIONs_
+- [ ] 20-3: _Stored Routines & Stored Functions_
+- [ ] 20-4: _[Projeto - Vocabulary Booster]()_
 
-##### Bloco 23: Introdução ao MongoDB
+##### Bloco 21: Normalização e Modelagem de Banco de Dados
 
-- [ ] 23-1: _NoSQL & MongoDB - Introdução_
-- [ ] 23-2: _Filter Operators_
-- [ ] 23-3: _[Projeto - Data Flights]()_
+- [ ] 21-1: _Transformando ideias em um modelo de banco de dados_
+- [ ] 21-2: _Normalização, Formas Normais e Dumps_
+- [ ] 21-3: _Transformando ideias em um modelo de banco de dados - Parte 2_
+- [ ] 21-4: _[Projeto - One For All]()_
 
-##### Bloco 24: MongoDB - Updates
+##### Bloco 22: Introdução ao MongoDB
 
-- [ ] 24-1: _Updates Simples_
-- [ ] 24-2: _Updates Complexos - Arrays - Parte 1_
-- [ ] 24-3: _Updates Complexos - Arrays - Parte 2_
-- [ ] 24-4: _[Projeto - Commerce]()_
+- [ ] 22-1: _NoSQL & MongoDB - Introdução_
+- [ ] 22-2: _Filter Operators_
+- [ ] 22-3: _[Projeto - Data Flights]()_
 
-##### Bloco 25: MongoDB - Aggregation Framework
+##### Bloco 23: MongoDB - Updates
 
-- [ ] 25-1: _Aggregation Framework - Part 1_
-- [ ] 25-2: _Aggregation Framework - Part 2_
-- [ ] 25-3: _[Projeto - Aggregations]()_
+- [ ] 23-1: _Updates Simples_
+- [ ] 23-2: _Updates Complexos - Arrays - Parte 1_
+- [ ] 23-3: _Updates Complexos - Arrays - Parte 2_
+- [ ] 23-4: _[Projeto - Commerce]()_
 
-##### Bloco 26: Introdução ao Desenvolvimento WEB com NodeJS
+##### Bloco 24: MongoDB - Aggregation Framework
 
-- [ ] 26-1: _NodeJS - Introdução_
-- [ ] 26-2: _NodeJS - Fluxo Assíncrono_
-- [ ] 26-3: _NodeJS - Testes_
-- [ ] 26-4: _Express - HTTP com NodeJs_
-- [ ] 26-5: _Express - Middlewares_
-- [ ] 26-6: _[Projeto - Talk Manager]()_
+- [ ] 24-1: _Aggregation Framework - Part 1_
+- [ ] 24-2: _Aggregation Framework - Part 2_
+- [ ] 24-3: _[Projeto - Aggregations]()_
 
-##### Bloco 27: NodeJS - Camada de Serviço e Arquitetura Rest e Restful
+##### Bloco 25: Introdução ao Desenvolvimento WEB com NodeJS
 
-- [ ] 27-1: _Arquitetura de Software - Introdução e Camada de Model_
-- [ ] 27-2: _Arquitetura de Software - Camada de Controller e Service_
-- [ ] 27-3: _Arquitetura WEB - Rest e Restful_
-- [ ] 27-4: _Arquitetura de Software - Testando as Camadas_
-- [ ] 27-5: _[Projeto - Store Manager]()_
+- [ ] 25-1: _NodeJS - Introdução_
+- [ ] 25-2: _NodeJS - Fluxo Assíncrono_
+- [ ] 25-3: _NodeJS - Testes_
+- [ ] 25-4: _Express - HTTP com NodeJs_
+- [ ] 25-5: _Express - Middlewares_
+- [ ] 25-6: _[Projeto - Talk Manager]()_
 
-##### Bloco 28: Autenticação e Upload de Arquivos
+##### Bloco 26: NodeJS - Camada de Serviço e Arquitetura Rest e Restful
 
-- [ ] 28-1: _NodeJS - JSON WEB Token_
-- [ ] 28-2: _NodeJS - Upload de arquivos com Multer_
-- [ ] 28-3: _NodeJS - Testando APIs com Testes de Intergração_
-- [ ] 28-4: _[Projeto - Cookmaster]()_
+- [ ] 26-1: _Arquitetura de Software - Introdução e Camada de Model_
+- [ ] 26-2: _Arquitetura de Software - Camada de Controller e Service_
+- [ ] 26-3: _Arquitetura WEB - Rest e Restful_
+- [ ] 26-4: _Arquitetura de Software - Testando as Camadas_
+- [ ] 26-5: _[Projeto - Store Manager]()_
 
-##### Bloco 29: Deployment
+##### Bloco 27: Autenticação e Upload de Arquivos
 
-- [ ] 29-1: _Introdução - Deploy_
-- [ ] 29-2:_Infraestrutura - Deploy com Heroku_
-- [ ] 29-3: _Deploy - Gerenciadores de Processos
-- [ ] 29-4: _[Projeto - Stranger Things]()_
+- [ ] 27-1: _NodeJS - JSON WEB Token_
+- [ ] 27-2: _NodeJS - Upload de arquivos com Multer_
+- [ ] 27-3: _NodeJS - Testando APIs com Testes de Intergração_
+- [ ] 27-4: _[Projeto - Cookmaster]()_
 
-##### Bloco 30: Arquitetura - SOLID e ORM
+##### Bloco 28: Deployment
 
-- [ ] 30-1: _Arquitetura - Princípios SOLID_
-- [ ] 30-2: _ORM - Interface da Aplicação com Banco de Dados_
-- [ ] 30-3: _ORM - Associations_
-- [ ] 30-4: _[Projeto - API de Blogs]()_
+- [ ] 28-1: _Introdução - Deploy_
+- [ ] 28-2:_Infraestrutura - Deploy com Heroku_
+- [ ] 28-3: _Deploy - Gerenciadores de Processos
+- [ ] 28-4: _[Projeto - Stranger Things]()_
 
-##### Bloco 31: Sockets
+##### Bloco 29: Arquitetura - SOLID e ORM
 
-- [ ] 31-1: _Arquitetura de Software - Camada de View_
-- [ ] 31-2: _Sockets - TCP/UDP & NET_
-- [ ] 31-3: _Sockets - Socket.io_
-- [ ] 31-4: _Sockets - Praticando Socket.io_
-- [ ] 31-5: _[Projeto - Webchat]()_
+- [ ] 29-1: _Arquitetura - Princípios SOLID_
+- [ ] 29-2: _ORM - Interface da Aplicação com Banco de Dados_
+- [ ] 29-3: _ORM - Associations_
+- [ ] 29-4: _[Projeto - API de Blogs]()_
 
-##### Bloco 32: Projeto
+##### Bloco 30: Sockets
 
-- [ ] 32-1: _[Projeto - App de Delivery]()_
+- [ ] 30-1: _Arquitetura de Software - Camada de View_
+- [ ] 30-2: _Sockets - TCP/UDP & NET_
+- [ ] 30-3: _Sockets - Socket.io_
+- [ ] 30-4: _Sockets - Praticando Socket.io_
+- [ ] 30-5: _[Projeto - Webchat]()_
+
+##### Bloco 31: Projeto
+
+- [ ] 31-1: _[Projeto - App de Delivery]()_
 
 ## Ciência da Computação :hourglass_flowing_sand:
 
-##### Bloco 33: Introdução à Python
+##### Bloco 32: Introdução à Python
 
-- [ ] 33-1: _Aprendendo Python_
-- [ ] 33-2: _Entrada e Saída de dados_
-- [ ] 33-3: _Testes_
-- [ ] 33-4: _[Projeto - Job Insights]()_
+- [ ] 32-1: _Aprendendo Python_
+- [ ] 32-2: _Entrada e Saída de dados_
+- [ ] 32-3: _Testes_
+- [ ] 32-4: _[Projeto - Job Insights]()_
 
-##### Bloco 34: Programação Orientada a Objetos e Padrões de Projeto
+##### Bloco 33: Programação Orientada a Objetos e Padrões de Projeto
 
-- [ ] 34-1: _Introdução - Programação Orientada a Objetos_
-- [ ] 34-2: _Herança, Composição e Interfaces_
-- [ ] 34-3: _Padrões de projeto_
-- [ ] 34-4: _[Projeto - Relatórios de Estoque]()_
+- [ ] 33-1: _Introdução - Programação Orientada a Objetos_
+- [ ] 33-2: _Herança, Composição e Interfaces_
+- [ ] 33-3: _Padrões de projeto_
+- [ ] 33-4: _[Projeto - Relatórios de Estoque]()_
 
-##### Bloco 35: Redes e Raspagem de Dados
+##### Bloco 34: Redes e Raspagem de Dados
 
-- [ ] 35-1: _Arquitetura de Redes_
-- [ ] 35-2: _Redes de computadores, ferramentas e segurança_
-- [ ] 35-3: _Raspagem de Dados_
-- [ ] 35-4: _[Projeto - Tech News]()_
+- [ ] 34-1: _Arquitetura de Redes_
+- [ ] 34-2: _Redes de computadores, ferramentas e segurança_
+- [ ] 34-3: _Raspagem de Dados_
+- [ ] 34-4: _[Projeto - Tech News]()_
 
-##### Bloco 36: Algoritmos
+##### Bloco 35: Algoritmos
 
-- [ ] 36-1: _Complexidade de Algoritmos_
-- [ ] 36-2: _Recursividade e Estratégias para Solução de Problemas_
-- [ ] 36-3: _Algoritmos de ordenação e busca_
-- [ ] 36-4: _[Projeto - Algoritmos]()_
+- [ ] 35-1: _Complexidade de Algoritmos_
+- [ ] 35-2: _Recursividade e Estratégias para Solução de Problemas_
+- [ ] 35-3: _Algoritmos de ordenação e busca_
+- [ ] 35-4: _[Projeto - Algoritmos]()_
 
-##### Bloco 37: Estrutura de Dados I: Arrays, Hashmaps e Sets
+##### Bloco 36: Estrutura de Dados I: Arrays, Hashmaps e Sets
 
-- [ ] 37-1: _Arquitetura de Computadores_
-- [ ] 37-2: _Arrays_
-- [ ] 37-3: _Hashmap e Dict_
+- [ ] 36-1: _Arquitetura de Computadores_
+- [ ] 36-2: _Arrays_
+- [ ] 36-3: _Hashmap e Dict_
+- [ ] 36-4: _Set_
+- [ ] 36-5: _[Projeto - Restaurant Orders]()_
+
+##### Bloco 37: Estrutura de Dados II: Listas, Filas e Pilhas
+
+- [ ] 37-1: _Nó e Listas Encadeadas_
+- [ ] 37-2: _Deque_
+- [ ] 37-3: _Pilhas_
 - [ ] 37-4: _Set_
-- [ ] 37-5: _[Projeto - Restaurant Orders]()_
-
-##### Bloco 38: Estrutura de Dados II: Listas, Filas e Pilhas
-
-- [ ] 38-1: _Nó e Listas Encadeadas_
-- [ ] 38-2: _Deque_
-- [ ] 38-3: _Pilhas_
-- [ ] 38-4: _Set_
-- [ ] 38-5: _[Projeto TING - TRYBE is Not Google]()_
+- [ ] 37-5: _[Projeto TING - TRYBE is Not Google]()_
 
 # E isso é só o começo... :rocket:
 

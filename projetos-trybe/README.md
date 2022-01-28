@@ -157,11 +157,11 @@ Abaixo, é possível encontrar a grade curricular do respectivo curso, que termi
 
 ##### Bloco 19: Introdução - Bancos de dados relacionais
 
-- [ ] 19-1: _Banco de dados SQL_
-- [ ] 19-2: _Encontrando dados em um banco de dados_
-- [ ] 19-3: _Filtrando dados de forma específica_
-- [ ] 19-4: _Manipulando tabelas_
-- [ ] 19-5: _[Projeto - All For One]()_
+- [x] 19-1: _Banco de dados SQL_
+- [x] 19-2: _Encontrando dados em um banco de dados_
+- [x] 19-3: _Filtrando dados de forma específica_
+- [x] 19-4: _Manipulando tabelas_
+- [x] 19-5: _[Projeto - All For One](https://github.com/joaofelipelliccione/joaofelipelliccione.github.io/tree/main/projetos-trybe/3-Backend/02_MySQL-Main-Commands)_
 
 ##### Bloco 20: Funções SQL, Joins e Subqueries
 

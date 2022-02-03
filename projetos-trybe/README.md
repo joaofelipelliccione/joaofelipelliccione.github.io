@@ -169,7 +169,7 @@ Abaixo, é possível encontrar a grade curricular do respectivo curso, que termi
 - [x] 20-2: _Descomplicando JOINs_
 - [x] 20-3: _Transformando ideias em um modelo de banco de dados_
 - [x] 20-4: _Normalização_
-- [ ] 20-5: _[Projeto - One For All]()_
+- [ ] 20-5: _[Projeto - One For All](https://github.com/joaofelipelliccione/joaofelipelliccione.github.io/tree/main/projetos-trybe/3-Backend/03_MySQL-Database-Modeling)_
 
 ##### Bloco 21: Introdução ao Desenvolvimento WEB com NodeJS
 

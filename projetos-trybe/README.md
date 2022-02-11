@@ -173,12 +173,12 @@ Abaixo, é possível encontrar a grade curricular do respectivo curso, que termi
 
 ##### Bloco 21: Introdução ao Desenvolvimento WEB com NodeJS
 
-- [ ] 21-1: _NodeJS - Introdução_
-- [ ] 21-2: _NodeJS - Fluxo Assíncrono_
-- [ ] 21-3: _NodeJS - Testes_
-- [ ] 21-4: _Express - HTTP com NodeJs_
-- [ ] 21-5: _Express - Middlewares_
-- [ ] 21-6: _[Projeto - Talk Manager]()_
+- [x] 21-1: _NodeJS - Introdução_
+- [x] 21-2: _NodeJS - Fluxo Assíncrono_
+- [x] 21-3: _Testes em Back-end com Node.js - Mocha, Chai e Sinon_
+- [x] 21-4: _Express - HTTP com NodeJs_
+- [x] 21-5: _Express - Middlewares_
+- [x] 21-6: _[Projeto - Talk Manager](https://github.com/joaofelipelliccione/joaofelipelliccione.github.io/tree/main/projetos-trybe/3-Backend/04_NodeJs-CRUD-API)_
 
 ##### Bloco 22: NodeJS - Camada de Serviço e Arquitetura Rest e Restful
 
@@ -281,4 +281,3 @@ Abaixo, é possível encontrar a grade curricular do respectivo curso, que termi
 - [ ] 34-5: _[Projeto TING - TRYBE is Not Google]()_
 
 # E isso é só o começo... :rocket:
-

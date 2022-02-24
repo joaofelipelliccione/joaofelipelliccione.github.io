@@ -1,5 +1,7 @@
+/* eslint-disable max-lines-per-function */
+
 const { StatusCodes } = require('http-status-codes');
-// const ProductModel = require('../models/ProductModel');
+const ProductModel = require('../models/ProductModel');
 
 const idValidator = (req, res, next) => {
   let invalidId = false;
@@ -56,27 +58,35 @@ const quantityLowerThanOneValidator = (req, res, next) => {
   next();
 };
 
-// const outOfStockProductsValidator = (req, res, next) => {
-//   let outOfStock = false;
-//   const newSaleArr = req.body;
-//   console.log(newSaleArr)
+const outOfStockProductsValidator = async (req, res, next) => {
+  let outOfStock = false;
+  const productsStockArr = [];
+  const newSaleArr = req.body;
 
-//   newSaleArr.forEach(async (newSaleObj) => {
-//     const product = await ProductModel.findById(newSaleObj.productId);
-//     console.log(product[0].quantity, newSaleObj.quantity);
-//     if (product[0].quantity < newSaleObj.quantity) {
-//       outOfStock = true;
-//       return outOfStock;
-//     }
-//   });
+  await Promise.all(newSaleArr.map(async (newSaleObj) => {
+    const itemsFromStock = await ProductModel.findById(newSaleObj.productId);
+    productsStockArr.push(...itemsFromStock);
+  }));
 
-//   console.log(outOfStock);
-//   next();
-// };
+  newSaleArr.forEach((newSaleObj) => {
+    productsStockArr.forEach(({ quantity }) => {
+      if (quantity < newSaleObj.quantity) {
+        outOfStock = true;
+        return outOfStock;
+      }
+    });
+  });
+
+  if (outOfStock) {
+    return res.status(StatusCodes.UNPROCESSABLE_ENTITY)
+    .json({ message: 'Such amount is not permitted to sell' });
+  }
+  next();
+};
 
 module.exports = {
   idValidator,
   notInformedQuantityValidator,
   quantityLowerThanOneValidator,
-  // outOfStockProductsValidator,
+  outOfStockProductsValidator,
 };

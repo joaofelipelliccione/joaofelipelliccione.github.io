@@ -8,7 +8,7 @@ saleRoutes.post('/',
 saleMws.idValidator,
 saleMws.notInformedQuantityValidator,
 saleMws.quantityLowerThanOneValidator,
-// saleMws.outOfStockProductsValidator,
+saleMws.outOfStockProductsValidator,
 SaleController.create);
 
 saleRoutes.get('/', SaleController.findAll);

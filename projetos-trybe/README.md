@@ -153,7 +153,7 @@ Abaixo, é possível encontrar a grade curricular do respectivo curso, que termi
 - [x] 18-1: _Utilizando Containers - Docker_
 - [x] 18-2: _Manipulação e Criação de Imagens no Docker_
 - [x] 18-3: _Orquestrando Containers com Docker Compose_
-- [x] 18-4: _[Projeto - Docker To-Do List](https://github.com/joaofelipelliccione/joaofelipelliccione.github.io/tree/main/projetos-trybe/3-Backend/01_docker-to-do-app)_
+- [x] 18-4: _Projeto - Docker To-Do List - [Código do Projeto](https://github.com/joaofelipelliccione/joaofelipelliccione.github.io/tree/main/projetos-trybe/3-Backend/01_docker-to-do-app)_
 
 ##### Bloco 19: Introdução - Bancos de dados relacionais
 
@@ -161,7 +161,7 @@ Abaixo, é possível encontrar a grade curricular do respectivo curso, que termi
 - [x] 19-2: _Encontrando dados em um banco de dados_
 - [x] 19-3: _Filtrando dados de forma específica_
 - [x] 19-4: _Manipulando tabelas_
-- [x] 19-5: _[Projeto - All For One](https://github.com/joaofelipelliccione/joaofelipelliccione.github.io/tree/main/projetos-trybe/3-Backend/02_MySQL-Main-Commands)_
+- [x] 19-5: _Projeto - All For One - [Código do Projeto](https://github.com/joaofelipelliccione/joaofelipelliccione.github.io/tree/main/projetos-trybe/3-Backend/02_MySQL-Main-Commands)_
 
 ##### Bloco 20: Funções SQL, Joins, Modelagem de Banco de Dados e Normalização
 
@@ -169,7 +169,7 @@ Abaixo, é possível encontrar a grade curricular do respectivo curso, que termi
 - [x] 20-2: _Descomplicando JOINs_
 - [x] 20-3: _Transformando ideias em um modelo de banco de dados_
 - [x] 20-4: _Normalização_
-- [x] 20-5: _[Projeto - One For All](https://github.com/joaofelipelliccione/joaofelipelliccione.github.io/tree/main/projetos-trybe/3-Backend/03_MySQL-Database-Modeling)_
+- [x] 20-5: _Projeto - One For All - [Código do Projeto](https://github.com/joaofelipelliccione/joaofelipelliccione.github.io/tree/main/projetos-trybe/3-Backend/03_MySQL-Database-Modeling)_
 
 ##### Bloco 21: Introdução ao Desenvolvimento WEB com NodeJS
 
@@ -178,15 +178,15 @@ Abaixo, é possível encontrar a grade curricular do respectivo curso, que termi
 - [x] 21-3: _Testes em Back-end com Node.js - Mocha, Chai e Sinon_
 - [x] 21-4: _Express - HTTP com NodeJs_
 - [x] 21-5: _Express - Middlewares_
-- [x] 21-6: _[Projeto - Talk Manager](https://github.com/joaofelipelliccione/joaofelipelliccione.github.io/tree/main/projetos-trybe/3-Backend/04_NodeJs-CRUD-API)_
+- [x] 21-6: _Projeto - Talk Manager - [Código do Projeto](https://github.com/joaofelipelliccione/joaofelipelliccione.github.io/tree/main/projetos-trybe/3-Backend/04_NodeJs-CRUD-API)_
 
 ##### Bloco 22: NodeJS - Camada de Serviço e Arquitetura Rest e Restful
 
-- [ ] 22-1: _Arquitetura de Software - Introdução e Camada de Model_
-- [ ] 22-2: _Arquitetura de Software - Camada de Controller e Service_
-- [ ] 22-3: _Arquitetura WEB - Rest e Restful_
-- [ ] 22-4: _Arquitetura de Software - Testando as Camadas_
-- [ ] 22-5: _[Projeto - Store Manager]()_
+- [x] 22-1: _Arquitetura de Software - Introdução e Camada de Model_
+- [x] 22-2: _Arquitetura de Software - Camada de Controller e Service_
+- [x] 22-3: _Arquitetura WEB - Rest e Restful_
+- [x] 22-4: _Arquitetura de Software - Testando as Camadas_
+- [x] 22-5: _Projeto - Store Manager - [Código do Projeto](https://github.com/joaofelipelliccione/joaofelipelliccione.github.io/tree/main/projetos-trybe/3-Backend/05_NodeJs-CRUD-API-SQL)_
 
 ##### Bloco 23: Node.js: ORM e Autenticação
 

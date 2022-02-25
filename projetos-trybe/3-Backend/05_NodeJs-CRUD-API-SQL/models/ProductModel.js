@@ -48,6 +48,16 @@ const remove = async (productId) => {
   await connection.execute(query, [productId]);
 };
 
+const updateQuantityOnSale = async (productId, quantity) => {
+  const query = 'UPDATE StoreManager.products SET quantity = ? WHERE id = ?';
+  await connection.execute(query, [quantity, productId]);
+
+  return {
+    id: productId,
+    updatedQuantity: quantity, 
+  };
+};
+
 module.exports = {
   findAll,
   findById,
@@ -55,4 +65,5 @@ module.exports = {
   create,
   update,
   remove,
+  updateQuantityOnSale,
 };

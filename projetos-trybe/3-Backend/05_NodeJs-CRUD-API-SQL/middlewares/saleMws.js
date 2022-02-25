@@ -68,19 +68,18 @@ const outOfStockProductsValidator = async (req, res, next) => {
     productsStockArr.push(...itemsFromStock);
   }));
 
-  newSaleArr.forEach((newSaleObj) => {
-    productsStockArr.forEach(({ quantity }) => {
-      if (quantity < newSaleObj.quantity) {
-        outOfStock = true;
-        return outOfStock;
-      }
-    });
+  newSaleArr.forEach((newSaleObj, i) => {
+    if (productsStockArr[i].quantity < newSaleObj.quantity) {
+      outOfStock = true;
+      return outOfStock;
+    }
   });
 
   if (outOfStock) {
     return res.status(StatusCodes.UNPROCESSABLE_ENTITY)
     .json({ message: 'Such amount is not permitted to sell' });
   }
+
   next();
 };
 

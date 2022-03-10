@@ -8,7 +8,7 @@ O programa conta com mais de 1.500 horas de online e aborda introdução ao dese
 
 Abaixo, é possível encontrar a grade curricular do respectivo curso, que terminará em meados de 2022!
 
-**[Clique](https://joaofelipelliccione.github.io/professional-portfolio_react/), para ter acesso ao meu *CV* e portfólio 🧑‍💼**
+**[Clique](https://joaofelipecunha.herokuapp.com/), para ter acesso ao meu *CV* e portfólio 🧑‍💼**
 
 ## Fundamentos do Desenvolvimento Web :white_check_mark:
 
@@ -190,10 +190,10 @@ Abaixo, é possível encontrar a grade curricular do respectivo curso, que termi
 
 ##### Bloco 23: Node.js: ORM e Autenticação
 
-- [ ] 23-1: _ORM - Interface da aplicação com o banco de dados_
-- [ ] 23-2: _ORM - Associations_
-- [ ] 23-3: _JWT - (JSON Web Token)_
-- [ ] 23-4: _Testando APIs com Testes de Integração_
+- [x] 23-1: _ORM - Interface da aplicação com o banco de dados_
+- [x] 23-2: _ORM - Associations_
+- [x] 23-3: _JWT - (JSON Web Token)_
+- [x] 23-4: _Testando APIs com Testes de Integração_
 - [ ] 23-5: _[Projeto - API de Blogs]()_
 
 ##### Bloco 24: Deployment

@@ -194,7 +194,7 @@ Abaixo, é possível encontrar a grade curricular do respectivo curso, que termi
 - [x] 23-2: _ORM - Associations_
 - [x] 23-3: _JWT - (JSON Web Token)_
 - [x] 23-4: _Testando APIs com Testes de Integração_
-- [ ] 23-5: _[Projeto - API de Blogs]()_
+- [x] 23-5: _Projeto - API de Blogs - [Código do Projeto](https://github.com/joaofelipelliccione/joaofelipelliccione.github.io/tree/main/projetos-trybe/3-Backend/06_NodeJs-CRUD-API-ORM)_
 
 ##### Bloco 24: Deployment
 

@@ -198,10 +198,9 @@ Abaixo, é possível encontrar a grade curricular do respectivo curso, que termi
 
 ##### Bloco 24: Deployment
 
-- [ ] 24-1: _Introdução - Deploy_
-- [ ] 24-2:_Infraestrutura - Deploy com Heroku_
-- [ ] 24-3: _Deploy - Gerenciadores de Processos_
-- [ ] 24-4: _[Projeto - Stranger Things]()_
+- [x] 24-1: _Introdução - Deploy_
+- [x] 24-2: _Infraestrutura - Deploy Docker com Heroku_
+- [x] 24-3: _Deploy - Gerenciadores de Processos (CI/CD)_
 
 ##### Bloco 25: TypeScript
 

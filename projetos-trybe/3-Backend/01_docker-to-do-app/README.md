@@ -1,5 +1,4 @@
-### Objetivos do projeto:
-
+## Projeto Docker
 O objetivo desse projeto foi "conteinerizar" as aplicações de frontend, backend e testes, criar uma conexão entre elas e orquestrar seu funcionamento, criar imagens das aplicações e configurar com o docker-compose.
 
 ### Habilidades desenvolvidas:

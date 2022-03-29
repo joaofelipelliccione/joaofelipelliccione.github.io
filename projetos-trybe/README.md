@@ -204,10 +204,10 @@ Abaixo, é possível encontrar a grade curricular do respectivo curso, que termi
 
 ##### Bloco 25: TypeScript
 
-- [ ] 25-1: _Introdução ao TypeScript_
-- [ ] 25-2:_Tipagem Estática e Generics_
-- [ ] 25-3: _Express com TypeScript_
-- [ ] 25-4: _[Projeto - Trybe Smith]()_
+- [x] 25-1: _Introdução ao TypeScript_
+- [x] 25-2: _Tipagem Estática e Generics_
+- [x] 25-3: _Express com TypeScript_
+- [x] 25-4: _[Projeto - Trybe Smith](https://github.com/joaofelipelliccione/joaofelipelliccione.github.io/tree/main/projetos-trybe/3-Backend/07_NodeJs-CRUD-API-Typescript)_
 
 ##### Bloco 26: Programação Orientada a Objetos (POO) e SOLID
 
@@ -280,3 +280,4 @@ Abaixo, é possível encontrar a grade curricular do respectivo curso, que termi
 - [ ] 34-5: _[Projeto TING - TRYBE is Not Google]()_
 
 # E isso é só o começo... :rocket:
+

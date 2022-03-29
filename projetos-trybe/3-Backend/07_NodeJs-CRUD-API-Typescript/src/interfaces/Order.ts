@@ -1,3 +1,9 @@
+export interface OrderRow {
+  id: number;
+  userId: number;
+  product: number;
+}
+
 export interface AllOrders {
   id: number;
   userId: number;

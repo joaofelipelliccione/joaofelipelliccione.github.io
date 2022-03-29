@@ -85,10 +85,9 @@ Abaixo, é possível encontrar a grade curricular do respectivo curso, que termi
 - [x] 10-3: _Jest - Simulando comportamentos_
 - [x] 10-4: _Projeto - Jest Assíncrono e Mocking - [Código do Projeto](https://github.com/joaofelipelliccione/joaofelipelliccione.github.io/tree/main/projetos-trybe/1-Fundamentos-Desenvolvimento-Web/10_jest-tests)_
 
-##### Projeto Bônus - Math in Music e Your Air
+##### Projeto Bônus - Math in Music
 
 - [x] Extra: _[Projeto - Math in Music](https://joaofelipelliccione.github.io/projetos-trybe/1-Fundamentos-Desenvolvimento-Web/11_math-in-music/index.html)_
-- [x] Extra: _[Projeto - Your Air](https://joaofelipelliccione.github.io/projetos-trybe/1-Fundamentos-Desenvolvimento-Web/12_your-air/index.html)_
 
 ## Desenvolvimento Front-end :white_check_mark:
 
@@ -207,7 +206,7 @@ Abaixo, é possível encontrar a grade curricular do respectivo curso, que termi
 - [x] 25-1: _Introdução ao TypeScript_
 - [x] 25-2: _Tipagem Estática e Generics_
 - [x] 25-3: _Express com TypeScript_
-- [x] 25-4: _[Projeto - Trybe Smith](https://github.com/joaofelipelliccione/joaofelipelliccione.github.io/tree/main/projetos-trybe/3-Backend/07_NodeJs-CRUD-API-Typescript)_
+- [x] 25-4: _Projeto - Trybe Smith - [Código do Projeto](https://github.com/joaofelipelliccione/joaofelipelliccione.github.io/tree/main/projetos-trybe/3-Backend/07_NodeJs-CRUD-API-Typescript)_
 
 ##### Bloco 26: Programação Orientada a Objetos (POO) e SOLID
 

@@ -213,8 +213,6 @@ Neste projeto, desenvolveu-se um **CRUD** (_Create, Read, Update_ e _Delete_) de
 
 - O endpoint deve ser acessível através do caminho (`/products`).
 
-- Um produto só pode ser criado caso a pessoa usuária esteja _logada_ e o _token_ `JWT` validado.
-
 - Os produtos enviados devem ser salvos na tabela `Products` do banco de dados;
 
 - O endpoint deve receber a seguinte estrutura:
@@ -227,21 +225,6 @@ Neste projeto, desenvolveu-se um **CRUD** (_Create, Read, Update_ e _Delete_) de
 
 <details close>
   <summary>Além disso, as seguintes verificações serão feitas:</summary>
-
-  <br>
-
-  > :point_right: Para token
-  - **[Será validado que não é possível cadastrar um produto sem token]**
-    - Se o token não for informado, o resultado retornado deverá ser um _status http_ `401` e
-    ```json
-      { "error": "Token not found" }
-    ```
-
-  - **[Será validado que não é possível cadastrar um produto com um token inválido]**
-    - Se o token informado não for válido, o resultado retornado deverá ser um _status http_ `401` e
-    ```json
-      { "error": "Invalid token" }
-    ```
 
   <br>
 

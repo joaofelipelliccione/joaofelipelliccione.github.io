@@ -1,0 +1,1 @@
+# trybesmith_sequelize

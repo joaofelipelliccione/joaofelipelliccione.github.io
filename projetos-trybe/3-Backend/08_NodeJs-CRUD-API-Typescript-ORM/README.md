@@ -1,6 +1,6 @@
 ## Projeto Trybesmith
 
-Neste projeto, desenvolveu-se um **CRUD** (_Create, Read, Update_ e _Delete_) de itens medievais, no formato de uma _API_, utilizando _Typescript_. Foram criados alguns _endpoints_ para ler e escrever em um banco de dados, utilizando o **MySQL**.
+Neste projeto, desenvolveu-se um **CRUD** (_Create, Read, Update_ e _Delete_) de itens medievais, no formato de uma _API_, utilizando _Typescript_. Foram criados alguns _endpoints_ para ler e escrever em um banco de dados, utilizando o **MySQL** e o ORM Sequelize.
 
 ---
 

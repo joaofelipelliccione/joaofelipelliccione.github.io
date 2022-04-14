@@ -215,8 +215,8 @@ Abaixo, é possível encontrar a grade curricular do respectivo curso, que termi
 - [x] 26-3: _Polimorfismo_
 - [x] 26-4: _SOLID - Introdução e Princípios S, O e D_
 - [x] 26-5: _SOLID - Princípios L e I_
-- [x] 26-6: _Projeto - Trybers and Dragons - [Código do Projeto](https://github.com/joaofelipelliccione/joaofelipelliccione.github.io/tree/main/projetos-trybe/3-Backend/09_Developing-Typescript)_
-- [x] 26-7: _Projeto - Trybe Futebol Clube - [Código do Projeto](https://github.com/joaofelipelliccione/joaofelipelliccione.github.io/tree/main/projetos-trybe/3-Backend/10_TFC)_
+- [x] 26-6: _Projeto - Trybers and Dragons - [Código do Projeto](https://github.com/joaofelipelliccione/joaofelipelliccione.github.io/tree/main/projetos-trybe/3-Backend/08_Developing-Typescript)_
+- [x] 26-7: _Projeto - Trybe Futebol Clube - [Código do Projeto](https://github.com/joaofelipelliccione/joaofelipelliccione.github.io/tree/main/projetos-trybe/3-Backend/09_TFC)_
 
 ##### Bloco 27: Introdução ao MongoDB
 

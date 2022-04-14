@@ -208,27 +208,30 @@ Abaixo, é possível encontrar a grade curricular do respectivo curso, que termi
 - [x] 25-3: _Express com TypeScript_
 - [x] 25-4: _Projeto - Trybe Smith - [Código do Projeto](https://github.com/joaofelipelliccione/joaofelipelliccione.github.io/tree/main/projetos-trybe/3-Backend/07_NodeJs-CRUD-API-Typescript)_
 
-##### Bloco 26: Programação Orientada a Objetos (POO) e SOLID
+##### Bloco 26: Programação Orientada à Objetos (POO) e SOLID
 
-- [ ] 26-1: _Introdução à Orientação a Objetos_
-- [ ] 26-2: _Herança e Interfaces_
-- [ ] 26-3: _Polimorfismo_
-- [ ] 26-4: _SOLID - Introdução e Princípios S, O e D_
-- [ ] 26-5: _SOLID - Princípios L e I_
-- [ ] 26-6: _[Projeto - Trybers and Dragons]()_
+- [x] 26-1: _Introdução à Orientação a Objetos_
+- [x] 26-2: _Herança e Interfaces_
+- [x] 26-3: _Polimorfismo_
+- [x] 26-4: _SOLID - Introdução e Princípios S, O e D_
+- [x] 26-5: _SOLID - Princípios L e I_
+- [x] 26-6: _Projeto - Trybers and Dragons - [Código do Projeto](https://github.com/joaofelipelliccione/joaofelipelliccione.github.io/tree/main/projetos-trybe/3-Backend/09_Developing-Typescript)_
+- [x] 26-7: _Projeto - Trybe Futebol Clube - [Código do Projeto](https://github.com/joaofelipelliccione/joaofelipelliccione.github.io/tree/main/projetos-trybe/3-Backend/10_TFC)_
 
 ##### Bloco 27: Introdução ao MongoDB
 
 - [ ] 27-1: _NoSQL & MongoDB - Introdução_
 - [ ] 27-2: _Filter Operators_
-- [ ] 27-3: _[Projeto - Data Flights]()_
+- [ ] 27-3: _Operadores de Consulta_
+- [ ] 27-4: _Updates Simples_
+- [ ] 27-5: _Updates Complexos - Arrays_
+- [ ] 27-6: _[Projeto - Commerce]()_
 
-##### Bloco 28: MongoDB - Updates Simples e Complexos
+##### Bloco 28: MongoDB com Node.js e POO
 
-- [ ] 28-1: _Updates Simples_
-- [ ] 28-2: _Updates Complexos - Arrays - Parte 1_
-- [ ] 28-3: _Updates Complexos - Arrays - Parte 2_
-- [ ] 28-4: _[Projeto - Commerce]()_
+- [ ] 28-1: _MongoDB e Arquitetura MSC_
+- [ ] 28-2: _MongoDB e POO_
+- [ ] 28-3: _[Projeto - Car Shop]()_
 
 ##### Bloco 29: MasterClass - VPS, CI/CD
 
@@ -279,4 +282,3 @@ Abaixo, é possível encontrar a grade curricular do respectivo curso, que termi
 - [ ] 34-5: _[Projeto TING - TRYBE is Not Google]()_
 
 # E isso é só o começo... :rocket:
-

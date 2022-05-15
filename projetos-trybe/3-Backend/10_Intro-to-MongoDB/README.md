@@ -295,3 +295,13 @@ Para isso, escreva no arquivo `desafio30.js` duas queries, **nesta ordem**:
 
 ---
 
+
+### Testes 🛠
+
+Para executar localmente os testes, é preciso estar na raiz do diretório do projeto e escrever o seguinte no seu terminal,:
+
+  ```sh
+  ./scripts/evaluate.sh
+  ```
+
+👀 **De olho na dica**: esse script vai imprimir um relatório indicando se o teste passou ou não para cada desafio. Como a execução do script envolve restauração da base de dados `commerce` de um teste para outro, recomenda-se esperar pela sua execução completa.

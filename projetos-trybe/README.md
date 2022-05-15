@@ -220,12 +220,12 @@ Abaixo, é possível encontrar a grade curricular do respectivo curso, que termi
 
 ##### Bloco 27: Introdução ao MongoDB
 
-- [ ] 27-1: _NoSQL & MongoDB - Introdução_
-- [ ] 27-2: _Filter Operators_
-- [ ] 27-3: _Operadores de Consulta_
-- [ ] 27-4: _Updates Simples_
-- [ ] 27-5: _Updates Complexos - Arrays_
-- [ ] 27-6: _[Projeto - Commerce]()_
+- [x] 27-1: _NoSQL & MongoDB - Introdução_
+- [x] 27-2: _Filter Operators_
+- [x] 27-3: _Operadores de Consulta_
+- [x] 27-4: _Updates Simples_
+- [x] 27-5: _Updates Complexos - Arrays_
+- [x] 27-6: _[Projeto - Commerce](https://github.com/joaofelipelliccione/joaofelipelliccione.github.io/tree/main/projetos-trybe/3-Backend/10_Intro-to-MongoDB)_
 
 ##### Bloco 28: MongoDB com Node.js e POO
 

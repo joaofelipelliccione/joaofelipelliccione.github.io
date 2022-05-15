@@ -1,0 +1,164 @@
+{
+  "requirements": [
+    {
+      "identifier": "desafio1",
+      "description": "1 - Retorne a quantidade de documentos inseridos na coleção `produtos`.",
+      "bonus": false
+    },
+    {
+      "identifier": "desafio2",
+      "description": "2 - Ordene a coleção `produtos` pelo `nome` em ordem crescente e mostre apenas o primeiro lanche.",
+      "bonus": false
+    },
+    {
+      "identifier": "desafio3",
+      "description": "3 - Retorne o lanche mais vendido.",
+      "bonus": false
+    },
+    {
+      "identifier": "desafio4",
+      "description": "4 - Retorne os lanches que tiveram vendas maiores que `50` e menores que `100`.",
+      "bonus": false
+    },
+    {
+      "identifier": "desafio5",
+      "description": "5 - Retorne o `nome`, as `curtidas` e `vendidos` dos lanches que tiveram quantidade de `curtidas` igual a `36` ou tenham a quantidade de vendas igual a `85`.",
+      "bonus": false
+    },
+    {
+      "identifier": "desafio6",
+      "description": "6 - Retorne o `nome` e `curtidas` dos lanches que tiveram curtidas maiores que `10` e menores que `100`.",
+      "bonus": false
+    },
+    {
+      "identifier": "desafio7",
+      "description": "7 - Retorne o `nome` e `vendidos` dos lanches que tenham sido `vendidos` uma quantidade diferente de `50` e que o campo `tag`não exista.",
+      "bonus": false
+    },
+    {
+      "identifier": "desafio8",
+      "description": "8 - Delete os lanches que tenham menos de `50` `curtidas`.",
+      "bonus": false
+    },
+    {
+      "identifier": "desafio9",
+      "description": "9 - Retorne o `nome` de todos os lanches que possuam `calorias` abaixo de `500`.",
+      "bonus": false
+    },
+    {
+      "identifier": "desafio10",
+      "description": "10 - Retorne o `nome` de todos os lanches que tenham o percentual de `proteínas` maior ou igual a `30` e menor ou igual a `40`.",
+      "bonus": false
+    },
+    {
+      "identifier": "desafio11",
+      "description": "11 - Retorne o `nome` do produto, a quantidade de `curtidas` e quantos itens foram `vendidos` dos produtos que não sejam igual a `Big Mac` e `McChicken`.",
+      "bonus": false
+    },
+    {
+      "identifier": "desafio12",
+      "description": "12 - Adicione `ketchup` aos `ingredientes` para todos os sanduíches menos o `McChicken`, garantindo que não haja duplicidade nos `ingredientes`.",
+      "bonus": false
+    },
+    {
+      "identifier": "desafio13",
+      "description": "13 - Inclua o campo `criadoPor` em todos os documentos, colocando `Ronald McDonald` no valor desse campo.",
+      "bonus": false
+    },
+    {
+      "identifier": "desafio14",
+      "description": "14 - Crie uma query que retorne todos os lanches que possuem *picles* em seus ingredientes e mostre apenas os `3` primeiros itens contidos no array `valoresNutricionais`.",
+      "bonus": false
+    },
+    {
+      "identifier": "desafio15",
+      "description": "15 - Adicione o campo `avaliacao` em todos os documentos da coleção e efetue alterações nesse campo.",
+      "bonus": false
+    },
+    {
+      "identifier": "desafio16",
+      "description": "16 - Adicione o campo ultimaModificacao com a data corrente somente no sanduíche Big Mac.",
+      "bonus": false
+    },
+    {
+      "identifier": "desafio17",
+      "description": "17 - Retorne a quantidade total de produtos em uma nova coleção chamada `resumoProdutos`.",
+      "bonus": false
+    },
+    {
+      "identifier": "desafio18",
+      "description": "18 - Inclua `bacon` no final da lista de `ingredientes` dos sanduíches `Big Mac` e `Quarteirão com Queijo`.",
+      "bonus": false
+    },
+    {
+      "identifier": "desafio19",
+      "description": "19 - Remova o item `cebola` de todos os sanduíches.",
+      "bonus": false
+    },
+    {
+      "identifier": "desafio20",
+      "description": "20 - Remova o primeiro `ingrediente` do sanduíche `Quarteirão com Queijo`.",
+      "bonus": false
+    },
+    {
+      "identifier": "desafio21",
+      "description": "21 - Remova o último `ingrediente` do sanduíche `Cheddar McMelt`.",
+      "bonus": false
+    },
+    {
+      "identifier": "desafio22",
+      "description": "22 - Adicione a quantidade de vendas dos sanduíches por dia da semana.",
+      "bonus": false
+    },
+    {
+      "identifier": "desafio23",
+      "description": "23 - Insira os elementos `combo` e `tasty` no array `tags` de todos os sanduíches e aproveite para deixar os elementos em ordem alfabética ascendente.",
+      "bonus": false
+    },
+    {
+      "identifier": "desafio24",
+      "description": "24 - Ordene em todos os documentos os elementos do array `valoresNutricionais` pelo campo `percentual` de forma descendente.",
+      "bonus": false
+    },
+    {
+      "identifier": "desafio25",
+      "description": "25 - Adicione o elemento `muito sódio` ao final do array `tags` nos produtos em que o `percentual` de `sódio` seja maior ou igual a `40`.",
+      "bonus": false
+    },
+    {
+      "identifier": "desafio26",
+      "description": "26 - Adicione o elemento `contém sódio` ao final do array `tags` nos produtos em que o `percentual` de `sódio` seja maior do que `20` e menor do que `40`.",
+      "bonus": false
+    },
+    {
+      "identifier": "desafio27",
+      "description": "27 - Conte quantos produtos contêm `Mc` no nome, sem considerar letras maiúsculas ou minúsculas.",
+      "bonus": false
+    },
+    {
+      "identifier": "desafio28",
+      "description": "28 - Conte quantos produtos têm `4` ingredientes.",
+      "bonus": false
+    },
+    {
+      "identifier": "desafio29",
+      "description": "29 - Renomeie o campo `descricao` para `descricaoSite` em todos os documentos.",
+      "bonus": false
+    },
+    {
+      "identifier": "desafio30",
+      "description": "30 - Remova o campo `curtidas` do item `Big Mac`.",
+      "bonus": false
+    },
+    {
+      "identifier": "desafio31",
+      "description": "31 - Retorne o `nome` dos sanduíches em que o número de `curtidas` é maior que o número de sanduíches `vendidos`.",
+      "bonus": false
+    },
+    {
+      "identifier": "desafio32",
+      "description": "32 - Retorne o `nome` e a quantidade de vendas (`vendidos`) dos sanduíches em que o número de vendas é múltiplo de `5`.",
+      "bonus": false
+    }
+  ]
+}

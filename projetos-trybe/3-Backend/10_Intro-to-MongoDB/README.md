@@ -296,9 +296,9 @@ Para isso, escreva no arquivo `desafio30.js` duas queries, **nesta ordem**:
 ---
 
 
-### Testes 🛠
+## Testes 🛠
 
-Para executar localmente os testes, é preciso estar na raiz do diretório do projeto e escrever o seguinte no seu terminal,:
+Para executar localmente os testes, é preciso estar na raiz do diretório do projeto e escrever o seguinte código em seu terminal:
 
   ```sh
   ./scripts/evaluate.sh

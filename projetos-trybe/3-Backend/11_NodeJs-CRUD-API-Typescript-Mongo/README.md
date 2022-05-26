@@ -32,7 +32,6 @@ npm install
   - `npm run dev`
 - rotas:
   - http://localhost:3001/cars
-  - http://localhost:3001/motocycles
 
 ## Executando Testes
 

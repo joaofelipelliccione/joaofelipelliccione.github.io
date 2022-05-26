@@ -1,6 +1,6 @@
 # Boas vindas ao repositório do projeto Car Shop!
 
-- Este projeto fez parte do bloco 30 do modulo de backend do curso de desenvolvimento Web da [Trybe](https://www.betrybe.com/)
+- Este projeto fez parte do bloco 30 do modulo de backend do curso de desenvolvimento Web da [Trybe](https://www.betrybe.com/).
 
 # Contexto
 
@@ -14,7 +14,7 @@ Neste projeto, fortificou-se:
 - O conhecimento sobre `Composição`;
 - O conhecimento sobre `Interfaces`;
 - O conhecimento sobre implementação em `TypeScript`: `Classes`, `Instâncias`, `Atributos`, `Métodos` e `Objetos`;
-- Conhecimentos sobre `MongoDB`, `Typescript` e `POO` para criar-se uma API `CRUD`.
+- Os conhecimentos sobre `MongoDB`, `Typescript` e `POO` para criar-se uma API `CRUD`.
 
 ---
 

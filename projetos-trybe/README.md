@@ -141,10 +141,6 @@ Abaixo, é possível encontrar a grade curricular do respectivo curso, que termi
 - [x] 17-3: _React Hooks - useEffect e Hooks customizados_
 - [x] 17-4: _[Projeto - StarWars Datatable com Context API e Hooks](https://joaofelipelliccione.github.io/trybe_frontend_8-starwars_planets_search/)_
 
-##### Projeto Final de Front-end
-
-- [x] Projeto Final de Front-end: _Projeto Próprio - izi tech_
-
 ## Desenvolvimento Back-end :hourglass_flowing_sand:
 
 ##### Bloco 18: Docker - Utilizando Containers
@@ -229,56 +225,51 @@ Abaixo, é possível encontrar a grade curricular do respectivo curso, que termi
 
 ##### Bloco 28: MongoDB com Node.js e POO
 
-- [ ] 28-1: _MongoDB e Arquitetura MSC_
-- [ ] 28-2: _MongoDB e POO_
-- [ ] 28-3: _[Projeto - Car Shop]()_
-
-##### Bloco 29: MasterClass - VPS, CI/CD
-
-- [ ] 29-1: _VPS_
-- [ ] 29-2: _CI/CD_
+- [x] 28-1: _MongoDB e Arquitetura MSC_
+- [x] 28-2: _MongoDB e POO_
+- [x] 28-3: _[Projeto - Car Shop](https://github.com/joaofelipelliccione/joaofelipelliccione.github.io/tree/main/projetos-trybe/3-Backend/11_NodeJs-CRUD-API-Typescript-Mongo)_
 
 ##### Projeto Final de Back-end
 
-- [ ] Projeto Final de Back-end: _[Projeto - App de Delivery]()_
+- [x] Projeto Final de Back-end: _[Backend Baristapp](https://github.com/joaofelipelliccione/barista_app_back)_
 
 ## Ciência da Computação :hourglass_flowing_sand:
 
-##### Bloco 30: Introdução à Python
+##### Bloco 29: Introdução à Python
 
-- [ ] 30-1: _Aprendendo Python_
-- [ ] 30-2: _Entrada e Saída de dados_
-- [ ] 30-3: _Testes_
-- [ ] 30-4: _[Projeto - Job Insights]()_
+- [ ] 29-1: _Aprendendo Python_
+- [ ] 29-2: _Entrada e Saída de dados_
+- [ ] 29-3: _Testes_
+- [ ] 29-4: _[Projeto - Job Insights]()_
 
-##### Bloco 31: Redes e Raspagem de Dados
+##### Bloco 30: Redes e Raspagem de Dados
 
-- [ ] 31-1: _Arquitetura de Redes_
-- [ ] 31-2: _Redes de computadores, ferramentas e segurança_
-- [ ] 31-3: _Raspagem de Dados_
-- [ ] 31-4: _[Projeto - Tech News]()_
+- [ ] 30-1: _Arquitetura de Redes_
+- [ ] 30-2: _Redes de computadores, ferramentas e segurança_
+- [ ] 30-3: _Raspagem de Dados_
+- [ ] 30-4: _[Projeto - Tech News]()_
 
-##### Bloco 32: Algoritmos
+##### Bloco 31: Algoritmos
 
-- [ ] 32-1: _Complexidade de Algoritmos_
-- [ ] 32-2: _Recursividade e Estratégias para Solução de Problemas_
-- [ ] 32-3: _Algoritmos de ordenação e busca_
-- [ ] 32-4: _[Projeto - Algoritmos]()_
+- [ ] 31-1: _Complexidade de Algoritmos_
+- [ ] 31-2: _Recursividade e Estratégias para Solução de Problemas_
+- [ ] 31-3: _Algoritmos de ordenação e busca_
+- [ ] 31-4: _[Projeto - Algoritmos]()_
 
-##### Bloco 33: Estrutura de Dados I: Arrays, Hashmaps e Sets
+##### Bloco 32: Estrutura de Dados I: Arrays, Hashmaps e Sets
 
-- [ ] 33-1: _Arquitetura de Computadores_
-- [ ] 33-2: _Arrays_
-- [ ] 33-3: _Hashmap e Dict_
+- [ ] 32-1: _Arquitetura de Computadores_
+- [ ] 32-2: _Arrays_
+- [ ] 32-3: _Hashmap e Dict_
+- [ ] 32-4: _Set_
+- [ ] 32-5: _[Projeto - Restaurant Orders]()_
+
+##### Bloco 33: Estrutura de Dados II: Listas, Filas e Pilhas
+
+- [ ] 33-1: _Nó e Listas Encadeadas_
+- [ ] 33-2: _Deque_
+- [ ] 33-3: _Pilhas_
 - [ ] 33-4: _Set_
-- [ ] 33-5: _[Projeto - Restaurant Orders]()_
-
-##### Bloco 34: Estrutura de Dados II: Listas, Filas e Pilhas
-
-- [ ] 34-1: _Nó e Listas Encadeadas_
-- [ ] 34-2: _Deque_
-- [ ] 34-3: _Pilhas_
-- [ ] 34-4: _Set_
-- [ ] 34-5: _[Projeto TING - TRYBE is Not Google]()_
+- [ ] 33-5: _[Projeto TING - TRYBE is Not Google]()_
 
 # E isso é só o começo... :rocket:

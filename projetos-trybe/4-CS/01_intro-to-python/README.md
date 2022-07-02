@@ -472,7 +472,7 @@ Os dados apresentam faixas salariais para cada emprego exibido. Vamos agora enco
 
 ## 6 - Implemente a função `filter_by_job_type`
 <p align="center">
-  <img src="/.images/filter.png" alt="Contagem" width="400"/>
+  <img src="./.images/filter.png" alt="Contagem" width="400"/>
 </p>
 
 > **Implemente em:** `src/insights.py`
@@ -570,7 +570,7 @@ Agora vamos implementar o filtro propriamente dito. Para esta filtragem, podemos
 > **Implemente em:** `tests/counter/test_counter.py`
 
   <p align="center">
-    <img src="/.images/flask.png" alt="Imagem sobre contar ocorrências" width="600"/>
+    <img src="./.images/flask.png" alt="Imagem sobre contar ocorrências" width="600"/>
   </p>
 
 A empresa cliente contratou um relatório que informa a quantidade de ocorrências das palavra *Python* e *Javascript* nos dados e, para isso, temos uma implementação pronta em `src/counter.py`. Durante o desenvolvimento, sofremos com alguns `bugs`, que já foram resolvidos. Para termos certeza e confiança da nossa entrega, no entanto, e não corrermos riscos, precisaremos de *testes automatizados* que garantam isso!

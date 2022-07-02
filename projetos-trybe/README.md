@@ -221,17 +221,17 @@ Abaixo, é possível encontrar a grade curricular do respectivo curso, que termi
 - [x] 27-3: _Operadores de Consulta_
 - [x] 27-4: _Updates Simples_
 - [x] 27-5: _Updates Complexos - Arrays_
-- [x] 27-6: _[Projeto - Commerce](https://github.com/joaofelipelliccione/joaofelipelliccione.github.io/tree/main/projetos-trybe/3-Backend/10_Intro-to-MongoDB)_
+- [x] 27-6: _Projeto - Commerce - [Código do Projeto](https://github.com/joaofelipelliccione/joaofelipelliccione.github.io/tree/main/projetos-trybe/3-Backend/10_Intro-to-MongoDB)_
 
 ##### Bloco 28: MongoDB com Node.js e POO
 
 - [x] 28-1: _MongoDB e Arquitetura MSC_
 - [x] 28-2: _MongoDB e POO_
-- [x] 28-3: _[Projeto - Car Shop](https://github.com/joaofelipelliccione/joaofelipelliccione.github.io/tree/main/projetos-trybe/3-Backend/11_NodeJs-CRUD-API-Typescript-Mongo)_
+- [x] 28-3: _Projeto - Car Shop - [Código do Projeto](https://github.com/joaofelipelliccione/joaofelipelliccione.github.io/tree/main/projetos-trybe/3-Backend/11_NodeJs-CRUD-API-Typescript-Mongo)_
 
 ##### Projeto Final de Back-end
 
-- [x] Projeto Final de Back-end: _[Backend Baristapp](https://github.com/joaofelipelliccione/barista_app_back)_
+- [x] Projeto Final de Back-End: _[Backend Baristapp](https://github.com/joaofelipelliccione/barista_app_back)_
 
 ## Ciência da Computação :hourglass_flowing_sand:
 
@@ -240,7 +240,7 @@ Abaixo, é possível encontrar a grade curricular do respectivo curso, que termi
 - [x] 29-1: _Aprendendo Python_
 - [x] 29-2: _Entrada e Saída de dados_
 - [x] 29-3: _Testes_
-- [x] 29-4: _[Projeto - Job Insights](https://github.com/joaofelipelliccione/joaofelipelliccione.github.io/tree/main/projetos-trybe/4-CS/01_intro-to-python)_
+- [x] 29-4: _Projeto - Job Insights - [Código do Projeto](https://github.com/joaofelipelliccione/joaofelipelliccione.github.io/tree/main/projetos-trybe/4-CS/01_intro-to-python)_
 
 ##### Bloco 30: Redes e Raspagem de Dados
 

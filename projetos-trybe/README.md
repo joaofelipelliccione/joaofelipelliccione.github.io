@@ -8,7 +8,7 @@ O programa conta com mais de 1.500 horas de online e aborda introdução ao dese
 
 Abaixo, é possível encontrar a grade curricular do respectivo curso, que terminará em meados de 2022!
 
-**[Clique](https://joaofelipecunha.vercel.app/), para ter acesso ao meu *CV* e portfólio 🧑‍💼**
+**[Clique](https://joaofelipecunha.vercel.app/), para ter acesso ao *Web CV* desenvolvido por mim 🧑‍💼**
 
 ## Fundamentos do Desenvolvimento Web :white_check_mark:
 
@@ -141,7 +141,7 @@ Abaixo, é possível encontrar a grade curricular do respectivo curso, que termi
 - [x] 17-3: _React Hooks - useEffect e Hooks customizados_
 - [x] 17-4: _[Projeto - StarWars Datatable com Context API e Hooks](https://joaofelipelliccione.github.io/trybe_frontend_8-starwars_planets_search/)_
 
-## Desenvolvimento Back-end :hourglass_flowing_sand:
+## Desenvolvimento Back-end :white_check_mark:
 
 ##### Bloco 18: Docker - Utilizando Containers
 
@@ -237,10 +237,10 @@ Abaixo, é possível encontrar a grade curricular do respectivo curso, que termi
 
 ##### Bloco 29: Introdução à Python
 
-- [ ] 29-1: _Aprendendo Python_
-- [ ] 29-2: _Entrada e Saída de dados_
-- [ ] 29-3: _Testes_
-- [ ] 29-4: _[Projeto - Job Insights]()_
+- [x] 29-1: _Aprendendo Python_
+- [x] 29-2: _Entrada e Saída de dados_
+- [x] 29-3: _Testes_
+- [x] 29-4: _[Projeto - Job Insights](https://github.com/joaofelipelliccione/joaofelipelliccione.github.io/tree/main/projetos-trybe/4-CS/01_intro-to-python)_
 
 ##### Bloco 30: Redes e Raspagem de Dados
 

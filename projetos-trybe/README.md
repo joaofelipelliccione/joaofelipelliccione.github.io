@@ -242,34 +242,41 @@ Abaixo, é possível encontrar a grade curricular do respectivo curso, que termi
 - [x] 29-3: _Testes_
 - [x] 29-4: _Projeto - Job Insights - [Código do Projeto](https://github.com/joaofelipelliccione/joaofelipelliccione.github.io/tree/main/projetos-trybe/4-CS/01_intro-to-python)_
 
-##### Bloco 30: Redes e Raspagem de Dados
+##### Bloco 30: Padrões de Projeto
 
-- [ ] 30-1: _Arquitetura de Redes_
-- [ ] 30-2: _Redes de computadores, ferramentas e segurança_
-- [ ] 30-3: _Raspagem de Dados_
-- [ ] 30-4: _[Projeto - Tech News]()_
+- [x] 30-1: _P.O.O em Python_
+- [x] 30-2: _Padrões - Iterator, Adapter e Strategy_
+- [x] 30-3: _Padrões - Decorator, Observer e Factory_
+- [x] 30-4: _Projeto - Relatórios de Estoque - [Código do Projeto](https://github.com/joaofelipelliccione/joaofelipelliccione.github.io/tree/main/projetos-trybe/4-CS/02_POO-python)_
 
-##### Bloco 31: Algoritmos
+##### Bloco 31: Redes e Raspagem de Dados
 
-- [ ] 31-1: _Complexidade de Algoritmos_
-- [ ] 31-2: _Recursividade e Estratégias para Solução de Problemas_
-- [ ] 31-3: _Algoritmos de ordenação e busca_
-- [ ] 31-4: _[Projeto - Algoritmos]()_
+- [ ] 31-1: _Arquitetura de Redes_
+- [ ] 31-2: _Redes de computadores, ferramentas e segurança_
+- [ ] 31-3: _Raspagem de Dados_
+- [ ] 31-4: _[Projeto - Tech News]()_
 
-##### Bloco 32: Estrutura de Dados I: Arrays, Hashmaps e Sets
+##### Bloco 32: Algoritmos
 
-- [ ] 32-1: _Arquitetura de Computadores_
-- [ ] 32-2: _Arrays_
-- [ ] 32-3: _Hashmap e Dict_
-- [ ] 32-4: _Set_
-- [ ] 32-5: _[Projeto - Restaurant Orders]()_
+- [ ] 32-1: _Complexidade de Algoritmos_
+- [ ] 32-2: _Recursividade e Estratégias para Solução de Problemas_
+- [ ] 32-3: _Algoritmos de ordenação e busca_
+- [ ] 32-4: _[Projeto - Algoritmos]()_
 
-##### Bloco 33: Estrutura de Dados II: Listas, Filas e Pilhas
+##### Bloco 33: Estrutura de Dados I: Arrays, Hashmaps e Sets
 
-- [ ] 33-1: _Nó e Listas Encadeadas_
-- [ ] 33-2: _Deque_
-- [ ] 33-3: _Pilhas_
+- [ ] 33-1: _Arquitetura de Computadores_
+- [ ] 33-2: _Arrays_
+- [ ] 33-3: _Hashmap e Dict_
 - [ ] 33-4: _Set_
-- [ ] 33-5: _[Projeto TING - TRYBE is Not Google]()_
+- [ ] 33-5: _[Projeto - Restaurant Orders]()_
+
+##### Bloco 34: Estrutura de Dados II: Listas, Filas e Pilhas
+
+- [ ] 34-1: _Nó e Listas Encadeadas_
+- [ ] 34-2: _Deque_
+- [ ] 34-3: _Pilhas_
+- [ ] 34-4: _Set_
+- [ ] 34-5: _[Projeto TING - TRYBE is Not Google]()_
 
 # E isso é só o começo... :rocket:

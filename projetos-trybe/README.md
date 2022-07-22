@@ -251,10 +251,10 @@ Abaixo, é possível encontrar a grade curricular do respectivo curso, que termi
 
 ##### Bloco 31: Redes e Raspagem de Dados
 
-- [ ] 31-1: _Arquitetura de Redes_
-- [ ] 31-2: _Redes de computadores, ferramentas e segurança_
-- [ ] 31-3: _Raspagem de Dados_
-- [ ] 31-4: _[Projeto - Tech News]()_
+- [x] 31-1: _Arquitetura de Redes_
+- [x] 31-2: _Redes de computadores, ferramentas e segurança_
+- [x] 31-3: _Raspagem de Dados_
+- [x] 31-4: _[Projeto - Tech News](https://github.com/joaofelipelliccione/joaofelipelliccione.github.io/tree/main/projetos-trybe/4-CS/03_scraping-python)_
 
 ##### Bloco 32: Algoritmos
 

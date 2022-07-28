@@ -254,14 +254,14 @@ Abaixo, é possível encontrar a grade curricular do respectivo curso, que termi
 - [x] 31-1: _Arquitetura de Redes_
 - [x] 31-2: _Redes de computadores, ferramentas e segurança_
 - [x] 31-3: _Raspagem de Dados_
-- [x] 31-4: _[Projeto - Tech News](https://github.com/joaofelipelliccione/joaofelipelliccione.github.io/tree/main/projetos-trybe/4-CS/03_scraping-python)_
+- [x] 31-4: _Projeto - Tech News - [Código do Projeto](https://github.com/joaofelipelliccione/joaofelipelliccione.github.io/tree/main/projetos-trybe/4-CS/03_scraping-python)_
 
 ##### Bloco 32: Algoritmos
 
-- [ ] 32-1: _Complexidade de Algoritmos_
-- [ ] 32-2: _Recursividade e Estratégias para Solução de Problemas_
-- [ ] 32-3: _Algoritmos de ordenação e busca_
-- [ ] 32-4: _[Projeto - Algoritmos]()_
+- [x] 32-1: _Complexidade de Algoritmos_
+- [x] 32-2: _Recursividade e Estratégias para Solução de Problemas_
+- [x] 32-3: _Algoritmos de ordenação e busca_
+- [x] 32-4: _Projeto - Algoritmos - [Código do Projeto](https://github.com/joaofelipelliccione/joaofelipelliccione.github.io/tree/main/projetos-trybe/4-CS/04_algorithms-python)_
 
 ##### Bloco 33: Estrutura de Dados I: Arrays, Hashmaps e Sets
 
